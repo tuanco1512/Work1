@@ -1,0 +1,96 @@
+
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar {
+    @extend %flex-layout;
+    padding: $base-padding $base-padding * 2;
+    background-color: #FFF;
+
+    .size-title {
+        font-size: $font-size-lg;
+    }
+    .container {
+        @extend %flex-layout;
+    }
+    .left-section{
+        align-items: center;
+        gap: 30px;
+        width: 33%;
+        
+        .logo-title{
+            font-size: $font-size-xl;
+        }
+        .logo{
+            gap: 9.778px;
+        }
+        .search{
+            width: 316px;
+            padding: $base-padding;
+            gap: 10px;
+            border-radius: $base-border-radius*0.5;
+            background-color: #F8F8F8;
+            
+            #search{
+                font-size: $base-font-size;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 145%; /* 23.2px */
+                border: none;
+                background-color: #F8F8F8;
+            }
+        }
+    }
+    .right-section{
+        align-items: center;
+        gap: 25px;
+        width: 45%;
+
+        .info{
+            color: #666;
+            gap: 47px;
+            font-size: $base-font-size*1.25;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 50px; /* 312.5% */
+        }
+        .seperate-line{
+            width: 1px;
+            height: 36px;
+            background: #EEE;
+        }
+        .login-register{
+            gap: 25px;
+            .btn-black{
+                border: 1px solid #3D4C68;
+                color:  #FFF;
+                font-size: $base-font-size*1.25;
+                font-weight: 500;
+                &:hover{
+                    background-color: #B6020F;
+                }
+            }
+            .btn-outlined-black{
+                border: 1px solid #3D4C68;
+                font-size: $base-font-size*1.25;
+                font-weight: 500;
+                &:hover{
+                    background-color: #B6020F;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+@each $key, $val in $colors {
+    .navbar-#{$key} {
+        @extend .navbar;
+        background-color: $val;
+    }
+}

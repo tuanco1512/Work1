@@ -1,0 +1,101 @@
+$primary: indigo;
+$base-padding: 1rem;
+$base-border-thickness: 3px;
+
+@import 'shinobi';
+
+.content{
+    display: flex;
+    justify-content: space-between;
+
+    .left-content{
+        width: 250px;
+        gap: 20px;
+        display: grid;
+    }
+    
+    .user-section{
+        border-radius: 10px;
+        border: 1px solid var(--border-light-grey, #EEE);
+        background: #FFF;
+    }
+    
+    .user-info{
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        padding: 14px 16px;
+        align-items: center;
+        gap: 15px;
+        background-color: #B6020F;
+        color: #FFFFFF;
+    
+        div{
+            font-size: $base-font-size;
+            gap: 5px;
+        }
+        .u-img{
+            object-fit: cover;
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            border: 1px solid #FFF;
+            background: lightgray 50% / cover no-repeat;
+        }
+    }
+    .user-point{
+        display: flex;
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        color: #B6020F;
+        text-align: center;
+        font-size: $base-font-size;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 145%;
+        background: rgba(255, 226, 228, 0.40);
+    }
+    .user-function{
+        padding: $base-padding;
+        gap: 14px;
+        display: grid;
+        
+        div{
+            display: flex;
+            padding: 10px 15px;
+            align-items: center;
+            gap: 15px;
+            border-radius: 6px;
+            background-color: #f8f8f8;
+            &:hover{
+                background-color: #EEE;
+            }
+        }
+    }
+    .advertise-section{
+        padding: 13.333px;
+        gap: 50px;
+        border-radius: 10px;
+        border: 0.833px solid var(--border-light-grey, #EEE);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFEFEF 71.54%), #FFF;
+    
+        .advertise-title{
+            display: grid;
+            gap: 17px;
+            font-weight: 600;
+            font-size: $base-font-size*1.25;
+    
+            .title{
+                color: #B6020F;
+            }
+        }
+        .join-link{
+            gap: 8.333px;
+            display: inline-flex;
+            color: #B6020F;
+        }
+    }
+}
