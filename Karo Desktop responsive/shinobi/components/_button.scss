@@ -44,20 +44,21 @@ $val in $colors {
 }
 
 
-.sign-up-btn{
+.sign-up-btn {
     display: flex;
     padding: 10px 30px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 8px;
     border: 1px solid var(--color-navy, #3D4C68);
-    &:hover{
+
+    &:hover {
         background-color: red;
         color: white;
     }
 }
 
-.btn-login{
+.btn-login {
     background: var(--text-black, #222);
     color: white;
 }
@@ -78,11 +79,6 @@ $val in $colors {
     border: 0.8px solid #E0E3EA;
     background: #FFF;
 
-    &:hover {
-        border: 0.8px solid #B6020F;
-        color: #B6020F;
-    }
-
     >div {
         display: flex;
         align-items: center;
@@ -90,10 +86,12 @@ $val in $colors {
     }
 }
 
-.btn-action-regular{
+.btn-action-regular {
     color: var(--color-navy, #3D4C68);
-    &:hover{
+
+    &:hover {
         color: #B6020F;
+        border: 0.8px solid #B6020F;
     }
 }
 
@@ -104,7 +102,14 @@ $val in $colors {
     color: white;
 
     &:hover {
+        border: 0.8px solid #B6020F;
         background-color: red;
         color: #FFF;
     }
+}
+
+.btn-action-yellow-cream {
+    border: 0.8px solid var(--status-warning, #FFF2AE);
+    background: var(--status-warning, #FFF2AE);
+    padding: 10px 7px;
 }
