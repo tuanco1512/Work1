@@ -90,6 +90,13 @@ $val in $colors {
     }
 }
 
+.btn-action-regular{
+    color: var(--color-navy, #3D4C68);
+    &:hover{
+        color: #B6020F;
+    }
+}
+
 .btn-action-red {
     border: 0.8px solid #B6020F;
     background: #B6020F;
