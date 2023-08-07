@@ -844,11 +844,6 @@ img {
     content-visibility: hidden;
   }
 }
-@media screen and (max-width: 1150px) {
-  .content .left-content {
-    display: none;
-  }
-}
 @media screen and (max-width: 920px) {
   .search {
     width: 30px !important;
@@ -859,13 +854,8 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 890px) {
-  .content .right-content {
-    display: none;
-  }
-}
 @media screen and (max-width: 570px) {
   .navbar .right-section .info {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
