@@ -32,6 +32,303 @@ img {
   color: #d32752;
 }
 
+.deal-card-other-view {
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 0.8px solid #E4E4E4;
+  background: #FFF;
+}
+.deal-card-other-view .author {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 16px;
+  gap: 10px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 0.5px solid var(--border-light-grey, #EEE);
+  background: #FFF;
+}
+.deal-card-other-view .author .dropdown-function {
+  display: flex;
+  padding-top: 2px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.deal-card-other-view .author .dropdown-function .dropdown-content {
+  display: none;
+  position: absolute;
+  align-items: flex-start;
+  border-radius: 5px;
+  border: 1px solid #E0E3EA;
+  background: #FFF;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.09);
+  color: var(--text-black, #222);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 145%;
+  /* 21.75px */
+}
+.deal-card-other-view .author .dropdown-function .dropdown-content a,
+.deal-card-other-view .author .dropdown-function .dropdown-content .text-error {
+  cursor: pointer;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+.deal-card-other-view .author .dropdown-function .dropdown-content a:hover,
+.deal-card-other-view .author .dropdown-function .dropdown-content .text-error:hover {
+  background: #EEE;
+}
+.deal-card-other-view .author .dropdown-function .dropdown-content a {
+  color: black;
+}
+.deal-card-other-view .author .dropdown-function .dropdown-content .dropdown-content-line {
+  height: 1px;
+  align-self: stretch;
+  background: var(--background-grey, #F8F8F8);
+}
+.deal-card-other-view .author .dropdown-function:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.deal-card-other-view .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+.deal-card-other-view .info .detail {
+  display: grid;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+.deal-card-other-view .info .detail .title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.deal-card-other-view .info .detail .title .address {
+  display: flex;
+  width: 518px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+.deal-card-other-view .info .detail .title .address .status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #3D4C68;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 145%;
+  /* 18.85px */
+  text-transform: uppercase;
+}
+.deal-card-other-view .info .detail .title .address .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  color: #222;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 145%;
+  /* 24.65px */
+}
+.deal-card-other-view .info .detail .title .address .main-title .places {
+  color: #44ACF8;
+  font-size: 14px;
+  font-weight: 400;
+}
+.deal-card-other-view .info .detail .title .important-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* 24.65px */
+}
+.deal-card-other-view .info .detail .title .important-detail .house-size {
+  width: 66px;
+  height: 24px;
+  align-items: center;
+  gap: 8px;
+}
+.deal-card-other-view .info .detail .img-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+.deal-card-other-view .info .detail .img-list .post-img {
+  height: 167px;
+  flex: 1 0 0;
+  width: 255px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.deal-card-other-view .info .detail .img-list .post-img-1 {
+  width: 518px;
+  height: 261px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.deal-card-other-view .info .detail .suggestion {
+  display: flex;
+  padding: 7px 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 5px;
+  background: var(--background-blue, rgba(68, 172, 248, 0.1));
+  color: var(--color-navy, #3D4C68);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 145%;
+  /* 20.3px */
+}
+.deal-card-other-view .info .action {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  align-self: stretch;
+}
+.deal-card-other-view .info .action .action-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.deal-card-other-view .info .action .action-list .btn {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+.deal-card-other-view .info .action .action-list .btn-action-red {
+  color: white;
+}
+
+.connect-suggestion-card {
+  display: flex;
+  width: 280px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-light-grey, #EEE);
+  background: #FFF;
+}
+.connect-suggestion-card .connect-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  /* 16.64px */
+}
+.connect-suggestion-card .connect-list .suggest-text {
+  color: var(--color-navy, #3D4C68);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 128%;
+  /* 16.64px */
+  text-transform: uppercase;
+}
+.connect-suggestion-card .connect-list .info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  /* 14.08px */
+}
+.connect-suggestion-card .connect-list .info-list .post-save {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--background-grey, #F8F8F8);
+}
+.connect-suggestion-card .connect-list .info-list .post-save .post-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  align-self: stretch;
+}
+.connect-suggestion-card .connect-list .info-list .post-save .post-wrapper .post-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  color: #3D4C68;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 128%;
+  /* 15.36px */
+  text-transform: uppercase;
+}
+.connect-suggestion-card .connect-list .info-list .post-save .post-wrapper .post-detail {
+  align-self: stretch;
+  color: var(--text-black, #222);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 155%;
+  /* 20.15px */
+}
+.connect-suggestion-card .connect-list .info-list .user-post-follow {
+  font-size: 13px;
+}
+.connect-suggestion-card .connect-list .info-list .user-post-sm-text {
+  font-size: 11px;
+}
+.connect-suggestion-card .connect-list .info-list .line {
+  width: 248px;
+  height: 1px;
+  background: #F8F8F8;
+}
+.connect-suggestion-card .connect-list .reload-list {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: #F8F8F8;
+  color: var(--color-navy, #3D4C68);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128%;
+  /* 16.64px */
+}
+.connect-suggestion-card .connect-list .reload-list:hover {
+  background-color: #EEEEEE;
+}
+
 .btn {
   cursor: pointer;
   color: var(--text-black, #222);
@@ -125,23 +422,23 @@ img {
   gap: 10px;
   background-color: #FFF;
 }
-.navbar > div {
+.navbar .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
 }
-.navbar > div .left-section {
+.navbar .nav-container .left-section {
   align-items: center;
   gap: 30px;
   display: flex;
 }
-.navbar > div .left-section .Karo-logo {
+.navbar .nav-container .left-section .Karo-logo {
   display: flex;
   align-items: center;
   gap: 9.778px;
 }
-.navbar > div .left-section .Karo-logo .logo-title {
+.navbar .nav-container .left-section .Karo-logo .logo-title {
   color: #000;
   text-align: center;
   font-family: Be Vietnam Pro;
@@ -151,7 +448,7 @@ img {
   line-height: normal;
   letter-spacing: -0.611px;
 }
-.navbar > div .left-section .search {
+.navbar .nav-container .left-section .search {
   display: flex;
   width: 316px;
   padding: 15px 14px;
@@ -161,7 +458,7 @@ img {
   background: var(--background-grey, #F8F8F8);
   justify-content: left;
 }
-.navbar > div .left-section .search #search {
+.navbar .nav-container .left-section .search #search {
   color: var(--text-grey, #666);
   font-family: Be Vietnam Pro;
   font-size: 16px;
@@ -172,35 +469,34 @@ img {
   border: none;
   background: var(--background-grey, #F8F8F8);
 }
-.navbar > div .right-section {
+.navbar .nav-container .right-section {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.navbar > div .right-section .info {
+.navbar .nav-container .right-section .info {
   display: flex;
   align-items: flex-start;
   gap: 47px;
-}
-.navbar > div .right-section .info a {
-  color: var(--text-grey, #666);
-  text-align: center;
-  font-family: Be Vietnam Pro;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 50px;
+}
+.navbar .nav-container .right-section .info a {
+  color: var(--text-grey, #666);
+  text-align: center;
   /* 312.5% */
 }
-.navbar > div .right-section .info a:hover {
+.navbar .nav-container .right-section .info a:hover {
   color: black;
 }
-.navbar > div .right-section .login-register {
+.navbar .nav-container .right-section .login-register {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.navbar > div .right-section .login-register .seperate-line {
+.navbar .nav-container .right-section .login-register .seperate-line {
   width: 1px;
   height: 36px;
   background: #EEE;
@@ -230,6 +526,7 @@ img {
   border-radius: 10px;
   border: 1px solid var(--border-light-grey, #EEE);
   background: #FFF;
+  width: 100%;
 }
 .content .left-content .user-info {
   display: flex;
@@ -238,6 +535,7 @@ img {
   gap: 15px;
   background: var(--color-red-primary, #B6020F);
   border-radius: 10px 10px 0 0;
+  width: -webkit-fill-available;
 }
 .content .left-content .user-info .u-img {
   width: 60px;
@@ -280,7 +578,7 @@ img {
   align-self: stretch;
   background: rgba(255, 226, 228, 0.4);
 }
-.content .left-content .user-point div {
+.content .left-content .user-point .user-point-text {
   color: var(--color-red-primary, #B6020F);
   text-align: center;
   font-size: 13px;
@@ -345,7 +643,7 @@ img {
   align-items: center;
   gap: 8.333px;
 }
-.content .left-content .advertise-section .advertise-title .join-link a div {
+.content .left-content .advertise-section .advertise-title .join-link a .join-text {
   color: var(--color-red-primary, #B6020F);
   font-size: 11.667px;
   font-weight: 600;
@@ -376,7 +674,7 @@ img {
   line-height: 128%;
   /* 20.48px */
 }
-.content .main-content .post-article > div {
+.content .main-content .post-article .post-container {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -432,306 +730,11 @@ img {
   align-items: flex-start;
   gap: 15px;
 }
-.content .main-content .article-show .deal-card-other-view {
-  display: flex;
-  width: 550px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  border: 0.8px solid #E4E4E4;
-  background: #FFF;
-}
-.content .main-content .article-show .deal-card-other-view .author {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-  padding: 16px;
-  gap: 10px;
-  border-radius: 10px 10px 0px 0px;
-  border-bottom: 0.5px solid var(--border-light-grey, #EEE);
-  background: #FFF;
-}
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function {
-  display: flex;
-  padding-top: 2px;
-  align-items: flex-start;
-  gap: 10px;
-}
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function .dropdown-content {
-  display: none;
-  position: absolute;
-  align-items: flex-start;
-  border-radius: 5px;
-  border: 1px solid #E0E3EA;
-  background: #FFF;
-  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.09);
-  color: var(--text-black, #222);
-  text-align: center;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 145%;
-  /* 21.75px */
-}
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function .dropdown-content a,
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function .dropdown-content .text-error {
-  cursor: pointer;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-}
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function .dropdown-content a:hover,
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function .dropdown-content .text-error:hover {
-  background: #EEE;
-}
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function .dropdown-content a {
-  color: black;
-}
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function .dropdown-content div {
-  height: 1px;
-  align-self: stretch;
-  background: var(--background-grey, #F8F8F8);
-}
-.content .main-content .article-show .deal-card-other-view .author .dropdown-function:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.content .main-content .article-show .deal-card-other-view .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail {
-  display: grid;
-  padding: 16px;
-  align-items: flex-start;
-  gap: 15px;
-  align-self: stretch;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .title .address {
-  display: flex;
-  width: 518px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 7px;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .title .address .status {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  color: #3D4C68;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 145%;
-  /* 18.85px */
-  text-transform: uppercase;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .title .address .main-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-  color: #222;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 145%;
-  /* 24.65px */
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .title .address .main-title .places {
-  color: #44ACF8;
-  font-size: 14px;
-  font-weight: 400;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .title .important-detail {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* 24.65px */
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .title .important-detail .house-size {
-  width: 66px;
-  height: 24px;
-  align-items: center;
-  gap: 8px;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .img-list {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .img-list .post-img {
-  height: 167px;
-  flex: 1 0 0;
-  width: 255px;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .img-list .post-img-1 {
-  width: 518px;
-  height: 261px;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-.content .main-content .article-show .deal-card-other-view .info .detail .suggestion {
-  display: flex;
-  padding: 7px 10px;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-  border-radius: 5px;
-  background: var(--background-blue, rgba(68, 172, 248, 0.1));
-  color: var(--color-navy, #3D4C68);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 145%;
-  /* 20.3px */
-}
-.content .main-content .article-show .deal-card-other-view .info .action {
-  display: flex;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  align-self: stretch;
-}
-.content .main-content .article-show .deal-card-other-view .info .action .action-list {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-}
-.content .main-content .article-show .deal-card-other-view .info .action .action-list .btn {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-}
-.content .main-content .article-show .deal-card-other-view .info .action .action-list .btn-action-red {
-  color: white;
-}
 .content .right-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-}
-.content .right-content .connect-suggestion {
-  display: flex;
-  width: 280px;
-  padding: 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  border-radius: 10px;
-  border: 1px solid var(--border-light-grey, #EEE);
-  background: #FFF;
-}
-.content .right-content .connect-suggestion .connect-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  width: 100%;
-  /* 16.64px */
-}
-.content .right-content .connect-suggestion .connect-list .suggest-text {
-  color: var(--color-navy, #3D4C68);
-  text-align: center;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 128%;
-  /* 16.64px */
-  text-transform: uppercase;
-}
-.content .right-content .connect-suggestion .connect-list .info-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  /* 14.08px */
-}
-.content .right-content .connect-suggestion .connect-list .info-list .post-save {
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 5px;
-  background: var(--background-grey, #F8F8F8);
-}
-.content .right-content .connect-suggestion .connect-list .info-list .post-save .post-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-  align-self: stretch;
-}
-.content .right-content .connect-suggestion .connect-list .info-list .post-save .post-wrapper .post-title {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-  color: #3D4C68;
-  text-align: center;
-  font-family: Be Vietnam Pro;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 128%;
-  /* 15.36px */
-  text-transform: uppercase;
-}
-.content .right-content .connect-suggestion .connect-list .info-list .post-save .post-wrapper .post-detail {
-  align-self: stretch;
-  color: var(--text-black, #222);
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 155%;
-  /* 20.15px */
-}
-.content .right-content .connect-suggestion .connect-list .info-list .user-post-follow {
-  font-size: 13px;
-}
-.content .right-content .connect-suggestion .connect-list .info-list .user-post-sm-text {
-  font-size: 11px;
-}
-.content .right-content .connect-suggestion .connect-list .info-list .line {
-  width: 248px;
-  height: 1px;
-  background: #F8F8F8;
-}
-.content .right-content .connect-suggestion .connect-list .reload-list {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  border-radius: 5px;
-  background: #F8F8F8;
-  color: var(--color-navy, #3D4C68);
-  text-align: center;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 128%;
-  /* 16.64px */
-}
-.content .right-content .connect-suggestion .connect-list .reload-list:hover {
-  background-color: #EEEEEE;
 }
 
 .tag {
@@ -859,5 +862,10 @@ img {
 @media screen and (max-width: 890px) {
   .content .right-content {
     display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .navbar .right-section .info {
+    font-size: 12px;
   }
 }
