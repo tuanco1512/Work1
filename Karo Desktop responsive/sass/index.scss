@@ -374,6 +374,10 @@ $base-border-thickness: 3px;
     color: red;
 }
 
+.menu {
+    display: none;
+}
+
 @media screen and (max-width: 1440px) {
     .navbar {
         width: 100%;
@@ -386,10 +390,48 @@ $base-border-thickness: 3px;
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1160px) {
+    .btn {
+        font-size: 14px !important;
+    }
+
     .content {
-        .left-content {
-        
+        .main-content {
+            .post-container {
+                font-size: 14px !important;
+            }
+
+            .article-filter {
+                .tag-wrapper {
+                    width: auto !important;
+                }
+            }
+
+            .deal-card-other-view {
+                width: 100%;
+
+                .address {
+                    width: 100% !important;
+
+                    .main-title {
+                        font-size: 14px !important;
+
+                        .places {
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-content {
+            .connect-suggestion-card {
+                width: auto;
+
+                .post-wrapper {
+                    width: 228px;
+                }
+            }
         }
     }
 }
@@ -406,12 +448,24 @@ $base-border-thickness: 3px;
     }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 980px) {
     .content {
         .right-content {
-        
+            display: none;
         }
     }
+
+    .menu {
+        display: contents;
+        gap: 25px;
+    }
+
+    .navbar {
+        .info {
+            display: none !important;
+        }
+    }
+
 }
 
 @media screen and (max-width: 570px) {
