@@ -53,8 +53,7 @@ $val in $colors {
     border: 1px solid var(--color-navy, #3D4C68);
 
     &:hover {
-        background-color: red;
-        color: white;
+    
     }
 }
 
@@ -103,7 +102,6 @@ $val in $colors {
 
     &:hover {
         border: 0.8px solid #B6020F;
-        background-color: red;
         color: #FFF;
     }
 }
