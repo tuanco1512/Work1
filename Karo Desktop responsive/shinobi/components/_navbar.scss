@@ -85,6 +85,7 @@
                 a {
                     color: var(--text-grey, #666);
                     text-align: center;
+
                     /* 312.5% */
                     &:hover {
                         color: black;
@@ -101,6 +102,40 @@
                     width: 1px;
                     height: 36px;
                     background: #EEE;
+                }
+
+                svg {
+                    cursor: pointer;
+                }
+
+                .u-login-info {
+                    display: flex;
+                    height: 50px;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 100px;
+                        border: 1px solid rgba(17, 17, 17, 0.10);
+                        background: lightgray 50% / cover no-repeat;
+                        object-fit: cover
+                    }
+
+                    .u-login-container {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        align-self: stretch;
+                        color: var(--color-navy, #3D4C68);
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 128%;
+                        /* 16.64px */
+                    }
+
                 }
             }
         }

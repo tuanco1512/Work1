@@ -121,59 +121,6 @@ $base-border-thickness: 3px;
                 }
             }
         }
-
-        .advertise-section {
-            display: flex;
-            padding: 13.333px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 50px;
-            border-radius: 10px;
-            border: 0.833px solid var(--border-light-grey, #EEE);
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFEFEF 71.54%), #FFF;
-
-            .advertise-title {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 17px;
-                align-self: stretch;
-                color: var(--text-black, #222);
-                font-size: 18.333px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 145%;
-
-                .title {
-                    color: var(--color-red-primary, #B6020F);
-                }
-
-                .join-link {
-                    width: 120px;
-                    height: 15px;
-
-                    a {
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 8.333px;
-
-                        .join-text {
-                            color: var(--color-red-primary, #B6020F);
-                            font-size: 11.667px;
-                            font-weight: 600;
-                            line-height: 130%;
-                            /* 15.167px */
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-            }
-
-            .advertise-img {
-                width: 223.333px;
-                height: 175.735px;
-            }
-        }
     }
 
     .main-content {
@@ -363,23 +310,23 @@ $base-border-thickness: 3px;
     color: #B6020F;
 }
 
-.font-basic{
+.font-basic {
     color: #333;
 }
 
-.font-black{
+.font-black {
     color: var(--color-black, #111);
 }
 
-.font-light-grey{
+.font-light-grey {
     color: var(--text-light-grey, #999);
 }
 
-.font-grey{
+.font-grey {
     color: #666;
 }
 
-.font-light-dark-blue{
+.font-light-dark-blue {
     color: #3D4C68;
 }
 
@@ -410,7 +357,9 @@ $base-border-thickness: 3px;
     flex-shrink: 0;
 }
 
-
+.width250px{
+    width: 250px;
+}
 
 @media screen and (max-width: 1440px) {
     .navbar {
