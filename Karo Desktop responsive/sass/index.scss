@@ -505,6 +505,7 @@ $base-border-thickness: 3px;
 
                 .link-icon {
                     position: relative;
+                    cursor: pointer;
 
                     .social-media-icon {
                         position: absolute;
@@ -512,6 +513,102 @@ $base-border-thickness: 3px;
                         bottom: 6px;
                     }
                 }
+            }
+        }
+
+        .info-middle-section {
+            display: flex;
+            align-items: center;
+            gap: 120px;
+            align-self: stretch;
+
+            .nav-link {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 200%;
+                /* 32px */
+            }
+        }
+
+        .info-right-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 30px;
+            align-self: stretch;
+
+            .email-contact {
+                display: flex;
+                width: 335px;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 20px;
+
+                .font-white {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 140%;
+                    /* 33.6px */
+                }
+
+                .email-contact-container {
+                    display: inline-flex;
+                    padding: 4px 6px 4px 20px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                    border-radius: 44px;
+                    background: #FFF;
+
+                    .type-email {
+                        display: flex;
+                        align-items: center;
+                        gap: 42px;
+
+                        #input-email {
+                            border: none;
+                            color: #111;
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: normal;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .send-email {
+                            width: 42px;
+                            height: 42px;
+                            position: relative;
+
+                            .btn-action-red {
+                                padding: 0;
+                                width: 42px;
+                                height: 42px;
+                                flex-shrink: 0;
+                                border-radius: 44px;
+                                background: #B6020F;
+                                cursor: pointer;
+                            }
+
+                            svg {
+                                position: absolute;
+                                bottom: 7px;
+                                left: 10px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .font-white {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 200%;
+                /* 32px */
             }
         }
     }
@@ -606,11 +703,28 @@ $base-border-thickness: 3px;
     }
 }
 
-@media screen and (max-width: 1180px) {
-    .login-register {
-        content-visibility: hidden;
+@media screen and (max-width: 1280px) {
+    .u-login-name {
+        display: none;
+    }
+
+    .card-info {
+        width: 25% !important;
+    }
+
+    .menu {
+        display: contents;
+        gap: 25px;
+    }
+
+    .navbar {
+        .info {
+            display: none !important;
+        }
     }
 }
+
+@media screen and (max-width: 1180px) {}
 
 @media screen and (max-width: 1160px) {
     .btn {
@@ -666,6 +780,27 @@ $base-border-thickness: 3px;
 
         input {
             display: none;
+        }
+    }
+
+    .footer {
+        padding-top: 30px;
+        height: auto;
+
+        .footer-info-section {
+            flex-direction: column;
+            width: 100%;
+            gap: 30px;
+
+            .info-middle-section {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .info-right-section {
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }
