@@ -1102,6 +1102,10 @@ img {
   /* 16.64px */
 }
 
+.br {
+  border-radius: 20px;
+}
+
 .display-f {
   display: flex;
 }
@@ -1426,6 +1430,66 @@ img {
   background: none;
 }
 
+.about-karo {
+  padding: 56px 0 56px 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.about-karo .font-black {
+  width: 660px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 145%;
+  /* 34.8px */
+}
+.about-karo .card-container {
+  display: flex;
+  padding: 0px 24px;
+  align-items: flex-start;
+  gap: 16px;
+}
+.about-karo .card-container .card-info {
+  display: flex;
+  width: 250px;
+  height: 343px;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  border-radius: 8px;
+  background: #FFF;
+  position: relative;
+}
+.about-karo .card-container .card-info .font-big-red {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-karo .card-container .card-info .font-black {
+  width: auto;
+  text-align: unset;
+  align-self: stretch;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  /* 26.1px */
+}
+.about-karo .card-container .card-info .view-more {
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  border-radius: 50px;
+  background: var(--background-grey, #F8F8F8);
+  backdrop-filter: blur(9px);
+  cursor: pointer;
+}
+
 #search {
   color: var(--text-grey, #666);
   font-family: Be Vietnam Pro;
@@ -1439,6 +1503,73 @@ img {
 }
 #search:focus {
   outline: none;
+}
+
+.footer {
+  background-color: #000;
+  height: 433px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-info-section {
+  display: flex;
+  width: 1115px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-info-section .info-left-section {
+  display: flex;
+  width: 275px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 33px;
+  flex-shrink: 0;
+}
+.footer .footer-info-section .info-left-section .info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.footer .footer-info-section .info-left-section .info-section .karo-logo {
+  display: flex;
+  align-items: center;
+  gap: 12.417px;
+}
+.footer .footer-info-section .info-left-section .info-section .karo-logo .karo-title {
+  color: #FFF;
+  text-align: center;
+  font-size: 33.019px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.776px;
+}
+.footer .footer-info-section .info-left-section .info-section .karo-contact {
+  align-self: stretch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.footer .footer-info-section .info-left-section .info-section .karo-contact .uppercase {
+  font-weight: 500;
+}
+.footer .footer-info-section .info-left-section .link-section {
+  width: 210px;
+  height: 30px;
+  gap: 15px;
+  display: flex;
+}
+.footer .footer-info-section .info-left-section .link-section .link-icon {
+  position: relative;
+}
+.footer .footer-info-section .info-left-section .link-section .link-icon .social-media-icon {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
 }
 
 .no-gap {
