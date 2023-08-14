@@ -1040,17 +1040,6 @@ img {
   background: var(--background-grey, #F8F8F8);
   justify-content: left;
 }
-.navbar .nav-container .left-section .search #search {
-  color: var(--text-grey, #666);
-  font-family: Be Vietnam Pro;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 145%;
-  /* 23.2px */
-  border: none;
-  background: var(--background-grey, #F8F8F8);
-}
 .navbar .nav-container .right-section {
   display: flex;
   align-items: center;
@@ -1115,6 +1104,14 @@ img {
 
 .display-f {
   display: flex;
+}
+
+.font-xl {
+  font-size: 32px;
+}
+
+.font-xxl {
+  font-size: 48px;
 }
 
 .content {
@@ -1375,6 +1372,79 @@ img {
   /* 15.36px */
 }
 
+.real-estate-consignment-background {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/18f66961620e9cfa3f18c6bd73dd9d39.jfif");
+  background-size: cover;
+  background-position: center top 15%;
+}
+.real-estate-consignment-background .content-container {
+  display: flex;
+  width: 660px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+}
+.real-estate-consignment-background .content-container .text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  align-self: stretch;
+}
+.real-estate-consignment-background .content-container .text-section .font-xxl {
+  align-self: stretch;
+  text-align: center;
+  font-weight: 700;
+  line-height: 145%;
+  /* 34.8px */
+}
+.real-estate-consignment-background .content-container .text-section .font-xl {
+  align-self: stretch;
+  text-align: center;
+  font-weight: 400;
+  line-height: 145%;
+  /* 27.55px */
+}
+.real-estate-consignment-background .content-container .search-section {
+  display: flex;
+  height: 30px;
+  padding: 10px 15px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 6px;
+  background: #FFF;
+}
+.real-estate-consignment-background .content-container .search-section #search {
+  width: 100%;
+  background: none;
+}
+
+#search {
+  color: var(--text-grey, #666);
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  /* 23.2px */
+  border: none;
+  background: var(--background-grey, #F8F8F8);
+}
+#search:focus {
+  outline: none;
+}
+
+.no-gap {
+  gap: 0px;
+}
+
 .font-big-red {
   color: #B6020F;
   font-size: 17px;
@@ -1395,6 +1465,10 @@ img {
   color: var(--color-black, #111);
 }
 
+.font-white {
+  color: var(--color-white, #FFF);
+}
+
 .font-light-grey {
   color: var(--text-light-grey, #999);
 }
@@ -1407,12 +1481,24 @@ img {
   color: #3D4C68;
 }
 
+.font-xxl {
+  font-size: 24px;
+}
+
+.font-xl {
+  font-size: 19px;
+}
+
 .font-reg-sm {
   color: #666;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.3px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-error {
