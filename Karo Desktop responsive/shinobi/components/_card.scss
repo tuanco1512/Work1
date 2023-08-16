@@ -767,11 +767,13 @@
                 text-transform: none !important;
             }
 
-            #select{
-                border: #fff;
-                & :focus{
-                    outline: #fff;
-                }
+            .select{
+                font-size: 15px;
+                font-family: 'Be Vietnam Pro';
+                font-weight: 400;
+                color: #666;
+                line-height: 145%;
+                border: none;
             }
         }
 

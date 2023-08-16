@@ -691,6 +691,14 @@ img {
   text-align: center;
   text-transform: none !important;
 }
+.real-estate-consignment-card .card-fill-form .input-item-info .select {
+  font-size: 15px;
+  font-family: "Be Vietnam Pro";
+  font-weight: 400;
+  color: #666;
+  line-height: 145%;
+  border: none;
+}
 .real-estate-consignment-card .card-fill-form .ai-support {
   display: flex;
   align-items: center;
@@ -1665,6 +1673,10 @@ img {
   /* 32px */
 }
 
+.over-flow-hidden {
+  overflow: hidden;
+}
+
 .no-gap {
   gap: 0px;
 }
@@ -1742,6 +1754,7 @@ img {
   transform: translate(-50%, -50%);
   background: rgba(17, 17, 17, 0.65);
   flex-shrink: 0;
+  z-index: 1;
 }
 
 .width250px {
