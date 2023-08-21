@@ -1765,6 +1765,14 @@ img {
   .navbar {
     width: 100%;
   }
+  .navbar .search {
+    width: 30px !important;
+    height: 30px;
+    border-radius: 30px !important;
+  }
+  .navbar .search input {
+    display: none;
+  }
 }
 @media screen and (max-width: 1280px) {
   .u-login-name {
@@ -1772,13 +1780,6 @@ img {
   }
   .card-info {
     width: 25% !important;
-  }
-  .menu {
-    display: contents;
-    gap: 25px;
-  }
-  .navbar .info {
-    display: none !important;
   }
 }
 @media screen and (max-width: 1160px) {
@@ -1811,14 +1812,6 @@ img {
   }
 }
 @media screen and (max-width: 920px) {
-  .search {
-    width: 30px !important;
-    height: 30px;
-    border-radius: 30px !important;
-  }
-  .search input {
-    display: none;
-  }
   .footer {
     padding-top: 30px;
     height: auto;

@@ -793,7 +793,7 @@
             </div>
         </div>
         <div class="form-popup" id="my-form">
-            <div class="form-wrapper">
+            <div class="form-wrapper" id="form-wrapper">
                 <div class="verify-success">
                     <div class="display-f">
                         <div class="icon-check-success">
@@ -1005,6 +1005,14 @@
         document.getElementById("mybody").style.overflow="auto";
         document.getElementById("my-form").style.display="none";  
     }
+
+    window.onclick = (event) => {
+        document.getElementById("mybody").style.overflow="auto";
+        document.getElementById("my-form").style.display="none";
+        
+    }
+
+document.getElementById("my-form").addEventListener('click', event => event.stopPropagation());
 </script>
 
 </html>

@@ -705,6 +705,14 @@ $base-border-thickness: 3px;
 @media screen and (max-width: 1440px) {
     .navbar {
         width: 100%;
+        .search {
+            width: 30px !important;
+            height: 30px;
+            border-radius: 30px !important;
+            input {
+                display: none;
+            }
+        }
     }
 }
 
@@ -717,16 +725,16 @@ $base-border-thickness: 3px;
         width: 25% !important;
     }
 
-    .menu {
-        display: contents;
-        gap: 25px;
-    }
+    // .menu {
+    //     display: contents;
+    //     gap: 25px;
+    // }
 
-    .navbar {
-        .info {
-            display: none !important;
-        }
-    }
+    // .navbar {
+    //     .info {
+    //         display: none !important;
+    //     }
+    // }
 }
 
 @media screen and (max-width: 1180px) {}
@@ -778,15 +786,6 @@ $base-border-thickness: 3px;
 }
 
 @media screen and (max-width: 920px) {
-    .search {
-        width: 30px !important;
-        height: 30px;
-        border-radius: 30px !important;
-
-        input {
-            display: none;
-        }
-    }
 
     .footer {
         padding-top: 30px;
