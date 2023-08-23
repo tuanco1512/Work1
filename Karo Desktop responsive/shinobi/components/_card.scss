@@ -773,7 +773,11 @@
                 font-weight: 400;
                 color: #666;
                 line-height: 145%;
-                border: none;
+                border-color: white;
+                outline: white;
+                &:focus{
+                    outline: none;
+                }
             }
         }
 

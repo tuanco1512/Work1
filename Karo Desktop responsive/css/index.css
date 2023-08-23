@@ -697,7 +697,11 @@ img {
   font-weight: 400;
   color: #666;
   line-height: 145%;
-  border: none;
+  border-color: white;
+  outline: white;
+}
+.real-estate-consignment-card .card-fill-form .input-item-info .select:focus {
+  outline: none;
 }
 .real-estate-consignment-card .card-fill-form .ai-support {
   display: flex;
