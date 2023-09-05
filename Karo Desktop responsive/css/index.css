@@ -606,29 +606,91 @@ img {
   border-radius: 10px;
   background: #FFF;
 }
-.real-estate-consignment-card .card-title {
+.real-estate-consignment-card .card-header {
   display: flex;
   width: 550px;
   padding: 20px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 1px solid var(--border-light-grey, #EEE);
+}
+.real-estate-consignment-card .card-header .card-title {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  border-bottom: 1px solid var(--border-light-grey, #EEE);
+  align-self: stretch;
 }
-.real-estate-consignment-card .card-title .line-title {
+.real-estate-consignment-card .card-header .card-title .line-title {
   width: 5px;
   height: 18px;
   flex-shrink: 0;
   border-radius: 5px;
   background: var(--color-red-primary, #B6020F);
 }
-.real-estate-consignment-card .card-title .font-light-dark-blue {
+.real-estate-consignment-card .card-header .card-title .font-light-dark-blue {
   flex: 1 0 0;
   font-size: 18px;
   font-weight: 600;
   line-height: 128%;
   /* 23.04px */
   text-transform: uppercase;
+}
+.real-estate-consignment-card .card-header .card-step {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.real-estate-consignment-card .card-header .card-step .step-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 25px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  position: relative;
+}
+.real-estate-consignment-card .card-header .card-step .step-number .line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  align-self: center;
+  background: var(--color-dark-grey, #EFEFEF);
+}
+.real-estate-consignment-card .card-header .card-step .step-number .icon {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--color-dark-grey, #EFEFEF);
+  color: var(--text-light-grey, #999);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 128%;
+  /* 20.48px */
+  z-index: 1;
+}
+.real-estate-consignment-card .card-header .card-step .step-number .active {
+  background: var(--color-red-primary, #B6020F);
+  color: var(--color-white, #FFF);
+}
+.real-estate-consignment-card .card-header .card-step .font-grey {
+  display: flex;
+  gap: 5px;
+  color: var(--text-grey, #666);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 128%;
+  /* 19.2px */
 }
 .real-estate-consignment-card .card-fill-form {
   display: flex;
