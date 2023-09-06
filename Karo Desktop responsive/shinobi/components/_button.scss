@@ -48,6 +48,11 @@ $val in $colors {
     color: #fff;
 }
 
+.btn-black {
+    border: 1px solid var(--color-navy, #3D4C68);
+    background: var(--color-black, #111);
+}
+
 .btn-dark-grey {
     background: var(--color-dark-grey, #EFEFEF);
     color: #666;

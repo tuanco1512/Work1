@@ -52,8 +52,8 @@
                     </div>
                 </div>
                 <div class="right-section display-f">
-                    <div class="menu">
-                        <a data-toggle="modal" data-target="#myModal">
+                    <div class="menu" tabindex="0">
+                        <a data-toggle="modal" data-target="#myModal" onclick="menuFunction()">
                             <svg width="24" height="16" viewBox="0 0 24 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -67,8 +67,14 @@
                                     fill="#111111" />
                             </svg>
                         </a>
+                        <div class="dropdown-content">
+                            <a href="#">Trang chủ</a>
+                            <a href="#">Định giá</a>
+                            <a href="#">Hướng dẫn</a>
+                            <a href="#">Tin tức</a>
+                        </div>
                     </div>
-                    <div class="info display-f">
+                    <div class="info display-f" id="myInfo">
                         <a href="#">Trang chủ</a>
                         <a href="#">Định giá</a>
                         <a href="#">Hướng dẫn</a>
@@ -126,15 +132,40 @@
                                 <div class="icon">2</div>
                                 <div class="icon">3</div>
                             </div>
-                            <div class="font-grey">Bước 1:<div class="font-black">Nhập thông tin bất động sản</div></div>
+                            <div class="font-grey">Bước 1:<div class="font-black">Nhập thông tin bất động sản</div>
+                            </div>
                         </div>
                     </div>
                     <div class="card-fill-form">
                         <div class="real-estate-info-container">
                             <div class="font-black">Thông tin BĐS</div>
+                            <div class="btn-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_2981_27480)">
+                                        <path d="M16.3633 16.3633L23.0003 23.0003" stroke="white" stroke-width="1.5"
+                                            stroke-miterlimit="10" />
+                                        <path
+                                            d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
+                                            stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="square" />
+                                        <path d="M14 8V13H6V8L10 5L14 8Z" stroke="white" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="square" />
+                                        <path d="M10 11V13" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="square" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2981_27480">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="font-white">Chọn từ hồ sơ BĐS đang có</div>
+                            </div>
+                            <div class="font-grey">hoặc tạo mới thông tin bên dưới</div>
                             <div class="info-fill-form">
                                 <div class="select-list">
-                                    <div class="btn btn-navy">Nhà phố</div>
+                                    <div class="btn btn-action-red">Nhà phố</div>
                                     <div class="btn btn-dark-grey">Căn hộ</div>
                                     <div class="btn btn-dark-grey">Đất nền</div>
                                 </div>
@@ -152,93 +183,79 @@
                                     </svg>
                                     <input id="search" placeholder="Chọn khu vực">
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Diện tích trên sổ<div class="font-red">*</div>
-                                    </div>
-                                    <input id="search">
+                                <div class="input-item">
+                                    <input id="search" placeholder="Diện tích trên sổ*">
                                     <div class="font-black">m²</div>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Diện tích xây dựng
-                                    </div>
-                                    <input id="search">
+                                <div class="input-item">
+                                    <input id="search" placeholder="Diện tích xây dựng">
                                     <div class="font-black">m²</div>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Chiều dài
-                                    </div>
-                                    <input id="search">
+                                <div class="input-item">
+                                    <input id="search" placeholder="Chiều dài">
                                     <div class="font-black">met</div>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Chiều rộng
-                                    </div>
-                                    <input id="search">
+                                <div class="input-item">
+                                    <input id="search" placeholder="Chiều rộng">
                                     <div class="font-black">met</div>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Số lượng tầng
-                                    </div>
-                                    <select name="" class="select">
+                                <div class="input-item">
+                                    <select class="font-grey" name="" class="select">
+                                        <option selected="true" disabled="disabled" value="">Số lượng tầng</option>
                                         <option value="">1 tầng</option>
                                         <option value="">2 tầng</option>
                                         <option value="">3 tầng</option>
                                     </select>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Số phòng ngủ
-                                    </div>
-                                    <select name="" class="select">
+                                <div class="input-item">
+                                    <select class="font-grey" name="" class="select">
+                                        <option selected="true" disabled="disabled" value="">Số phòng ngủ</option>
                                         <option value="">1 phòng</option>
                                         <option value="">2 phòng</option>
                                         <option value="">3 phòng</option>
                                     </select>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Số lượng WC
-                                    </div>
-                                    <select name="" class="select">
+                                <div class="input-item">
+                                    <select class="font-grey" name="" class="select">
+                                        <option selected="true" disabled="disabled" value="">Số lượng WC</option>
                                         <option value="">1 phòng</option>
                                         <option value="">2 phòng</option>
                                         <option value="">3 phòng</option>
                                     </select>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Năm xây dựng
-                                    </div>
-                                    <select name="" class="select">
+                                <div class="input-item">
+                                    <select class="font-grey" name="" class="select">
+                                        <option selected="true" disabled="disabled" value="">Năm xây dựng</option>
                                         <option value="">2021</option>
                                         <option value="">2022</option>
                                         <option value="">2023</option>
                                     </select>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Tình trạng xây dựng
-                                    </div>
-                                    <select name="" class="select">
+                                <div class="input-item">
+                                    <select class="font-grey" name="" class="select">
+                                        <option selected="true" disabled="disabled" value="">Tình trạng xây dựng
+                                        </option>
                                         <option value="">Đang khởi công</option>
                                         <option value="">Đang xây dựng</option>
                                         <option value="">Hoàn thành</option>
                                     </select>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Hướng
-                                    </div>
-                                    <select name="" class="select">
+                                <div class="input-item">
+                                    <select class="font-grey" name="" class="select">
+                                        <option selected="true" disabled="disabled" value="">Hướng</option>
                                         <option value="">Đông</option>
                                         <option value="">Tây</option>
                                         <option value="">Nam</option>
                                         <option value="">Bắc</option>
                                     </select>
                                 </div>
-                                <div class="input-item-info">
-                                    <div class="font-grey">Giấy tờ pháp lý
-                                    </div>
-                                    <select name="" class="select">
-                                        <option value="">Giấy tờ pháp lý</option>
-                                        <option value="">Giấy tờ pháp lý</option>
-                                        <option value="">Giấy tờ pháp lý</option>
-                                        <option value="">Giấy tờ pháp lý</option>
+                                <div class="input-item">
+                                    <select class="font-grey" name="" class="select">
+                                        <option selected="true" disabled="disabled" value="">Giấy tờ pháp lý
+                                        </option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
                                     </select>
                                 </div>
                             </div>
@@ -388,7 +405,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-info">
+                        <!-- <div class="contact-info">
                             <div class="font-black">Thông tin liên hệ</div>
                             <div class="input-item-info">
                                 <div class="font-grey">Người ký gửi<div class="font-red">*</div>
@@ -445,7 +462,7 @@
                             <div class="btn btn-action btn-action-red">
                                 Ký gửi bất động sản
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -458,10 +475,25 @@
 
 
         <!-- work section -->
+        <div class="nav-step">
+            <div class="font-grey display-f">Bước 1: <div class="font-black">Nhập thông tin bất động sản</div>
+            </div>
+            <div class="btn btn-action-red">Tiếp theo</div>
+        </div>
 
 
         <!-- footer -->
     </div>
+    <script>
+        function menuFunction() {
+            var x = document.getElementById("myInfo");
+            if (x.className === "info") {
+                x.className += " responsive";
+            } else {
+                x.className = "info";
+            }
+        }
+    </script>
 </body>
 
 </html>

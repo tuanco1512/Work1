@@ -212,6 +212,41 @@ $base-border-thickness: 3px;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+        position: sticky;
+        top: 12%;
+    }
+}
+
+.nav-step {
+    display: flex;
+    width: -webkit-fill-available;
+    padding: 14px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+
+    .font-grey {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 128%;
+        /* 21.76px */
+        gap: 5px;
+    }
+
+    .btn-action-red {
+        padding: 14px 90px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        color: var(--color-white, #FFF);
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 128%;
+        /* 21.76px */
     }
 }
 
@@ -614,7 +649,7 @@ $base-border-thickness: 3px;
     }
 }
 
-.over-flow-hidden{
+.over-flow-hidden {
     overflow: hidden;
 }
 
@@ -705,10 +740,12 @@ $base-border-thickness: 3px;
 @media screen and (max-width: 1440px) {
     .navbar {
         width: 100%;
+
         .search {
             width: 30px !important;
             height: 30px;
             border-radius: 30px !important;
+
             input {
                 display: none;
             }
@@ -817,8 +854,36 @@ $base-border-thickness: 3px;
     }
 
     .menu {
-        display: contents;
-        gap: 25px;
+        display: block;
+        cursor: pointer;
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 33%;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+            a {
+                float: none;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-weight: 500;
+                color: #666;
+                &:hover{
+                    background-color: #EFEFEF;
+                }
+            }
+        }
+
+        &:focus-within .dropdown-content {
+            display: flex;
+        }
     }
 
     .navbar {
@@ -826,7 +891,6 @@ $base-border-thickness: 3px;
             display: none !important;
         }
     }
-
 }
 
 @media screen and (max-width: 570px) {

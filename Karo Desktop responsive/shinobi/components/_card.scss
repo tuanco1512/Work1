@@ -791,6 +791,10 @@
             background: #FFF;
             cursor: pointer;
 
+            .font-black {
+                text-transform: none !important;
+            }
+
             #search {
                 width: 100%;
                 font-size: 15px;
@@ -798,6 +802,24 @@
                 line-height: 128%;
                 background-color: #FFF;
                 /* 19.2px */
+            }
+
+            >select {
+                align-self: center;
+                border: 1px solid white;
+                outline: none;
+                width: 100%;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .font-grey{
+                color: #666;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 128%;
+                font-family: Be Vietnam Pro;
             }
         }
 
@@ -887,6 +909,32 @@
                 line-height: 128%;
                 /* 19.2px */
                 text-transform: uppercase;
+            }
+
+            .btn-black {
+                display: flex;
+                padding: 12px 14px;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                border-radius: 6px;
+
+                .fonr-white {
+                    color: var(--color-white, #FFF);
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 128%;
+                    /* 19.2px */
+                }
+            }
+
+            .font-grey {
+                color: #666;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 128%;
+                align-self: center;
+                /* 19.2px */
             }
 
             .info-fill-form {

@@ -712,6 +712,9 @@ img {
   background: #FFF;
   cursor: pointer;
 }
+.real-estate-consignment-card .card-fill-form .input-item .font-black {
+  text-transform: none !important;
+}
 .real-estate-consignment-card .card-fill-form .input-item #search {
   width: 100%;
   font-size: 15px;
@@ -719,6 +722,22 @@ img {
   line-height: 128%;
   background-color: #FFF;
   /* 19.2px */
+}
+.real-estate-consignment-card .card-fill-form .input-item > select {
+  align-self: center;
+  border: 1px solid white;
+  outline: none;
+  width: 100%;
+}
+.real-estate-consignment-card .card-fill-form .input-item > select:hover {
+  cursor: pointer;
+}
+.real-estate-consignment-card .card-fill-form .input-item .font-grey {
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 128%;
+  font-family: Be Vietnam Pro;
 }
 .real-estate-consignment-card .card-fill-form .input-item-info {
   padding: 14px 15px;
@@ -797,6 +816,22 @@ img {
   line-height: 128%;
   /* 19.2px */
   text-transform: uppercase;
+}
+.real-estate-consignment-card .card-fill-form .real-estate-info-container .btn-black {
+  display: flex;
+  padding: 12px 14px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 6px;
+}
+.real-estate-consignment-card .card-fill-form .real-estate-info-container .font-grey {
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 128%;
+  align-self: center;
+  /* 19.2px */
 }
 .real-estate-consignment-card .card-fill-form .real-estate-info-container .info-fill-form {
   display: flex;
@@ -999,9 +1034,23 @@ img {
   line-height: normal;
 }
 
-.btn-navy {
-  background: var(--color-navy, #3D4C68);
-  color: #fff;
+.btn-black {
+  cursor: pointer;
+  color: var(--text-black, #222);
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn-black:hover {
+  background-color: #0d0d0d;
+}
+
+.btn-black {
+  border: 1px solid var(--color-navy, #3D4C68);
+  background: var(--color-black, #111);
 }
 
 .btn-dark-grey {
@@ -1085,7 +1134,7 @@ img {
   background-color: #FFF;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar .nav-container {
   display: flex;
@@ -1382,6 +1431,39 @@ img {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  position: sticky;
+  top: 12%;
+}
+
+.nav-step {
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 14px 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+}
+.nav-step .font-grey {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 128%;
+  /* 21.76px */
+  gap: 5px;
+}
+.nav-step .btn-action-red {
+  padding: 14px 90px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  color: var(--color-white, #FFF);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 128%;
+  /* 21.76px */
 }
 
 .tag {
@@ -1901,8 +1983,33 @@ img {
     display: none;
   }
   .menu {
-    display: contents;
-    gap: 25px;
+    display: block;
+    cursor: pointer;
+  }
+  .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .menu .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    color: #666;
+  }
+  .menu .dropdown-content a:hover {
+    background-color: #EFEFEF;
+  }
+  .menu:focus-within .dropdown-content {
+    display: flex;
   }
   .navbar .info {
     display: none !important;
