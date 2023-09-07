@@ -248,7 +248,7 @@ $base-border-thickness: 3px;
             background: var(--color-white, #FFF);
         }
 
-        .btn-action-red {
+        .btn-action-red, .btn-black {
             padding: 14px 90px;
             justify-content: center;
             align-items: center;
@@ -909,6 +909,21 @@ $base-border-thickness: 3px;
     .navbar {
         .info {
             display: none !important;
+        }
+    }
+
+    .nav-step {
+        .btn-action {
+            padding: 14px 25px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: 1px solid var(--border-light-grey, #EEE);
+            background: var(--color-white, #FFF);
+        }
+
+        .btn-action-red, .btn-black {
+            padding: 14px 25px !important;
         }
     }
 }

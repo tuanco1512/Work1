@@ -733,7 +733,7 @@
                     background: var(--color-dark-grey, #EFEFEF);
                 }
 
-                .red{
+                .red {
                     width: 50%;
                     height: 2px;
                     position: absolute;
@@ -741,425 +741,440 @@
                     background: var(--color-red-primary, #B6020F);
                 }
 
-                .icon {
-                    display: flex;
-                    width: 30px;
-                    height: 30px;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50px;
-                    background: var(--color-dark-grey, #EFEFEF);
-                    color: var(--text-light-grey, #999);
-                    text-align: center;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 128%;
-                    /* 20.48px */
-                    z-index: 1;
-                }
-
-                .active {
+                .red-full {
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    align-self: center;
                     background: var(--color-red-primary, #B6020F);
-                    color: var(--color-white, #FFF);
                 }
-
-
             }
 
-            .font-grey {
+            .icon {
                 display: flex;
-                gap: 5px;
-                color: var(--text-grey, #666);
+                width: 30px;
+                height: 30px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background: var(--color-dark-grey, #EFEFEF);
+                color: var(--text-light-grey, #999);
                 text-align: center;
-                font-size: 15px;
-                font-weight: 400;
+                font-size: 16px;
+                font-weight: 500;
                 line-height: 128%;
-                /* 19.2px */
+                /* 20.48px */
+                z-index: 1;
+            }
+
+            .active {
+                background: var(--color-red-primary, #B6020F);
+                color: var(--color-white, #FFF);
+            }
+
+
+        }
+
+        .font-grey {
+            display: flex;
+            gap: 5px;
+            color: var(--text-grey, #666);
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 128%;
+            /* 19.2px */
+        }
+    }
+
+    .form-wrapper{
+        position: unset;
+        transform: none;
+        width: -webkit-fill-available;
+    }
+}
+
+.card-fill-form {
+    display: flex;
+    width: 550px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+
+    .input-item {
+        display: flex;
+        height: 30px;
+        padding: 10px 15px;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 6px;
+        border: 1px solid var(--border-light-grey, #EEE);
+        background: #FFF;
+        cursor: pointer;
+
+        .font-black {
+            text-transform: none !important;
+        }
+
+        #search {
+            width: 100%;
+            font-size: 15px;
+            padding: 15px 0;
+            font-weight: 400;
+            line-height: 128%;
+            background-color: #FFF;
+            /* 19.2px */
+        }
+
+        >select {
+            align-self: center;
+            border: 1px solid white;
+            outline: none;
+            width: 100%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .font-grey {
+            color: #666;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 128%;
+            font-family: Be Vietnam Pro;
+        }
+    }
+
+    .input-item-info {
+        padding: 14px 15px;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 6px;
+        border: 1px solid var(--border-light-grey, #EEE);
+        background: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 145%;
+        display: flex;
+        justify-content: space-between;
+        flex: 1 0 0;
+        cursor: pointer;
+
+        .font-grey {
+            display: flex;
+
+            .font-red {
+                color: var(--status-error, #DB4A42);
+            }
+        }
+
+        #search {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 128%;
+            background-color: #FFF;
+            /* 19.2px */
+        }
+
+        .font-black {
+            text-align: center;
+            text-transform: none !important;
+        }
+
+        .select {
+            font-size: 15px;
+            font-family: 'Be Vietnam Pro';
+            font-weight: 400;
+            color: #666;
+            line-height: 145%;
+            border-color: white;
+            outline: white;
+
+            &:focus {
+                outline: none;
             }
         }
     }
 
-    .card-fill-form {
+    .ai-support {
         display: flex;
-        width: 550px;
-        padding: 24px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
+        align-items: center;
+        gap: 7px;
+        align-self: stretch;
+        cursor: pointer;
 
-        .input-item {
-            display: flex;
-            height: 30px;
-            padding: 10px 15px;
-            align-items: center;
-            gap: 10px;
-            align-self: stretch;
-            border-radius: 6px;
-            border: 1px solid var(--border-light-grey, #EEE);
-            background: #FFF;
-            cursor: pointer;
-
-            .font-black {
-                text-transform: none !important;
-            }
-
-            #search {
-                width: 100%;
-                font-size: 15px;
-                padding: 15px 0;
-                font-weight: 400;
-                line-height: 128%;
-                background-color: #FFF;
-                /* 19.2px */
-            }
-
-            >select {
-                align-self: center;
-                border: 1px solid white;
-                outline: none;
-                width: 100%;
-                &:hover{
-                    cursor: pointer;
-                }
-            }
-
-            .font-grey{
-                color: #666;
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 128%;
-                font-family: Be Vietnam Pro;
-            }
-        }
-
-        .input-item-info {
-            padding: 14px 15px;
-            align-items: center;
-            gap: 10px;
-            align-self: stretch;
-            border-radius: 6px;
-            border: 1px solid var(--border-light-grey, #EEE);
-            background: #FFF;
-            font-size: 15px;
+        .font-red {
+            text-align: center;
+            font-size: 14px;
             font-weight: 400;
             line-height: 145%;
-            display: flex;
-            justify-content: space-between;
-            flex: 1 0 0;
-            cursor: pointer;
-
-            .font-grey {
-                display: flex;
-
-                .font-red {
-                    color: var(--status-error, #DB4A42);
-                }
-            }
-
-            #search {
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 128%;
-                background-color: #FFF;
-                /* 19.2px */
-            }
-
-            .font-black {
-                text-align: center;
-                text-transform: none !important;
-            }
-
-            .select {
-                font-size: 15px;
-                font-family: 'Be Vietnam Pro';
-                font-weight: 400;
-                color: #666;
-                line-height: 145%;
-                border-color: white;
-                outline: white;
-
-                &:focus {
-                    outline: none;
-                }
-            }
+            /* 20.3px */
         }
+    }
 
-        .ai-support {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            align-self: stretch;
-            cursor: pointer;
+    .real-estate-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
 
-            .font-red {
-                text-align: center;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 145%;
-                /* 20.3px */
-            }
-        }
-
-        .real-estate-info-container {
+        .font-black {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 20px;
-            align-self: stretch;
+            gap: 8px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 128%;
+            /* 19.2px */
+            text-transform: uppercase;
+        }
 
-            .font-black {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 8px;
-                text-align: center;
+        .btn-black {
+            display: flex;
+            padding: 12px 14px;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+            border-radius: 6px;
+
+            .fonr-white {
+                color: var(--color-white, #FFF);
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 128%;
                 /* 19.2px */
-                text-transform: uppercase;
-            }
-
-            .btn-black {
-                display: flex;
-                padding: 12px 14px;
-                align-items: center;
-                gap: 10px;
-                align-self: stretch;
-                border-radius: 6px;
-
-                .fonr-white {
-                    color: var(--color-white, #FFF);
-                    font-size: 15px;
-                    font-weight: 500;
-                    line-height: 128%;
-                    /* 19.2px */
-                }
-            }
-
-            .font-grey {
-                color: #666;
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 128%;
-                align-self: center;
-                /* 19.2px */
-            }
-
-            .info-fill-form {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 25px;
-                align-self: stretch;
-
-                .select-list {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 14px;
-                    align-self: stretch;
-                    border-radius: 5px;
-
-                    .btn {
-                        display: flex;
-                        padding: 10px;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        flex: 1 0 0;
-                        border-radius: 6px;
-                        line-height: 128%;
-                        /* 20.48px */
-                    }
-                }
-            }
-
-            .info-img {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 18px;
-                align-self: stretch;
-
-                .font-light-dark-blue {
-                    text-align: center;
-                    font-size: 16px;
-                    font-weight: 600;
-                    line-height: 145%;
-                    /* 23.2px */
-                    text-transform: uppercase;
-                    display: flex;
-                    align-items: center;
-                    gap: 4px;
-
-                    .font-grey {
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 128%;
-                        text-transform: none;
-                    }
-                }
-
-                .img-list {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 4px;
-
-                    .img-container {
-                        width: 90px;
-                        height: 90px;
-                        border-radius: 6px;
-                        display: flex;
-                        position: relative;
-
-                        .img {
-                            width: 90px;
-                            height: 90px;
-                            flex-shrink: 0;
-                            border-radius: 6px;
-                            background: url("/img/house-picture.png");
-                            background-size: cover;
-                        }
-
-                        .img-tool-left {
-                            width: 24px;
-                            height: 24px;
-                            flex-shrink: 0;
-                            position: absolute;
-                            bottom: 5px;
-                            left: 5px;
-                            cursor: pointer;
-                        }
-
-                        .img-tool-right {
-                            width: 24px;
-                            height: 24px;
-                            flex-shrink: 0;
-                            position: absolute;
-                            bottom: 5px;
-                            right: 5px;
-                            cursor: pointer;
-                        }
-
-                        .tool-pic {
-                            position: absolute;
-                            top: 6px;
-                            left: 6px;
-                        }
-
-                        .add-img {
-                            border-radius: 6px;
-                            background: rgba(61, 76, 104, 0.15);
-                            width: 90px;
-                            height: 90px;
-                            flex-shrink: 0;
-                            cursor: pointer;
-                        }
-
-                        .img-tool-center {
-                            width: 20px;
-                            height: 20px;
-                            flex-shrink: 0;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            cursor: pointer;
-                        }
-                    }
-                }
-
-
-            }
-
-            .info-notice {
-                display: flex;
-                padding: 10px 14px;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                gap: 8px;
-                align-self: stretch;
-                border-radius: 5px;
-                background: var(--status-warning, #FFF2AE);
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 150%;
-
-                .font-red {
-                    color: var(--status-error, #DB4A42);
-                    display: flex;
-                    gap: 4px;
-                }
-
-                .font-black {
-                    text-transform: none;
-                    font-weight: 400;
-                }
             }
         }
 
-        .contact-info {
+        .font-grey {
+            color: #666;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 128%;
+            align-self: center;
+            /* 19.2px */
+        }
+
+        .info-fill-form {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 25px;
             align-self: stretch;
 
-            .font-black {
-                text-align: center;
-                font-size: 15px;
-                font-weight: 500;
-                line-height: 128%;
-                /* 19.2px */
-                text-transform: uppercase;
-            }
-
-            .describe-info {
+            .select-list {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 14px;
                 align-self: stretch;
+                border-radius: 5px;
 
-                .font-grey {
-                    cursor: pointer;
+                .btn {
                     display: flex;
-                    height: 130px;
-                    padding: 10px 15px;
-                    align-items: flex-start;
+                    padding: 10px;
+                    justify-content: center;
+                    align-items: center;
                     gap: 10px;
-                    align-self: stretch;
+                    flex: 1 0 0;
                     border-radius: 6px;
-                    border: 1px solid var(--border-light-grey, #EEE);
-                    background: #FFF;
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 145%;
-                    /* 21.75px */
-                    font-family: Be Vietnam Pro;
-                }
-
-                .ai-support {
-                    align-self: auto;
+                    line-height: 128%;
+                    /* 20.48px */
                 }
             }
         }
 
-        .confirm-card {
+        .info-img {
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            gap: 15px;
+            gap: 18px;
             align-self: stretch;
 
-            .btn {
-                padding: 14px 10px;
-                font-size: 17px;
+            .font-light-dark-blue {
+                text-align: center;
+                font-size: 16px;
                 font-weight: 600;
-                line-height: 128%;
-                /* 21.76px */
+                line-height: 145%;
+                /* 23.2px */
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                .font-grey {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 128%;
+                    text-transform: none;
+                }
             }
+
+            .img-list {
+                display: flex;
+                align-items: flex-start;
+                gap: 4px;
+
+                .img-container {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 6px;
+                    display: flex;
+                    position: relative;
+
+                    .img {
+                        width: 90px;
+                        height: 90px;
+                        flex-shrink: 0;
+                        border-radius: 6px;
+                        background: url("/img/house-picture.png");
+                        background-size: cover;
+                    }
+
+                    .img-tool-left {
+                        width: 24px;
+                        height: 24px;
+                        flex-shrink: 0;
+                        position: absolute;
+                        bottom: 5px;
+                        left: 5px;
+                        cursor: pointer;
+                    }
+
+                    .img-tool-right {
+                        width: 24px;
+                        height: 24px;
+                        flex-shrink: 0;
+                        position: absolute;
+                        bottom: 5px;
+                        right: 5px;
+                        cursor: pointer;
+                    }
+
+                    .tool-pic {
+                        position: absolute;
+                        top: 6px;
+                        left: 6px;
+                    }
+
+                    .add-img {
+                        border-radius: 6px;
+                        background: rgba(61, 76, 104, 0.15);
+                        width: 90px;
+                        height: 90px;
+                        flex-shrink: 0;
+                        cursor: pointer;
+                    }
+
+                    .img-tool-center {
+                        width: 20px;
+                        height: 20px;
+                        flex-shrink: 0;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+        }
+
+        .info-notice {
+            display: flex;
+            padding: 10px 14px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;
+            border-radius: 5px;
+            background: var(--status-warning, #FFF2AE);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+
+            .font-red {
+                color: var(--status-error, #DB4A42);
+                display: flex;
+                gap: 4px;
+            }
+
+            .font-black {
+                text-transform: none;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        align-self: stretch;
+
+        .font-black {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 128%;
+            /* 19.2px */
+            text-transform: uppercase;
+        }
+
+        .describe-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            align-self: stretch;
+
+            .font-grey {
+                cursor: pointer;
+                display: flex;
+                height: 130px;
+                padding: 10px 15px;
+                align-items: flex-start;
+                gap: 10px;
+                align-self: stretch;
+                border-radius: 6px;
+                border: 1px solid var(--border-light-grey, #EEE);
+                background: #FFF;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 145%;
+                /* 21.75px */
+                font-family: Be Vietnam Pro;
+            }
+
+            .ai-support {
+                align-self: auto;
+            }
+        }
+    }
+
+    .confirm-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        align-self: stretch;
+
+        .btn {
+            padding: 14px 10px;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 128%;
+            /* 21.76px */
         }
     }
 }
