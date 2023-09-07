@@ -662,6 +662,13 @@ img {
   align-self: center;
   background: var(--color-dark-grey, #EFEFEF);
 }
+.real-estate-consignment-card .card-header .card-step .step-number .red {
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  align-self: center;
+  background: var(--color-red-primary, #B6020F);
+}
 .real-estate-consignment-card .card-header .card-step .step-number .icon {
   display: flex;
   width: 30px;
@@ -718,6 +725,7 @@ img {
 .real-estate-consignment-card .card-fill-form .input-item #search {
   width: 100%;
   font-size: 15px;
+  padding: 15px 0;
   font-weight: 400;
   line-height: 128%;
   background-color: #FFF;
@@ -1000,11 +1008,11 @@ img {
   border-radius: 6px;
   border: 1px solid var(--border-light-grey, #EEE);
   background: #FFF;
-  text-align: center;
   font-size: 15px;
   font-weight: 400;
   line-height: 145%;
   /* 21.75px */
+  font-family: Be Vietnam Pro;
 }
 .real-estate-consignment-card .card-fill-form .contact-info .describe-info .ai-support {
   align-self: auto;
@@ -1463,7 +1471,18 @@ img {
   /* 21.76px */
   gap: 5px;
 }
-.nav-step .btn-action-red {
+.nav-step .display-f {
+  gap: 20px;
+}
+.nav-step .display-f .btn-action {
+  padding: 14px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid var(--border-light-grey, #EEE);
+  background: var(--color-white, #FFF);
+}
+.nav-step .display-f .btn-action-red {
   padding: 14px 90px;
   justify-content: center;
   align-items: center;

@@ -733,6 +733,14 @@
                     background: var(--color-dark-grey, #EFEFEF);
                 }
 
+                .red{
+                    width: 50%;
+                    height: 2px;
+                    position: absolute;
+                    align-self: center;
+                    background: var(--color-red-primary, #B6020F);
+                }
+
                 .icon {
                     display: flex;
                     width: 30px;
@@ -798,6 +806,7 @@
             #search {
                 width: 100%;
                 font-size: 15px;
+                padding: 15px 0;
                 font-weight: 400;
                 line-height: 128%;
                 background-color: #FFF;
@@ -1125,11 +1134,11 @@
                     border-radius: 6px;
                     border: 1px solid var(--border-light-grey, #EEE);
                     background: #FFF;
-                    text-align: center;
                     font-size: 15px;
                     font-weight: 400;
                     line-height: 145%;
                     /* 21.75px */
+                    font-family: Be Vietnam Pro;
                 }
 
                 .ai-support {
