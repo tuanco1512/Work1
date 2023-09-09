@@ -663,7 +663,21 @@ img {
   align-self: center;
   background: var(--color-dark-grey, #EFEFEF);
 }
-.real-estate-consignment-card .card-header .card-step .step-number .icon {
+.real-estate-consignment-card .card-header .card-step .step-number .red {
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  align-self: center;
+  background: var(--color-red-primary, #B6020F);
+}
+.real-estate-consignment-card .card-header .card-step .step-number .red-full {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  align-self: center;
+  background: var(--color-red-primary, #B6020F);
+}
+.real-estate-consignment-card .card-header .card-step .icon {
   display: flex;
   width: 30px;
   height: 30px;
@@ -679,11 +693,11 @@ img {
   /* 20.48px */
   z-index: 1;
 }
-.real-estate-consignment-card .card-header .card-step .step-number .active {
+.real-estate-consignment-card .card-header .card-step .active {
   background: var(--color-red-primary, #B6020F);
   color: var(--color-white, #FFF);
 }
-.real-estate-consignment-card .card-header .card-step .font-grey {
+.real-estate-consignment-card .card-header .font-grey {
   display: flex;
   gap: 5px;
   color: var(--text-grey, #666);
@@ -693,7 +707,13 @@ img {
   line-height: 128%;
   /* 19.2px */
 }
-.real-estate-consignment-card .card-fill-form {
+.real-estate-consignment-card .form-wrapper {
+  position: unset;
+  transform: none;
+  width: -webkit-fill-available;
+}
+
+.card-fill-form {
   display: flex;
   width: 550px;
   padding: 24px;
@@ -701,7 +721,7 @@ img {
   align-items: flex-start;
   gap: 25px;
 }
-.real-estate-consignment-card .card-fill-form .input-item {
+.card-fill-form .input-item {
   display: flex;
   height: 30px;
   padding: 10px 15px;
@@ -713,34 +733,35 @@ img {
   background: #FFF;
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .input-item .font-black {
+.card-fill-form .input-item .font-black {
   text-transform: none !important;
 }
-.real-estate-consignment-card .card-fill-form .input-item #search {
+.card-fill-form .input-item #search {
   width: 100%;
   font-size: 15px;
+  padding: 15px 0;
   font-weight: 400;
   line-height: 128%;
   background-color: #FFF;
   /* 19.2px */
 }
-.real-estate-consignment-card .card-fill-form .input-item > select {
+.card-fill-form .input-item > select {
   align-self: center;
   border: 1px solid white;
   outline: none;
   width: 100%;
 }
-.real-estate-consignment-card .card-fill-form .input-item > select:hover {
+.card-fill-form .input-item > select:hover {
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .input-item .font-grey {
+.card-fill-form .input-item .font-grey {
   color: #666;
   font-size: 15px;
   font-weight: 400;
   line-height: 128%;
   font-family: Be Vietnam Pro;
 }
-.real-estate-consignment-card .card-fill-form .input-item-info {
+.card-fill-form .input-item-info {
   padding: 14px 15px;
   align-items: center;
   gap: 10px;
@@ -756,24 +777,24 @@ img {
   flex: 1 0 0;
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .input-item-info .font-grey {
+.card-fill-form .input-item-info .font-grey {
   display: flex;
 }
-.real-estate-consignment-card .card-fill-form .input-item-info .font-grey .font-red {
+.card-fill-form .input-item-info .font-grey .font-red {
   color: var(--status-error, #DB4A42);
 }
-.real-estate-consignment-card .card-fill-form .input-item-info #search {
+.card-fill-form .input-item-info #search {
   font-size: 15px;
   font-weight: 400;
   line-height: 128%;
   background-color: #FFF;
   /* 19.2px */
 }
-.real-estate-consignment-card .card-fill-form .input-item-info .font-black {
+.card-fill-form .input-item-info .font-black {
   text-align: center;
   text-transform: none !important;
 }
-.real-estate-consignment-card .card-fill-form .input-item-info .select {
+.card-fill-form .input-item-info .select {
   font-size: 15px;
   font-family: "Be Vietnam Pro";
   font-weight: 400;
@@ -782,31 +803,31 @@ img {
   border-color: white;
   outline: white;
 }
-.real-estate-consignment-card .card-fill-form .input-item-info .select:focus {
+.card-fill-form .input-item-info .select:focus {
   outline: none;
 }
-.real-estate-consignment-card .card-fill-form .ai-support {
+.card-fill-form .ai-support {
   display: flex;
   align-items: center;
   gap: 7px;
   align-self: stretch;
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .ai-support .font-red {
+.card-fill-form .ai-support .font-red {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 145%;
   /* 20.3px */
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container {
+.card-fill-form .real-estate-info-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .font-black {
+.card-fill-form .real-estate-info-container .font-black {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -818,7 +839,7 @@ img {
   /* 19.2px */
   text-transform: uppercase;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .btn-black {
+.card-fill-form .real-estate-info-container .btn-black {
   display: flex;
   padding: 12px 14px;
   align-items: center;
@@ -826,7 +847,7 @@ img {
   align-self: stretch;
   border-radius: 6px;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .font-grey {
+.card-fill-form .real-estate-info-container .font-grey {
   color: #666;
   font-size: 15px;
   font-weight: 400;
@@ -834,14 +855,14 @@ img {
   align-self: center;
   /* 19.2px */
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-fill-form {
+.card-fill-form .real-estate-info-container .info-fill-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
   align-self: stretch;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-fill-form .select-list {
+.card-fill-form .real-estate-info-container .info-fill-form .select-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -849,7 +870,7 @@ img {
   align-self: stretch;
   border-radius: 5px;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-fill-form .select-list .btn {
+.card-fill-form .real-estate-info-container .info-fill-form .select-list .btn {
   display: flex;
   padding: 10px;
   justify-content: center;
@@ -860,14 +881,14 @@ img {
   line-height: 128%;
   /* 20.48px */
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img {
+.card-fill-form .real-estate-info-container .info-img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
   align-self: stretch;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .font-light-dark-blue {
+.card-fill-form .real-estate-info-container .info-img .font-light-dark-blue {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -878,25 +899,25 @@ img {
   align-items: center;
   gap: 4px;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .font-light-dark-blue .font-grey {
+.card-fill-form .real-estate-info-container .info-img .font-light-dark-blue .font-grey {
   font-size: 14px;
   font-weight: 400;
   line-height: 128%;
   text-transform: none;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list {
+.card-fill-form .real-estate-info-container .info-img .img-list {
   display: flex;
   align-items: flex-start;
   gap: 4px;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list .img-container {
+.card-fill-form .real-estate-info-container .info-img .img-list .img-container {
   width: 90px;
   height: 90px;
   border-radius: 6px;
   display: flex;
   position: relative;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list .img-container .img {
+.card-fill-form .real-estate-info-container .info-img .img-list .img-container .img {
   width: 90px;
   height: 90px;
   flex-shrink: 0;
@@ -904,7 +925,7 @@ img {
   background: url("/img/house-picture.png");
   background-size: cover;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list .img-container .img-tool-left {
+.card-fill-form .real-estate-info-container .info-img .img-list .img-container .img-tool-left {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -913,7 +934,7 @@ img {
   left: 5px;
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list .img-container .img-tool-right {
+.card-fill-form .real-estate-info-container .info-img .img-list .img-container .img-tool-right {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -922,12 +943,12 @@ img {
   right: 5px;
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list .img-container .tool-pic {
+.card-fill-form .real-estate-info-container .info-img .img-list .img-container .tool-pic {
   position: absolute;
   top: 6px;
   left: 6px;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list .img-container .add-img {
+.card-fill-form .real-estate-info-container .info-img .img-list .img-container .add-img {
   border-radius: 6px;
   background: rgba(61, 76, 104, 0.15);
   width: 90px;
@@ -935,7 +956,7 @@ img {
   flex-shrink: 0;
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-img .img-list .img-container .img-tool-center {
+.card-fill-form .real-estate-info-container .info-img .img-list .img-container .img-tool-center {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -945,7 +966,7 @@ img {
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-notice {
+.card-fill-form .real-estate-info-container .info-notice {
   display: flex;
   padding: 10px 14px;
   flex-direction: column;
@@ -959,23 +980,23 @@ img {
   font-weight: 400;
   line-height: 150%;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-notice .font-red {
+.card-fill-form .real-estate-info-container .info-notice .font-red {
   color: var(--status-error, #DB4A42);
   display: flex;
   gap: 4px;
 }
-.real-estate-consignment-card .card-fill-form .real-estate-info-container .info-notice .font-black {
+.card-fill-form .real-estate-info-container .info-notice .font-black {
   text-transform: none;
   font-weight: 400;
 }
-.real-estate-consignment-card .card-fill-form .contact-info {
+.card-fill-form .contact-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
   align-self: stretch;
 }
-.real-estate-consignment-card .card-fill-form .contact-info .font-black {
+.card-fill-form .contact-info .font-black {
   text-align: center;
   font-size: 15px;
   font-weight: 500;
@@ -983,14 +1004,14 @@ img {
   /* 19.2px */
   text-transform: uppercase;
 }
-.real-estate-consignment-card .card-fill-form .contact-info .describe-info {
+.card-fill-form .contact-info .describe-info {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
   align-self: stretch;
 }
-.real-estate-consignment-card .card-fill-form .contact-info .describe-info .font-grey {
+.card-fill-form .contact-info .describe-info .font-grey {
   cursor: pointer;
   display: flex;
   height: 130px;
@@ -1001,22 +1022,22 @@ img {
   border-radius: 6px;
   border: 1px solid var(--border-light-grey, #EEE);
   background: #FFF;
-  text-align: center;
   font-size: 15px;
   font-weight: 400;
   line-height: 145%;
   /* 21.75px */
+  font-family: Be Vietnam Pro;
 }
-.real-estate-consignment-card .card-fill-form .contact-info .describe-info .ai-support {
+.card-fill-form .contact-info .describe-info .ai-support {
   align-self: auto;
 }
-.real-estate-consignment-card .card-fill-form .confirm-card {
+.card-fill-form .confirm-card {
   display: flex;
   align-items: flex-start;
   gap: 15px;
   align-self: stretch;
 }
-.real-estate-consignment-card .card-fill-form .confirm-card .btn {
+.card-fill-form .confirm-card .btn {
   padding: 14px 10px;
   font-size: 17px;
   font-weight: 600;
@@ -1517,7 +1538,18 @@ img {
   /* 21.76px */
   gap: 5px;
 }
-.nav-step .btn-action-red {
+.nav-step .display-f {
+  gap: 20px;
+}
+.nav-step .display-f .btn-action {
+  padding: 14px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid var(--border-light-grey, #EEE);
+  background: var(--color-white, #FFF);
+}
+.nav-step .display-f .btn-action-red, .nav-step .display-f .btn-black {
   padding: 14px 90px;
   justify-content: center;
   align-items: center;
@@ -2082,6 +2114,17 @@ img {
   }
   .navbar .info {
     display: none !important;
+  }
+  .nav-step .btn-action {
+    padding: 14px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--border-light-grey, #EEE);
+    background: var(--color-white, #FFF);
+  }
+  .nav-step .btn-action-red, .nav-step .btn-black {
+    padding: 14px 25px !important;
   }
 }
 @media screen and (max-width: 570px) {

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ky gui BDS form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Karo navbar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="left-section display-f">
+                    <div class="Karo-logo display-f">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+                            <g clip-path="url(#clip0_2225_1136)">
+                                <path
+                                    d="M12.1618 13.5908L25.4063 0.888916H6.68655C5.98811 0.88981 5.29405 0.999125 4.62915 1.21296L9.73921 13.0996C9.8353 13.3227 9.98398 13.5192 10.1725 13.6723C10.3611 13.8254 10.5839 13.9306 10.822 13.9789C11.0601 14.0272 11.3063 14.0171 11.5396 13.9495C11.7729 13.8819 11.9864 13.7588 12.1618 13.5908Z"
+                                    fill="#B6020F" />
+                                <path
+                                    d="M19.8642 13.5187L34.2222 18.4282V7.57544C34.2223 6.15299 33.7687 4.7676 32.9274 3.6206C32.0861 2.47361 30.901 1.62479 29.5442 1.19751L19.3112 11.0113C19.1254 11.1899 18.9885 11.4132 18.9138 11.6599C18.839 11.9066 18.8289 12.1684 18.8844 12.4201C18.94 12.6718 19.0592 12.905 19.2308 13.0974C19.4023 13.2898 19.6204 13.4349 19.8642 13.5187Z"
+                                    fill="#B6020F" />
+                                <path
+                                    d="M1.96996 2.84094C1.3454 3.46107 0.849784 4.19871 0.511679 5.0113C0.173574 5.8239 -0.000327833 6.69539 4.63959e-07 7.57553L4.6396e-07 28.4067C4.6396e-07 30.18 0.704473 31.8808 1.95844 33.1348C3.21241 34.3887 4.91316 35.0932 6.68654 35.0932H15.8445L1.96996 2.84094Z"
+                                    fill="#B6020F" />
+                                <path
+                                    d="M14.178 15.9337L12.8587 17.199C12.5766 17.4698 12.3838 17.8203 12.3062 18.2035C12.2285 18.5868 12.2696 18.9846 12.4241 19.3439L19.2032 35.1113H27.5305C29.3039 35.1113 31.0047 34.4068 32.2586 33.1528C33.5126 31.8988 34.2171 30.1981 34.2171 28.4247V21.6893L16.1274 15.5017C15.7941 15.3884 15.436 15.3688 15.0923 15.445C14.7485 15.5212 14.4323 15.6902 14.178 15.9337Z"
+                                    fill="#B6020F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2225_1136">
+                                    <rect width="34.2222" height="34.2222" fill="white"
+                                        transform="translate(0 0.888916)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="logo-title">Karo</div>
+                    </div>
+                    <div class="search display-f" tabindex="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 22L15.656 15.656" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="text" id="search" placeholder="Tìm kiếm">
+                        <div class="dropdown-content">
+                            <input type="text" id="search" placeholder="Tìm kiếm">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section display-f">
+                    <div class="menu" tabindex="0">
+                        <a data-toggle="modal" data-target="#myModal" onclick="menuFunction()">
+                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 9H1C0.4 9 0 8.6 0 8C0 7.4 0.4 7 1 7H14C14.6 7 15 7.4 15 8C15 8.6 14.6 9 14 9Z"
+                                    fill="#111111" />
+                                <path
+                                    d="M23 2H1C0.4 2 0 1.6 0 1C0 0.4 0.4 0 1 0H23C23.6 0 24 0.4 24 1C24 1.6 23.6 2 23 2Z"
+                                    fill="#111111" />
+                                <path
+                                    d="M23 16H1C0.4 16 0 15.6 0 15C0 14.4 0.4 14 1 14H23C23.6 14 24 14.4 24 15C24 15.6 23.6 16 23 16Z"
+                                    fill="#111111" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Trang chủ</a>
+                            <a href="#">Định giá</a>
+                            <a href="#">Hướng dẫn</a>
+                            <a href="#">Tin tức</a>
+                        </div>
+                    </div>
+                    <div class="info display-f" id="myInfo">
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Định giá</a>
+                        <a href="#">Hướng dẫn</a>
+                        <a href="#">Tin tức</a>
+                    </div>
+                    <div class="login-register">
+                        <div class="seperate-line"></div>
+                        <div class="btn sign-up-btn btn-login">Quản lý</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_2412_9490)">
+                                <path
+                                    d="M20 10V8C20 5.87827 19.1571 3.84344 17.6569 2.34315C16.1566 0.842855 14.1217 0 12 0C9.87827 0 7.84344 0.842855 6.34315 2.34315C4.84285 3.84344 4 5.87827 4 8V10C3.97544 10.61 3.82539 11.2083 3.55922 11.7577C3.29305 12.3071 2.91647 12.7957 2.453 13.193C1.6202 13.9026 1.09858 14.9103 1 16C1 18.5 5.112 20 12 20C18.888 20 23 18.5 23 16C22.9014 14.9103 22.3798 13.9026 21.547 13.193C21.0835 12.7957 20.707 12.3071 20.4408 11.7577C20.1746 11.2083 20.0246 10.61 20 10Z"
+                                    fill="#222222" />
+                                <path
+                                    d="M9.14499 21.9C9.33558 22.508 9.71528 23.0392 10.2288 23.4164C10.7423 23.7936 11.3628 23.997 12 23.997C12.6371 23.997 13.2577 23.7936 13.7712 23.4164C14.2847 23.0392 14.6644 22.508 14.855 21.9C13.961 21.966 13.011 22 12 22C10.989 22 10.039 21.968 9.14499 21.9Z"
+                                    fill="#222222" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2412_9490">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="u-login-info">
+                            <img src="img/92350283_1165985643739290_7457379281144905728_n.jpg" alt="">
+                            <div class="u-login-container">
+                                <div class="u-login-name">Vũ Minh Anh Tuấn</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M11.943 5.269C11.9008 5.18796 11.8372 5.12005 11.7591 5.07262C11.681 5.0252 11.5914 5.00008 11.5 5H4.5C4.40854 5.00008 4.31886 5.02524 4.24071 5.07274C4.16256 5.12025 4.09894 5.18828 4.05676 5.26943C4.01459 5.35058 3.99548 5.44175 4.00152 5.533C4.00755 5.62426 4.0385 5.71211 4.091 5.787L7.591 10.787C7.63714 10.8526 7.69839 10.9062 7.76957 10.9431C7.84076 10.9801 7.91979 10.9994 8 10.9994C8.08021 10.9994 8.15924 10.9801 8.23043 10.9431C8.30161 10.9062 8.36286 10.8526 8.409 10.787L11.909 5.787C11.9615 5.71204 11.9925 5.6241 11.9985 5.53276C12.0045 5.44142 11.9853 5.35018 11.943 5.269Z"
+                                        fill="#222222" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- intro -->
+        <div class="content">
+            <!-- main-content -->
+            <div class="main-content">
+                <div class="real-estate-consignment-card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <div class="line-title"></div>
+                            <div class="font-light-dark-blue">Ký gửi bất động sản</div>
+                        </div>
+                        <div class="card-step">
+                            <div class="step-number">
+                                <div class="line"></div>
+                                <div class="line red"></div>
+                                <div class="icon active">1</div>
+                                <div class="icon active">2</div>
+                                <div class="icon">3</div>
+                            </div>
+                            <div class="font-grey">Bước 2:<div class="font-black">Nhập thông tin liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fill-form">
+                        <div class="contact-info">
+                            <div class="font-black">Thông tin liên hệ</div>
+                            <div class="input-item">
+                                <input id="search" placeholder="Người ký gửi*">
+                            </div>
+                            <div class="input-item">
+                                <input id="search" placeholder="Số điện thoại*">
+                            </div>
+                            <div class="input-item">
+                                <input id="search" placeholder="Email">
+                            </div>
+                            <div class="input-item">
+                                <select class="font-grey" name="" class="select">
+                                    <option selected="true" disabled="disabled" value="">Ký gửi bán nhà</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                    <option value="">C</option>
+                                </select>
+                            </div>
+                            <div class="input-item">
+                                <input id="search" placeholder="Giá bán mong muốn*">
+                                <div class="font-black">VND</div>
+                            </div>
+                            <div class="describe-info">
+                                <textarea class="font-grey" name="" id="" cols="30" rows="10"
+                                    placeholder="Nhập nội dung bán (nếu có)..."></textarea>
+                                <div class="ai-support">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_2512_44136)">
+                                            <path
+                                                d="M6.18298 9.04898V3.85298L9.49398 1.94098C10.929 1.11298 12.764 1.60398 13.592 3.03898C14.146 3.99898 14.11 5.13798 13.595 6.03398"
+                                                stroke="#B6020F" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M7.99999 5.90198L12.5 8.49998V12.323C12.5 13.98 11.157 15.323 9.49999 15.323C8.39199 15.323 7.42399 14.722 6.90399 13.828"
+                                                stroke="#B6020F" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M9.81697 9.04896L5.31697 11.647L2.00597 9.73496C0.570974 8.90696 0.0789743 7.07196 0.907974 5.63696C1.46197 4.67696 2.46697 4.13896 3.49997 4.13696"
+                                                stroke="#B6020F" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M8 10.098L3.5 7.5V3.677C3.5 2.02 4.843 0.677002 6.5 0.677002C7.608 0.677002 8.576 1.278 9.096 2.172"
+                                                stroke="#B6020F" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M6.18298 6.95103L10.683 4.35303L13.994 6.26503C15.429 7.09303 15.921 8.92803 15.092 10.363C14.538 11.323 13.533 11.861 12.5 11.863"
+                                                stroke="#B6020F" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M9.81696 6.95105V12.147L6.50596 14.059C5.07096 14.887 3.23596 14.396 2.40796 12.9611C1.85396 12.0011 1.88996 10.862 2.40496 9.96605"
+                                                stroke="#B6020F" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2512_44136">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div class="font-red">Soạn nội dung bằng KaroAI</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right-content -->
+            <img class="right-content width250px" src="/img/Frame 1236.png" alt="">
+        </div>
+
+        <!-- about -->
+
+
+        <!-- work section -->
+        <div class="nav-step">
+            <div class="font-grey display-f">Bước 2: <div class="font-black">Nhập thông tin liên hệ</div>
+            </div>
+            <div class="display-f">
+                <div class="btn btn-action">Quay lại</div>
+                <div class="btn btn-action-red">Tiếp theo</div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+    </div>
+</body>
+
+</html>
