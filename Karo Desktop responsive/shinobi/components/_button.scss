@@ -43,6 +43,18 @@ $val in $colors {
     }
 }
 
+.btn-r-25{
+    border-radius: 25px !important;
+}
+
+.btn-orange {
+    background: #EC1F25;
+    color: #fff;
+    &:hover{
+        background: #EC1F25;
+    }
+}
+
 .btn-navy {
     background: var(--color-navy, #3D4C68);
     color: #fff;

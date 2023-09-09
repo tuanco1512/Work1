@@ -13,6 +13,7 @@
     align-items: flex-start;
     gap: 10px;
     background-color: #FFF;
+    border-bottom: 1px solid #E6E6E6;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -42,6 +43,28 @@
                     font-weight: 500;
                     line-height: normal;
                     letter-spacing: -0.611px;
+                }
+            }
+
+            .seperate-line {
+                width: 1px;
+                height: 30px;
+                background: var(--border-light-grey, #EEE);
+            }
+
+            .nav-info {
+                display: flex;
+                align-items: flex-start;
+                gap: 40px;
+                color: black;
+                font-weight: 500;
+                line-height: 50px;
+
+                .font-plus-jakarta {
+                    border: 1px solid white;
+                    font-weight: 500;
+                    font-size: 16px;
+                    outline: white;
                 }
             }
 
@@ -97,6 +120,10 @@
                 display: flex;
                 align-items: center;
                 gap: 25px;
+
+                .btn{
+                    padding: 10px 30px;
+                }
 
                 .seperate-line {
                     width: 1px;

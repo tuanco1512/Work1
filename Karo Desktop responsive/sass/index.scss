@@ -6,6 +6,10 @@ $base-border-thickness: 3px;
 
 @import 'shinobi';
 
+.font-plus-jakarta {
+    font-family: Plus Jakarta Sans;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
