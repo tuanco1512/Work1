@@ -1661,6 +1661,7 @@ img {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4.5px);
+  border: none;
 }
 .img-section .big-img .btn .font-white {
   color: #FFF;
@@ -1691,6 +1692,11 @@ img {
 .img-section .small-img-container .img-list {
   background: url(/img/Frame\ 2112.png), lightgray 50%/cover no-repeat;
   cursor: pointer;
+}
+
+.about-work-wrapper {
+  display: flex;
+  gap: 34px;
 }
 
 .about {
@@ -1754,6 +1760,177 @@ img {
   height: 1px;
   align-self: stretch;
   background: #FAFAFA;
+}
+.about .about-properties-owner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.about .about-properties-owner .properties {
+  align-self: stretch;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.about .about-properties-owner .properties .font-black {
+  color: #000929;
+  /* Heading/H4 */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 36px */
+  letter-spacing: -0.24px;
+}
+.about .about-properties-owner .properties .font-grey {
+  color: #000929;
+  /* Body / Medium 160% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+  opacity: 0.7;
+}
+.about .about-properties-owner .owner {
+  border-radius: 8px;
+  border: 1.5px solid #E6F0FF;
+  background: #FAFCFF;
+  padding: 24px;
+  align-self: stretch;
+}
+.about .about-properties-owner .owner .owner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.about .about-properties-owner .owner .owner-content .font-light-grey {
+  color: #000929;
+  /* Body / Medium 150% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  opacity: 0.5;
+}
+.about .about-properties-owner .owner .owner-content .owner-info {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+}
+.about .about-properties-owner .owner .owner-content .owner-info .font-black {
+  color: #000929;
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.about .about-properties-owner .owner .owner-content .owner-info .font-grey {
+  color: #000929;
+  /* Body / Small 140% / Medium */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  /* 19.6px */
+  opacity: 0.5;
+}
+.about .about-properties-owner .owner .owner-content .owner-info .function-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.about .about-properties-owner .owner .owner-content .owner-info .function-container .btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #FFF0F0;
+  border: none;
+}
+.about .about-properties-owner .owner .owner-content .owner-info .function-container .font-orange {
+  text-align: center;
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  /* Body/Medium 150%/Bold */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.about .line {
+  width: -webkit-fill-available;
+  height: 1.5px;
+  opacity: 0.1;
+  background: #000929;
+}
+.about .features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.about .features .font-black {
+  color: #000929;
+  /* Heading/H4 */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 36px */
+  letter-spacing: -0.24px;
+}
+.about .features .house-info {
+  display: flex;
+  gap: 80px;
+}
+.about .features .house-info .facilities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 351px;
+}
+.about .features .house-info .facilities .year-built {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+}
+.about .features .house-info .facilities .year-built .font-light-grey {
+  color: #000929;
+  /* Body / Medium 150% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  opacity: 0.5;
+}
+.about .features .house-info .facilities .year-built .font-black {
+  color: #000929;
+  text-align: right;
+  /* Body / Large 145% / Bold */
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 145%;
+  /* 26.1px */
+  letter-spacing: -0.09px;
+}
+
+.work {
+  display: flex;
+  width: 350px;
+  height: -webkit-fill-available;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 8px;
+  border: 1.5px solid #FF5358;
+  background: var(--main-color-white, #FFF);
 }
 
 .tag {
@@ -2130,6 +2307,10 @@ img {
   font-weight: 500;
   line-height: 145%;
   /* 24.65px */
+}
+
+.font-orange {
+  color: #FF5358;
 }
 
 .font-red {
