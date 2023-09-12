@@ -469,7 +469,39 @@
                     </div>
                 </div>
                 <div class="line"></div>
-                <div>Bản đồ</div>
+                <div class="map-section">
+                    <div class="font-black">Bản đồ</div>
+                    <div class="map-wrapper">
+                        <div><iframe class="G-map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.980454159384!2d105.81632120036431!3d21.022778414043216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2sHanoi%2C%20Vietnam!5e0!3m2!1sen!2s!4v1694483610430!5m2!1sen!2s"
+                                width="816" height="313" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <a href="" class="link-active">
+                            <p>Xem thêm nhà rao bán tại Q. Bình Thạnh</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_20_5213)">
+                                    <path d="M6 4L10 8L6 12" stroke="#FF5358" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_20_5213">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <div class="font-black">Phân bổ giá nhà trong khu vực</div>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <p class="font-light-grey">Mua bán nhà trên Karo bạn sẽ được đảm bảo giao dịch an toàn, tiết kiệm
+                        thời gian và chi phí phát sinh</p>
+                </div>
             </div>
 
             <!-- work section -->
@@ -480,6 +512,53 @@
 
         <!-- footer -->
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+        Chart.defaults.backgroundColor = '#9BD0F5';
+        Chart.defaults.borderColor = 'white';
+        Chart.defaults.color = 'black';
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1,
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>

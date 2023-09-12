@@ -1919,6 +1919,44 @@ img {
   /* 26.1px */
   letter-spacing: -0.09px;
 }
+.about .map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.about .map-section .font-black {
+  /* Heading/H4 */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 36px */
+  letter-spacing: -0.24px;
+}
+.about .map-section .map-wrapper {
+  display: flex;
+  width: 816px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.about .map-section .map-wrapper .G-map {
+  border-radius: 8px;
+  background: #C4C4C4;
+}
+.about .map-section .map-wrapper .link-active {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #FF5358;
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
 
 .work {
   display: flex;
