@@ -494,9 +494,9 @@
                     </div>
                 </div>
                 <div class="line"></div>
-                <div>
+                <div class="bar-chart-section">
                     <div class="font-black">Phân bổ giá nhà trong khu vực</div>
-                    <div>
+                    <div class="bar-chart">
                         <canvas id="myChart"></canvas>
                     </div>
                     <p class="font-light-grey">Mua bán nhà trên Karo bạn sẽ được đảm bảo giao dịch an toàn, tiết kiệm
@@ -514,49 +514,87 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
-
-    <canvas id="myChart" width="400" height="400"></canvas>
     <script>
         Chart.defaults.backgroundColor = '#9BD0F5';
         Chart.defaults.borderColor = 'white';
         Chart.defaults.color = 'black';
 
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const myChart = new Chart(ctx, {
+        const labelChart = '# of Votes'
+        const data = {
+            labels: [20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260],
+            datasets: [{
+                label: labelChart,
+                data: [14, 34, 73, 81, 137, 109, 185, 109, 137, 81, 73, 34, 14],
+                backgroundColor: [
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                    '#FFB7B9',
+                ],
+                borderWidth: 1,
+                borderRadius: 8,
+                borderSkipped: false
+            }]
+        }
+
+        // tooltip
+        const titleTooltip = (tooltipItems) => {
+            return '';
+        }
+
+        const labelTooltip = (tooltipItems) => {
+            return '';
+        }
+
+        // config
+        const config = {
             type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1,
-                    borderRadius: 5
-                }]
-            },
+            data,
             options: {
+                categoryPercentage: 0.6,
+                plugins: {
+                    tooltip: {
+                        bodyFont: {
+                            size: 14,
+                            weight: 400,
+                            family: 'Plus Jakarta Sans',
+                            height: '140%'
+                        },
+                        callbacks: {
+                            title: titleTooltip,
+                            label: labelTooltip,
+                            beforeBody: function (context) {
+                                return '110tr/m² - 150tr/m²'
+                            },
+                            afterBody: function (context) {
+                                return '50 căn'
+                            }
+                        },
+                        events: ['click']
+                    }
+                },
                 scales: {
                     y: {
                         beginAtZero: true
                     }
                 }
             }
-        });
+        }
+
+        //render init
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
     </script>
 
 </body>
