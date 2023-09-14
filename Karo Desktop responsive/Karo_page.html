@@ -497,11 +497,17 @@
                 <div class="bar-chart-section">
                     <div class="font-black">Phân bổ giá nhà trong khu vực</div>
                     <div class="bar-chart">
+                        <div class="chart-unit">
+                            <p class="font-light-grey">Đơn vị</p>
+                            <p class="font-black">Triệu/m²</p>
+                        </div>
                         <canvas id="myChart"></canvas>
                     </div>
                     <p class="font-light-grey">Mua bán nhà trên Karo bạn sẽ được đảm bảo giao dịch an toàn, tiết kiệm
                         thời gian và chi phí phát sinh</p>
                 </div>
+                <div class="line"></div>
+
             </div>
 
             <!-- work section -->
@@ -518,6 +524,10 @@
         Chart.defaults.backgroundColor = '#9BD0F5';
         Chart.defaults.borderColor = 'white';
         Chart.defaults.color = 'black';
+        Chart.defaults.font.size = 14;
+        Chart.defaults.font.weight = 500;
+        Chart.defaults.font.family = 'Be Vietnam Pro';
+        Chart.defaults.font.height = '140%';
 
         const labelChart = '# of Votes'
         const data = {
@@ -562,6 +572,9 @@
             options: {
                 categoryPercentage: 0.6,
                 plugins: {
+                    legend: {
+                        display: false
+                    },
                     tooltip: {
                         bodyFont: {
                             size: 14,
@@ -584,7 +597,10 @@
                 },
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            display: false
+                        }
                     }
                 }
             }

@@ -1974,7 +1974,38 @@ img {
   letter-spacing: -0.24px;
 }
 .about .bar-chart-section .bar-chart {
+  display: flex;
   width: 816px;
+  border-radius: 8px;
+  border: 1.5px solid #FFE9E9;
+  background: #FFFDFD;
+  position: relative;
+}
+.about .bar-chart-section .bar-chart .chart-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.about .bar-chart-section .bar-chart .chart-unit .font-light-grey {
+  color: var(--main-color-black, #000929);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 145%;
+  /* 21.75px */
+  letter-spacing: -0.075px;
+  opacity: 0.7;
+}
+.about .bar-chart-section .bar-chart .chart-unit .font-black {
+  color: var(--main-color-black, #000929);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 125%;
+  /* 22.5px */
+  letter-spacing: -0.18px;
 }
 .about .bar-chart-section .bar-chart #myChart {
   width: 100%;
