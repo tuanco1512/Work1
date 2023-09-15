@@ -514,10 +514,33 @@
                             <div class="slide-container">
                                 <p class="font-black">Số tiền cần vay</p>
                                 <div class="range-slider">
-                                    <input type="range" min="1" max="100" value="1" id="myRange" , class="slider">
+                                    <input type="range" min="1000000000" max="5000000000" id="myRange" value="1" ,
+                                        class="slider">
                                     <div class="text">
-                                        <p></p>
-                                        <p></p>
+                                        <span class="font-black" id="value"></span>
+                                        <p class="font-blue">VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-container">
+                                <p class="font-black">Thời gian vay</p>
+                                <div class="range-slider">
+                                    <input type="range" min="0" max="45" value="1" id="myRange" value="1" ,
+                                        class="slider">
+                                    <div class="text">
+                                        <span class="font-black" id="value"></span>
+                                        <p class="font-blue">Tháng</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-container">
+                                <p class="font-black">Số tiền cần vay</p>
+                                <div class="range-slider">
+                                    <input type="range" min="1000000000" max="5000000000" value="1" id="myRange" ,
+                                        class="slider">
+                                    <div class="text">
+                                        <span class="font-black" id="value"></span>
+                                        <p class="font-blue">VNĐ</p>
                                     </div>
                                 </div>
                             </div>
@@ -537,6 +560,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+
     <script>
         Chart.defaults.backgroundColor = '#9BD0F5';
         Chart.defaults.borderColor = 'white';
@@ -659,6 +683,19 @@
         }
 
         ctx.onclick = clickHandler
+    </script>
+
+    <script>
+        const slider = document.getElementById("myRange");
+        const output = document.getElementById("value");
+
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            const x = (this.value - this.min) / (this.max - this.min) * 100
+            this.style.background = 'linear-gradient(to right, #FF5358 0%, #FF5358 ' + x + '%, #E6E6E6 ' + x + '%, #E6E6E6 100%)'
+        }
     </script>
 
 </body>
