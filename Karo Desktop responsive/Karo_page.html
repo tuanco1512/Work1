@@ -507,7 +507,24 @@
                         thời gian và chi phí phát sinh</p>
                 </div>
                 <div class="line"></div>
-
+                <div class="range-slider-section">
+                    <div class="font-black">Công cụ tính lãi suất vay</div>
+                    <div class="range-slider-wrapper">
+                        <div class="range-slider-area">
+                            <div class="slide-container">
+                                <p class="font-black">Số tiền cần vay</p>
+                                <div class="range-slider">
+                                    <input type="range" min="1" max="100" value="1" id="myRange" , class="slider">
+                                    <div class="text">
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
 
             <!-- work section -->
@@ -607,10 +624,41 @@
         }
 
         //render init
+        const ctx = document.getElementById('myChart')
         const myChart = new Chart(
-            document.getElementById('myChart'),
+            ctx,
             config
         );
+
+        function clickHandler(click) {
+            const color = [
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+                '#FFB7B9',
+            ];
+
+            myChart.config.data.datasets[0].backgroundColor = color
+            const points = myChart.getElementsAtEventForMode(click, 'nearest', {
+                intersect: true
+            }, true);
+            if (points[0]) {
+                myChart.data.datasets[points[0].datasetIndex].backgroundColor[points[0].index]
+                    = '#FF5358'
+            }
+            myChart.update();
+        }
+
+        ctx.onclick = clickHandler
     </script>
 
 </body>
