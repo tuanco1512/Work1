@@ -514,10 +514,10 @@
                             <div class="slide-container">
                                 <p class="font-black">Số tiền cần vay</p>
                                 <div class="range-slider">
-                                    <input type="range" min="1000000000" max="5000000000" id="myRange" value="1" ,
+                                    <input type="range" min="1000000000" max="5000000000" id="moneyRange" value="1" ,
                                         class="slider">
                                     <div class="text">
-                                        <span class="font-black" id="value"></span>
+                                        <span class="font-black" id="moneyValue"></span>
                                         <p class="font-blue">VNĐ</p>
                                     </div>
                                 </div>
@@ -525,10 +525,10 @@
                             <div class="slide-container">
                                 <p class="font-black">Thời gian vay</p>
                                 <div class="range-slider">
-                                    <input type="range" min="0" max="45" value="1" id="myRange" value="1" ,
+                                    <input type="range" min="0" max="45" value="1" id="monthRange" value="1" ,
                                         class="slider">
                                     <div class="text">
-                                        <span class="font-black" id="value"></span>
+                                        <span class="font-black" id="monthValue"></span>
                                         <p class="font-blue">Tháng</p>
                                     </div>
                                 </div>
@@ -536,16 +536,19 @@
                             <div class="slide-container">
                                 <p class="font-black">Số tiền cần vay</p>
                                 <div class="range-slider">
-                                    <input type="range" min="1000000000" max="5000000000" value="1" id="myRange" ,
+                                    <input type="range" min="0" max="30" value="1" id="rateRange" ,
                                         class="slider">
                                     <div class="text">
-                                        <span class="font-black" id="value"></span>
-                                        <p class="font-blue">VNĐ</p>
+                                        <span class="font-black" id="rateValue"></span>
+                                        <p class="font-blue">%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div></div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -686,15 +689,33 @@
     </script>
 
     <script>
-        const slider = document.getElementById("myRange");
-        const output = document.getElementById("value");
+        const money_slider = document.getElementById("moneyRange");
+        const money_output = document.getElementById("moneyValue");
+        const month_slider = document.getElementById("monthRange");
+        const month_output = document.getElementById("monthValue");
+        const rate_slider = document.getElementById("rateRange");
+        const rate_output = document.getElementById("rateValue");
 
-        output.innerHTML = slider.value;
+        money_output.innerHTML = money_slider.value;
+        month_output.innerHTML = month_slider.value;
+        rate_output.innerHTML = rate_slider.value;
 
-        slider.oninput = function () {
-            output.innerHTML = this.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            const x = (this.value - this.min) / (this.max - this.min) * 100
-            this.style.background = 'linear-gradient(to right, #FF5358 0%, #FF5358 ' + x + '%, #E6E6E6 ' + x + '%, #E6E6E6 100%)'
+        money_slider.oninput = function () {
+            money_output.innerHTML = this.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            const x = (this.value - this.min) / (this.max - this.min) * 100;
+            this.style.background = 'linear-gradient(to right, #FF5358 0%, #FF5358 ' + x + '%, #E6E6E6 ' + x + '%, #E6E6E6 100%)';
+        }
+
+        month_slider.oninput = function () {
+            month_output.innerHTML = this.value;
+            const x = (this.value - this.min) / (this.max - this.min) * 100;
+            this.style.background = 'linear-gradient(to right, #FF5358 0%, #FF5358 ' + x + '%, #E6E6E6 ' + x + '%, #E6E6E6 100%)';
+        }
+
+        rate_slider.oninput = function () {
+            rate_output.innerHTML = this.value;
+            const x = (this.value - this.min) / (this.max - this.min) * 100;
+            this.style.background = 'linear-gradient(to right, #FF5358 0%, #FF5358 ' + x + '%, #E6E6E6 ' + x + '%, #E6E6E6 100%)';
         }
     </script>
 
