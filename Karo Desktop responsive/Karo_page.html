@@ -731,7 +731,7 @@
         // config
         const config = {
             type: 'bar',
-            data,
+            data: data,
             options: {
                 categoryPercentage: 0.6,
                 plugins: {
@@ -771,7 +771,7 @@
 
         const Pconfig = {
             type: 'bar',
-            Pdata,
+            data: Pdata,
             options: {
                 categoryPercentage: 0.6,
                 plugins: {
@@ -803,6 +803,16 @@
                         beginAtZero: true,
                         ticks: {
                             display: true,
+                            stepSize: 25,
+                            callback: function (value, index, ticks) {
+                                return value + '%';
+                            }
+                        },
+                        grid: {
+                            color: "#ccc"
+                        },
+                        border: {
+                            dash: [2,2]
                         }
                     }
                 }
