@@ -1004,6 +1004,66 @@ $base-border-thickness: 3px;
             }
         }
     }
+
+    .prenium-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        align-self: stretch;
+
+        .prenium-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            .font-black {
+                color: #000929;
+
+                /* Heading/H4 */
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 150%;
+                /* 36px */
+                letter-spacing: -0.24px;
+            }
+
+            .font-red {
+                color: #FD5358;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 140%;
+                /* 21px */
+            }
+        }
+
+        .prenium-body {
+            display: flex;
+            align-items: flex-start;
+            align-self: stretch;
+            border-radius: 8px;
+            border: 1.5px solid #FFE9E9;
+            background: #FFFDFD;
+
+            .prenium-chart {
+                width: 518px;
+                padding: 20px;
+                height: 228px;
+
+                #preniumChart {
+                    width: 100%;
+                }
+            }
+
+            .line {
+                width: 1px;
+                height: 100%;
+                align-self: stretch;
+                background: var(--border-light-grey, #EEE);
+            }
+        }
+    }
 }
 
 .work {
