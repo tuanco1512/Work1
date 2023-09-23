@@ -1645,13 +1645,16 @@ img {
   display: inline-flex;
   align-items: flex-start;
   gap: 34px;
+  width: 1240px;
 }
 .img-section .big-img {
-  width: 816px;
-  height: 478px;
+  width: 66%;
+  padding-top: 39%;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: url(/img/Frame\ 2115.png), lightgray 50%/cover no-repeat;
+  background: url(/img/ffdd1ce6f65bceb3ad32f909a6dd2024.png), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 .img-section .big-img .btn {
@@ -1682,17 +1685,20 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  gap: 34px;
+  width: 31%;
 }
 .img-section .small-img-container .small-img {
   display: flex;
-  width: 390px;
-  height: 224px;
+  width: 100%;
+  padding-top: 58%;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: url(/img/spacejoy-YI2YkyaREHk-unsplash.png), lightgray 50%/cover no-repeat;
+  background: url(/img/7d682b05898e9d20b5ba7ddf6d1619af.png), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .img-section .small-img-container .img-list {
   background: url(/img/Frame\ 2112.png), lightgray 50%/cover no-repeat;
@@ -1723,7 +1729,8 @@ img {
   background: var(--main-color-white, #FFF);
 }
 .about .info-detail .detail-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
