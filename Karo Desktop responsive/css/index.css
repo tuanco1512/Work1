@@ -1059,9 +1059,8 @@ img {
   width: 100%;
   padding-top: 51%;
   background: url(/img/r-architecture-0tKCSyLXqQM-unsplash\ 1.png);
-  position: relative;
 }
-.card-deal .mask-group .btn {
+.card-deal .like-btn {
   width: 40px;
   height: 40px;
   background: #FFF;
@@ -1069,8 +1068,9 @@ img {
   position: absolute;
   top: 14px;
   right: 14px;
+  cursor: pointer;
 }
-.card-deal .mask-group .btn svg {
+.card-deal .like-btn svg {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1805,17 +1805,21 @@ img {
   gap: 34px;
   width: 1240px;
 }
-.img-section .big-img {
+.img-section .big-img-wrapper {
+  position: relative;
   width: 66%;
-  padding-top: 39%;
+}
+.img-section .big-img-wrapper .big-img {
+  display: block;
+  width: 100%;
+  padding-top: 59%;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: url(/img/ffdd1ce6f65bceb3ad32f909a6dd2024.png), lightgray 50%/cover no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
-.img-section .big-img .btn {
+.img-section .big-img-wrapper .btn {
   position: absolute;
   top: 22px;
   right: 22px;
@@ -1829,7 +1833,7 @@ img {
   backdrop-filter: blur(4.5px);
   border: none;
 }
-.img-section .big-img .btn .font-white {
+.img-section .big-img-wrapper .btn .font-white {
   color: #FFF;
   text-align: center;
   /* Body / Small 140% / Bold */

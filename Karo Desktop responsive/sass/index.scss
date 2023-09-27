@@ -360,15 +360,20 @@ $base-border-thickness: 3px;
     gap: 34px;
     width: 1240px;
 
-    .big-img {
-        width: 66%;
-        padding-top: 39%;
-        border-radius: 8px;
-        border: 1px solid rgba(0, 0, 0, 0.10);
-        background: url(/img/ffdd1ce6f65bceb3ad32f909a6dd2024.png), lightgray 50% / cover no-repeat;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .big-img-wrapper {
         position: relative;
+        width: 66%;
+
+        .big-img {
+            display: block;
+            width: 100%;
+            padding-top: 59%;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            background: url(/img/ffdd1ce6f65bceb3ad32f909a6dd2024.png), lightgray 50% / cover no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
         .btn {
             position: absolute;
@@ -1357,7 +1362,7 @@ $base-border-thickness: 3px;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 150%;
-                
+
                 /* 24px */
             }
 
