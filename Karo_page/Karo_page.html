@@ -520,8 +520,8 @@
                                     <input type="range" min="0" max="5000000000" id="moneyRange" class="slider"
                                         value="0">
                                     <div class="text">
-                                        <input class="font-black" id="moneyValue" type="number" min="0" max="5000000000"
-                                            value="0">
+                                        <input class="font-black" id="moneyValue" type="text" min="0" max="5000000000"
+                                            value="0" onfocus="use_number(this)" onblur="use_text(this)">
                                         <p class="font-blue">VNĐ</p>
                                     </div>
                                 </div>
@@ -1941,8 +1941,7 @@
         price_output.innerHTML = price_slider.value;
 
         money_slider.oninput = function () {
-            money_output.value = this.value;
-            // this.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            money_output.value = this.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             const x = (this.value - this.min) / (this.max - this.min) * 100;
             this.style.background = 'linear-gradient(to right, #FF5358 0%, #FF5358 ' + x + '%, #E6E6E6 ' + x + '%, #E6E6E6 100%)';
         }
@@ -1981,6 +1980,26 @@
             price_output.innerHTML = this.value;
             const x = (this.value - this.min) / (this.max - this.min) * 100;
             this.style.background = 'linear-gradient(to right, #FF5358 0%, #FF5358 ' + x + '%, #E6E6E6 ' + x + '%, #E6E6E6 100%)';
+        }
+
+        function use_number(node) {
+            var empty_val = false;
+            const value = node.value;
+            if (node.value == '')
+                empty_val = true;
+            node.type = 'number';
+            if (!empty_val)
+                node.value = Number(value.replace(/,/g, '')); // or equivalent per locale
+        }
+
+        function use_text(node) {
+            var empty_val = false;
+            const value = Number(node.value);
+            if (node.value == '')
+                empty_val = true;
+            node.type = 'text';
+            if (!empty_val)
+                node.value = value.toLocaleString('en');  // or other formatting
         }
     </script>
 
