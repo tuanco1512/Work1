@@ -567,6 +567,14 @@ $base-border-thickness: 3px;
                     opacity: 0.5;
                 }
 
+                .font-orange {
+                    /* Body / Medium 150% / Medium */
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    /* 24px */
+                }
+
                 .owner-info {
                     display: flex;
                     justify-content: space-between;
@@ -689,6 +697,23 @@ $base-border-thickness: 3px;
                         line-height: 145%;
                         /* 26.1px */
                         letter-spacing: -0.09px;
+                    }
+
+                    .font-orange {
+                        color: #FF5358;
+                        text-align: right;
+
+                        /* Body / Large 145% / Bold */
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 145%;
+                        /* 26.1px */
+                        letter-spacing: -0.09px;
+                    }
+
+                    .display-f {
+                        align-items: center;
+                        gap: 10px;
                     }
                 }
             }

@@ -1988,6 +1988,13 @@ img {
   /* 24px */
   opacity: 0.5;
 }
+.about .about-properties-owner .owner .owner-content .font-orange {
+  /* Body / Medium 150% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+}
 .about .about-properties-owner .owner .owner-content .owner-info {
   display: flex;
   justify-content: space-between;
@@ -2092,6 +2099,20 @@ img {
   line-height: 145%;
   /* 26.1px */
   letter-spacing: -0.09px;
+}
+.about .features .house-info .facilities .year-built .font-orange {
+  color: #FF5358;
+  text-align: right;
+  /* Body / Large 145% / Bold */
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 145%;
+  /* 26.1px */
+  letter-spacing: -0.09px;
+}
+.about .features .house-info .facilities .year-built .display-f {
+  align-items: center;
+  gap: 10px;
 }
 .about .map-section {
   display: flex;
