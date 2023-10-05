@@ -1313,6 +1313,10 @@ $base-border-thickness: 3px;
         gap: 20px;
         align-self: stretch;
 
+        .chart-section {
+            width: 180px;
+        }
+
         .font-white {
             align-self: stretch;
             color: var(--main-color-white, #FFF);
