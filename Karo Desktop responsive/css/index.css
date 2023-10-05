@@ -2586,10 +2586,79 @@ img {
   text-transform: uppercase;
 }
 
+.work-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.count-down {
+  display: flex;
+  width: 350px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 8px;
+  background: #002051;
+}
+.count-down .status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.count-down .status .font-white {
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 27px */
+}
+.count-down .status .plan {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #60EE1E;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  /* 19.6px */
+}
+.count-down .doughnut-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+.count-down .doughnut-chart .font-white {
+  align-self: stretch;
+  color: var(--main-color-white, #FFF);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  /* 18px */
+}
+.count-down .btn-black {
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 13px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 0.2;
+  background: #FFF;
+}
+
 .work {
   display: flex;
   width: 350px;
-  height: -webkit-fill-available;
   padding: 20px;
   flex-direction: column;
   align-items: flex-start;
