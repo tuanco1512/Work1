@@ -2637,6 +2637,7 @@ img {
 }
 .count-down .doughnut-chart .chart-section {
   width: 180px;
+  height: 100px;
 }
 .count-down .doughnut-chart .font-white {
   align-self: stretch;
