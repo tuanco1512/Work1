@@ -1266,6 +1266,18 @@ img {
   color: #666;
 }
 
+.btn-funcs {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1.5px solid #F5F9FF;
+  background: #F5F9FF;
+  cursor: pointer;
+}
+
 .sign-up-btn {
   display: flex;
   padding: 10px 30px;
@@ -1778,17 +1790,7 @@ img {
   align-items: flex-start;
   gap: 19px;
 }
-.intro .title .sub-title .function-container .btn {
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 8px;
-  border: 1.5px solid #F5F9FF;
-  background: #F5F9FF;
-}
-.intro .title .sub-title .function-container .btn .font-blue {
+.intro .title .sub-title .function-container .font-blue {
   background: #F5F9FF;
   text-align: center;
   font-feature-settings: "ss04" on, "ss06" on, "liga" off;
@@ -2049,14 +2051,14 @@ img {
   opacity: 0.1;
   background: #000929;
 }
-.about .features {
+.about .type-about_group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
 }
-.about .features .font-black {
+.about .type-about_group .font-black {
   color: #000929;
   /* Heading/H4 */
   font-size: 24px;
@@ -2065,23 +2067,23 @@ img {
   /* 36px */
   letter-spacing: -0.24px;
 }
-.about .features .house-info {
+.about .type-about_group .house-info {
   display: flex;
   gap: 80px;
 }
-.about .features .house-info .facilities {
+.about .type-about_group .house-info .facilities {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   width: 351px;
 }
-.about .features .house-info .facilities .year-built {
+.about .type-about_group .house-info .facilities .type-about_info {
   display: flex;
   align-self: stretch;
   justify-content: space-between;
 }
-.about .features .house-info .facilities .year-built .font-light-grey {
+.about .type-about_group .house-info .facilities .type-about_info .font-light-grey {
   color: #000929;
   /* Body / Medium 150% / Medium */
   font-size: 16px;
@@ -2090,7 +2092,7 @@ img {
   /* 24px */
   opacity: 0.5;
 }
-.about .features .house-info .facilities .year-built .font-black {
+.about .type-about_group .house-info .facilities .type-about_info .font-black {
   color: #000929;
   text-align: right;
   /* Body / Large 145% / Bold */
@@ -2100,8 +2102,7 @@ img {
   /* 26.1px */
   letter-spacing: -0.09px;
 }
-.about .features .house-info .facilities .year-built .font-orange {
-  color: #FF5358;
+.about .type-about_group .house-info .facilities .type-about_info .font-orange {
   text-align: right;
   /* Body / Large 145% / Bold */
   font-size: 18px;
@@ -2109,10 +2110,6 @@ img {
   line-height: 145%;
   /* 26.1px */
   letter-spacing: -0.09px;
-}
-.about .features .house-info .facilities .year-built .display-f {
-  align-items: center;
-  gap: 10px;
 }
 .about .map-section {
   display: flex;
@@ -3433,6 +3430,16 @@ img {
   background: rgba(17, 17, 17, 0.65);
   flex-shrink: 0;
   z-index: 1;
+}
+
+.link-arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.red-link {
+  color: #FF5358;
 }
 
 .width250px {
