@@ -326,27 +326,16 @@ $base-border-thickness: 3px;
                 align-items: flex-start;
                 gap: 19px;
 
-                .btn {
-                    display: flex;
-                    padding: 12px 24px;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 8px;
-                    border-radius: 8px;
-                    border: 1.5px solid #F5F9FF;
+                .font-blue {
                     background: #F5F9FF;
+                    text-align: center;
+                    font-feature-settings: 'ss04' on, 'ss06' on, 'liga' off;
 
-                    .font-blue {
-                        background: #F5F9FF;
-                        text-align: center;
-                        font-feature-settings: 'ss04' on, 'ss06' on, 'liga' off;
-
-                        /* Body/Medium 150%/Bold */
-                        font-size: 16px;
-                        font-weight: 700;
-                        line-height: 150%;
-                        /* 24px */
-                    }
+                    /* Body/Medium 150%/Bold */
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 150%;
+                    /* 24px */
                 }
             }
         }
@@ -642,7 +631,7 @@ $base-border-thickness: 3px;
         background: #000929;
     }
 
-    .features {
+    .type-about_group {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -671,7 +660,7 @@ $base-border-thickness: 3px;
                 gap: 20px;
                 width: 351px;
 
-                .year-built {
+                .type-about_info {
                     display: flex;
                     align-self: stretch;
                     justify-content: space-between;
@@ -700,7 +689,6 @@ $base-border-thickness: 3px;
                     }
 
                     .font-orange {
-                        color: #FF5358;
                         text-align: right;
 
                         /* Body / Large 145% / Bold */
@@ -709,11 +697,6 @@ $base-border-thickness: 3px;
                         line-height: 145%;
                         /* 26.1px */
                         letter-spacing: -0.09px;
-                    }
-
-                    .display-f {
-                        align-items: center;
-                        gap: 10px;
                     }
                 }
             }
@@ -2208,6 +2191,16 @@ $base-border-thickness: 3px;
     background: rgba(17, 17, 17, 0.65);
     flex-shrink: 0;
     z-index: 1;
+}
+
+.link-arrow{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.red-link{
+    color: #FF5358;
 }
 
 .width250px {

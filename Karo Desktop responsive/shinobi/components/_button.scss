@@ -42,14 +42,15 @@ $val in $colors {
     }
 }
 
-.btn-r-25{
+.btn-r-25 {
     border-radius: 25px !important;
 }
 
 .btn-orange {
     background: #EC1F25;
     color: #fff;
-    &:hover{
+
+    &:hover {
         background: #EC1F25;
     }
 }
@@ -69,6 +70,17 @@ $val in $colors {
     color: #666;
 }
 
+.btn-funcs {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1.5px solid #F5F9FF;
+    background: #F5F9FF;
+    cursor: pointer;
+}
 
 .sign-up-btn {
     display: flex;
