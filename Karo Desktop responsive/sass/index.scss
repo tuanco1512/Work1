@@ -269,13 +269,14 @@ $base-border-thickness: 3px;
     }
 }
 
-.intro-container_header{
+.intro-container_main {
     display: flex;
     flex-direction: column;
     width: 1240px;
     gap: 35px;
     max-width: 100%;
     padding: 0 30px;
+    box-sizing: border-box;
 }
 
 .intro {
@@ -436,7 +437,7 @@ $base-border-thickness: 3px;
 
 .about {
     display: flex;
-    width: calc(100% - 390px - 34px);
+    width: calc(100% - 350px - 34px);
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
@@ -454,14 +455,12 @@ $base-border-thickness: 3px;
 
         .detail-wrapper {
             display: grid;
-            grid-template-columns: auto auto auto auto;
-            justify-content: space-between;
+            grid-template-columns: repeat(4, 1fr);
             align-items: center;
             align-self: stretch;
 
             .house-info {
                 display: flex;
-                width: 140px;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 16px;
@@ -662,13 +661,14 @@ $base-border-thickness: 3px;
         .house-info {
             display: flex;
             gap: 80px;
+            width: 100%;
 
             .facilities {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 20px;
-                width: 351px;
+                width: 100%;
 
                 .type-about_info {
                     display: flex;
@@ -732,7 +732,7 @@ $base-border-thickness: 3px;
 
         .map-wrapper {
             display: flex;
-            width: 816px;
+            width: 100%;
             flex-direction: column;
             align-items: flex-start;
             gap: 24px;
@@ -740,6 +740,8 @@ $base-border-thickness: 3px;
             .G-map {
                 border-radius: 8px;
                 background: #C4C4C4;
+                width: 100% !important;
+                height: 313px;
             }
 
             .link-active {
@@ -778,7 +780,7 @@ $base-border-thickness: 3px;
 
         .bar-chart {
             display: flex;
-            width: 816px;
+            width: 100%;
             border-radius: 8px;
             border: 1.5px solid #FFE9E9;
             background: #FFFDFD;
@@ -889,7 +891,7 @@ $base-border-thickness: 3px;
                         align-self: stretch;
 
                         .slider {
-                            width: 479px;
+                            width: 65%;
                             height: 6px;
                             appearance: none;
                             background: linear-gradient(90deg, #E6E6E6 60%, #E6E6E6 60%);
@@ -916,7 +918,7 @@ $base-border-thickness: 3px;
 
                         .text {
                             display: flex;
-                            width: 200px;
+                            width: 25%;
                             padding: 10px 15px;
                             align-items: center;
                             gap: 20px;
@@ -942,7 +944,7 @@ $base-border-thickness: 3px;
 
                 .total-amount {
                     display: flex;
-                    width: 479px;
+                    width: 65%;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 25px;
@@ -1030,8 +1032,10 @@ $base-border-thickness: 3px;
 
                 .Frame-14054 {
                     background: url(/img/Frame\ 14054.png);
-                    width: 230px;
+                    width: 25%;
                     height: 148px;
+                    background-size: cover;
+                    background-position: center;
                 }
             }
         }
@@ -1079,7 +1083,7 @@ $base-border-thickness: 3px;
             background: #FFFDFD;
 
             .prenium-chart {
-                width: 518px;
+                width: 65%;
                 padding: 20px;
                 height: 228px;
             }
@@ -1270,6 +1274,7 @@ $base-border-thickness: 3px;
     gap: 30px;
     border-radius: 8px;
     background: #002051;
+    box-sizing: border-box;
 
     .status {
         display: flex;
@@ -1347,6 +1352,7 @@ $base-border-thickness: 3px;
     background: var(--main-color-white, #FFF);
     position: sticky;
     top: 103px;
+    box-sizing: border-box;
 
     .font-grey {
         color: #000929;
@@ -1551,15 +1557,21 @@ $base-border-thickness: 3px;
     }
 }
 
+.list-container-setting {
+    width: 100%;
+}
+
 .similar-setting {
     display: flex;
     flex-direction: column;
     width: 1240px;
-    padding: 64px 100px 92px 100px;
+    padding: 0 30px;
     justify-content: center;
     background: #FAFCFF;
     box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.20);
     gap: 48px;
+    box-sizing: border-box;
+    margin: 0 auto;
 
     .font-black {
         color: #000929;
@@ -1582,7 +1594,7 @@ $base-border-thickness: 3px;
 }
 
 .Karo-page-footer {
-    width: 1440px;
+    width: 100%;
     background: var(--main-color-white, #FFF);
     box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.20);
 
@@ -1591,7 +1603,9 @@ $base-border-thickness: 3px;
         justify-content: space-between;
         align-items: flex-start;
         width: 1240px;
-        padding: 80px 100px 0 100px;
+        padding: 80px 30px 0 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
 
         .info-area {
             display: flex;
@@ -1677,11 +1691,12 @@ $base-border-thickness: 3px;
     }
 
     .copy-right {
-        padding: 32px 100px 33px 100px;
+        padding: 30px;
         width: 1240px;
-        height: 26px;
         display: flex;
         justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0 auto;
 
         .font-light-grey {
             color: #000929;
@@ -2203,13 +2218,13 @@ $base-border-thickness: 3px;
     z-index: 1;
 }
 
-.link-arrow{
+.link-arrow {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.red-link{
+.red-link {
     color: #FF5358;
 }
 
