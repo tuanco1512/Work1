@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper font-plus-jakarta">
+    <div class="wrapper font-plus-jakarta _web">
         <!-- Karo navbar -->
         <nav class="navbar">
             <div class="nav-container">
@@ -1840,6 +1840,8 @@
         }
 
         // config
+
+        // regular config
         const config = {
             type: 'bar',
             data: data,
@@ -1880,6 +1882,7 @@
             }
         }
 
+        // prenium config
         const Pconfig = {
             type: 'bar',
             data: Pdata,
@@ -1931,6 +1934,7 @@
             }
         }
 
+        // doughnut config
         const Dconfig = {
             type: 'doughnut',
             data: Ddata,
@@ -1961,12 +1965,15 @@
         }
 
         //render init
+
+        // regular chart render
         const ctx = document.getElementById('myChart')
         const myChart = new Chart(
             ctx,
             config
         );
 
+        // prenium chart render
         const Pctx = document.getElementById('preniumChart')
         Pctx.width = 518;
         const Pchart = new Chart(
@@ -1974,12 +1981,14 @@
             Pconfig
         );
 
+        // doughnut chart render
         const Dctx = document.getElementById('doughnutChart');
         const Dchart = new Chart(
             Dctx,
             Dconfig
         )
 
+        //
         function clickHandler(click) {
             const color = [
                 '#FFB7B9',
