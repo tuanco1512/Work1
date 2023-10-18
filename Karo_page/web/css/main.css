@@ -119,7 +119,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   gap: 35px;
-  background-color: #F8F8F8;
+  background-color: white;
   font-size: 16px;
   color: black;
 }
@@ -144,6 +144,17 @@ img {
 
 .test {
   color: #326dee;
+}
+
+.disable {
+  opacity: 0.2;
+}
+.disable:hover {
+  cursor: default !important;
+}
+
+select {
+  cursor: pointer;
 }
 
 .intro-container_main {
@@ -1069,6 +1080,7 @@ img {
 .list-container-setting {
   width: 100%;
   background: #FAFCFF;
+  padding: 35px 0;
 }
 
 .similar-setting {
@@ -1398,7 +1410,7 @@ img {
   line-height: 150%;
   /* 18px */
 }
-.count-down-card .btn-black {
+.count-down-card .btn-extend {
   display: flex;
   width: -webkit-fill-available;
   padding: 13px 24px;
@@ -1406,8 +1418,10 @@ img {
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  opacity: 0.2;
   background: #FFF;
+}
+.count-down-card .btn-extend:hover {
+  cursor: pointer;
 }
 
 .slide-card {
@@ -1565,18 +1579,6 @@ img {
   font-weight: 700;
   line-height: 150%;
   /* 24px */
-}
-.slide-card .search-btn {
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
-  border-radius: 8px;
-  border: 1.5px solid #F5F9FF;
-  background: #F5F9FF;
-  cursor: pointer;
 }
 .slide-card .search-btn .font-blue {
   color: #002F7A;
@@ -1752,33 +1754,11 @@ img {
   padding: 16px 20px 20px 20px;
   gap: 15px;
 }
-.card-deal .btn-wrapper .btn-func {
-  display: flex;
-  width: 100%;
-  padding: 10px 15px;
-  justify-content: center;
-  gap: 9.125px;
-  border-radius: 6px;
-  background: var(--bg-light-blue, #F5F9FF);
-  border: none;
-  cursor: pointer;
-}
 .card-deal .btn-wrapper .btn-func .font-blue {
   font-size: 15px;
   font-weight: 600;
   line-height: 140%;
   /* 21px */
-}
-.card-deal .btn-wrapper .btn-success {
-  display: flex;
-  width: 100%;
-  padding: 10px 15px;
-  justify-content: center;
-  gap: 9.125px;
-  border-radius: 6px;
-  background: var(--green-light, #F0FFE8);
-  border: none;
-  cursor: pointer;
 }
 .card-deal .btn-wrapper .btn-success .font-green {
   font-size: 15px;
@@ -1855,6 +1835,7 @@ img {
 }
 .btn-orange:hover {
   background: #EC1F25;
+  cursor: pointer;
 }
 
 .btn-navy {
@@ -1884,7 +1865,44 @@ img {
   cursor: pointer;
 }
 
-.btn-funcs:hover, .btn:hover, .btn-black:hover, .btn-orange:hover, .btn-dark-grey:hover, .btn-navy:hover {
+.btn-func {
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+  justify-content: center;
+  gap: 9.125px;
+  border-radius: 6px;
+  background: var(--bg-light-blue, #F5F9FF);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-success {
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+  justify-content: center;
+  gap: 9.125px;
+  border-radius: 6px;
+  background: var(--green-light, #F0FFE8);
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1.5px solid #F5F9FF;
+  background: #F5F9FF;
+  cursor: pointer;
+}
+
+.btn-funcs:hover, .btn:hover, .btn-black:hover, .btn-orange:hover, .btn-dark-grey:hover, .btn-navy:hover, .search-btn:hover, .btn-func:hover, .btn-success:hover {
   opacity: 0.8;
 }
 

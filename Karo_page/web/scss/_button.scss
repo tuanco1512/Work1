@@ -22,6 +22,7 @@
 
     &:hover {
         background: #EC1F25;
+        cursor: pointer;
     }
 }
 
@@ -52,7 +53,44 @@
     cursor: pointer;
 }
 
-.btn-funcs, .btn, .btn-black, .btn-orange, .btn-dark-grey, .btn-navy{
+.btn-func {
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    justify-content: center;
+    gap: 9.125px;
+    border-radius: 6px;
+    background: var(--bg-light-blue, #F5F9FF);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success {
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    justify-content: center;
+    gap: 9.125px;
+    border-radius: 6px;
+    background: var(--green-light, #F0FFE8);
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1.5px solid #F5F9FF;
+    background: #F5F9FF;
+    cursor: pointer;
+}
+
+.btn-funcs, .btn, .btn-black, .btn-orange, .btn-dark-grey, .btn-navy, .search-btn, .btn-func, .btn-success {
     &:hover{
         opacity: 0.8;
     }
