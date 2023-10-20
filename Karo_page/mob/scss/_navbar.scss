@@ -94,25 +94,120 @@
             gap: 25px;
             position: relative;
 
-            .side-menu{
-                position: absolute;
-                width: 250px;
-                top: 0;
-                left: 0;
+            .btn-menu{
+                cursor: pointer;
+            }
 
-                .text{
+            .side-menu {
+                position: fixed;
+                width: 375px;
+                top: 0;
+                left: -375px;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.60);
+                transition: left 0.4s ease;
+
+                .text {
+                    display: flex;
                     font-size: 25px;
                     font-weight: 600;
                     text-align: center;
-                    padding-bottom: 30px;
-                    letter-spacing: 1px
+                    line-height: 65px;
+                    letter-spacing: 1px;
+                    background-color: #FFF;
                 }
 
-                ul{
-                    li{
+                .side-menu_nav {
+                    >li.active {
+                        a{
+                            color: #FF5358;
+                            background: #f9f9f9;
+                            border-left-color: #FF5358;
+                        }
+
+                        .sell-list_group, .rent-list_group{
+                            .side-menu_nav-link{
+                                a{
+                                    color: black;
+                                    background: white;
+                                    border-left-color: transparent;
+
+                                    &:hover{
+                                        color: #FF5358;
+                                        background: #f9f9f9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .sell-list_group,
+                    .rent-list_group {
+                        position: static;
+                        display: none;
+
+                        .side-menu_nav-link {
+                            line-height: 42px;
+                            border-bottom: none;
+
+                            a {
+                                font-size: 17px;
+                                padding-left: 80px;
+                            }
+                        }
+                    }
+
+                    .sell-list_group.show {
+                        display: block;
+                    }
+
+                    .rent-list_group.show {
+                        display: block;
+                    }
+
+                    .sell-list,
+                    .rent-list,
+                    .side-menu_nav-link {
                         line-height: 60px;
+                        border-bottom: 1px solid #E6E6E6;
+
+                        a {
+                            position: relative;
+                            font-size: 18px;
+                            padding-left: 40px;
+                            font-weight: 500;
+                            display: block;
+                            width: 100%;
+                            box-sizing: border-box;
+                            border-left: 3px solid transparent;
+
+                            span.rotate {
+                                transform: translateY(-50%) rotate(-180deg);
+                            }
+
+                            span {
+                                position: absolute;
+                                top: 50%;
+                                right: 20px;
+                                transform: translateY(-50%);
+                                font-size: 22px;
+                                transition: transform 0.4s;
+                            }
+                        }
+                    }
+
+                    .side-menu_nav-link:last-child{
+                        border-bottom: 1px solid #E6E6E6;
                     }
                 }
+
+                .side-menu_nav {
+                    background: #FFF;
+                }
+            }
+
+            .side-menu.show{
+                left: 0px
             }
         }
     }

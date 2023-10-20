@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Karo_page_post_sale</title>
 </head>
 
@@ -18,48 +19,79 @@
                     <div class="Karo-logo display-f">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                             <g clip-path="url(#clip0_1157_9068)">
-                              <path d="M9.95018 10.3924L20.7866 0H5.47043C4.89899 0.000731114 4.33112 0.0901706 3.78711 0.265124L7.96807 9.99053C8.04668 10.1731 8.16833 10.3338 8.32261 10.4591C8.47689 10.5844 8.65921 10.6705 8.85399 10.71C9.04877 10.7495 9.25022 10.7412 9.44111 10.6859C9.63201 10.6306 9.80667 10.5299 9.95018 10.3924Z" fill="#EC1F25"/>
-                              <path d="M16.2523 10.3335L27.9998 14.3503V5.47081C27.9999 4.30699 27.6288 3.17348 26.9404 2.23503C26.2521 1.29658 25.2824 0.602096 24.1724 0.252502L15.7999 8.28196C15.6479 8.42808 15.5359 8.61083 15.4747 8.81266C15.4136 9.0145 15.4053 9.22867 15.4508 9.43462C15.4962 9.64056 15.5937 9.83139 15.7341 9.98879C15.8745 10.1462 16.0529 10.2649 16.2523 10.3335Z" fill="#EC1F25"/>
-                              <path d="M1.61178 1.59705C1.10078 2.10443 0.695278 2.70794 0.418646 3.3728C0.142015 4.03765 -0.000268227 4.75069 3.79603e-07 5.4708L3.79603e-07 22.5145C3.79603e-07 23.9654 0.576387 25.3569 1.60236 26.3829C2.62834 27.4089 4.01986 27.9853 5.47081 27.9853H12.9637L1.61178 1.59705Z" fill="#EC1F25"/>
-                              <path d="M11.6 12.3093L10.5205 13.3446C10.2897 13.5661 10.132 13.8528 10.0684 14.1664C10.0049 14.48 10.0385 14.8055 10.1649 15.0994L15.7115 28H22.5247C23.9757 28 25.3672 27.4236 26.3932 26.3976C27.4192 25.3717 27.9955 23.9801 27.9955 22.5292V17.0184L13.1949 11.9558C12.9222 11.8631 12.6292 11.8471 12.348 11.9094C12.0667 11.9718 11.808 12.1101 11.6 12.3093Z" fill="#EC1F25"/>
+                                <path
+                                    d="M9.95018 10.3924L20.7866 0H5.47043C4.89899 0.000731114 4.33112 0.0901706 3.78711 0.265124L7.96807 9.99053C8.04668 10.1731 8.16833 10.3338 8.32261 10.4591C8.47689 10.5844 8.65921 10.6705 8.85399 10.71C9.04877 10.7495 9.25022 10.7412 9.44111 10.6859C9.63201 10.6306 9.80667 10.5299 9.95018 10.3924Z"
+                                    fill="#EC1F25" />
+                                <path
+                                    d="M16.2523 10.3335L27.9998 14.3503V5.47081C27.9999 4.30699 27.6288 3.17348 26.9404 2.23503C26.2521 1.29658 25.2824 0.602096 24.1724 0.252502L15.7999 8.28196C15.6479 8.42808 15.5359 8.61083 15.4747 8.81266C15.4136 9.0145 15.4053 9.22867 15.4508 9.43462C15.4962 9.64056 15.5937 9.83139 15.7341 9.98879C15.8745 10.1462 16.0529 10.2649 16.2523 10.3335Z"
+                                    fill="#EC1F25" />
+                                <path
+                                    d="M1.61178 1.59705C1.10078 2.10443 0.695278 2.70794 0.418646 3.3728C0.142015 4.03765 -0.000268227 4.75069 3.79603e-07 5.4708L3.79603e-07 22.5145C3.79603e-07 23.9654 0.576387 25.3569 1.60236 26.3829C2.62834 27.4089 4.01986 27.9853 5.47081 27.9853H12.9637L1.61178 1.59705Z"
+                                    fill="#EC1F25" />
+                                <path
+                                    d="M11.6 12.3093L10.5205 13.3446C10.2897 13.5661 10.132 13.8528 10.0684 14.1664C10.0049 14.48 10.0385 14.8055 10.1649 15.0994L15.7115 28H22.5247C23.9757 28 25.3672 27.4236 26.3932 26.3976C27.4192 25.3717 27.9955 23.9801 27.9955 22.5292V17.0184L13.1949 11.9558C12.9222 11.8631 12.6292 11.8471 12.348 11.9094C12.0667 11.9718 11.808 12.1101 11.6 12.3093Z"
+                                    fill="#EC1F25" />
                             </g>
                             <defs>
-                              <clipPath id="clip0_1157_9068">
-                                <rect width="28" height="28" fill="white"/>
-                              </clipPath>
+                                <clipPath id="clip0_1157_9068">
+                                    <rect width="28" height="28" fill="white" />
+                                </clipPath>
                             </defs>
-                          </svg>
+                        </svg>
                         <div class="logo-title">Karo</div>
                     </div>
                 </div>
                 <div class="right-section display-f">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M14 13H1C0.4 13 0 12.6 0 12C0 11.4 0.4 11 1 11H14C14.6 11 15 11.4 15 12C15 12.6 14.6 13 14 13Z" fill="#111111"/>
-                        <path d="M23 6H1C0.4 6 0 5.6 0 5C0 4.4 0.4 4 1 4H23C23.6 4 24 4.4 24 5C24 5.6 23.6 6 23 6Z" fill="#111111"/>
-                        <path d="M23 20H1C0.4 20 0 19.6 0 19C0 18.4 0.4 18 1 18H23C23.6 18 24 18.4 24 19C24 19.6 23.6 20 23 20Z" fill="#111111"/>
-                      </svg>
+                    <svg class="btn-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M14 13H1C0.4 13 0 12.6 0 12C0 11.4 0.4 11 1 11H14C14.6 11 15 11.4 15 12C15 12.6 14.6 13 14 13Z"
+                            fill="#111111" />
+                        <path d="M23 6H1C0.4 6 0 5.6 0 5C0 4.4 0.4 4 1 4H23C23.6 4 24 4.4 24 5C24 5.6 23.6 6 23 6Z"
+                            fill="#111111" />
+                        <path
+                            d="M23 20H1C0.4 20 0 19.6 0 19C0 18.4 0.4 18 1 18H23C23.6 18 24 18.4 24 19C24 19.6 23.6 20 23 20Z"
+                            fill="#111111" />
+                    </svg>
                     <div class="side-menu">
-                        <div class="text">Karo Side Menu</div>
+                        <div class="text">Karo Side Menu
+                            <div class="btn-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <g opacity="0.5" clip-path="url(#clip0_738_27707)">
+                                  <path d="M18 6L6 18" stroke="#000929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M6 6L18 18" stroke="#000929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_738_27707">
+                                    <rect width="24" height="24" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                        </div>
                         <ul class="side-menu_nav">
                             <li class="sell-list">
-                                <a href="">Mua bán</a>
+                                <a href="#" class="sell-btn">Mua bán
+                                    <span class="fas fa-caret-down first"></span>
+                                </a>
                                 <ul class="sell-list_group">
-                                    <li class="side-menu_nav-link"><a href="">A</a></li>
-                                    <li class="side-menu_nav-link"><a href="">B</a></li>
-                                    <li class="side-menu_nav-link"><a href="">C</a></li>
+                                    <li class="side-menu_nav-link"><a href="#">A</a></li>
+                                    <li class="side-menu_nav-link"><a href="#">B</a></li>
+                                    <li class="side-menu_nav-link"><a href="#">C</a></li>
                                 </ul>
                             </li>
                             <li class="rent-list">
-                                <a href="">Thuê</a>
+                                <a href="#" class="rent-btn">Thuê
+                                    <span class="fas fa-caret-down second"></span>
+                                </a>
                                 <ul class="rent-list_group">
-                                    <li class="side-menu_nav-link"><a href="">A</a></li>
-                                    <li class="side-menu_nav-link"><a href="">B</a></li>
-                                    <li class="side-menu_nav-link"><a href="">C</a></li>
+                                    <li class="side-menu_nav-link"><a href="#">A</a></li>
+                                    <li class="side-menu_nav-link"><a href="#">B</a></li>
+                                    <li class="side-menu_nav-link"><a href="#">C</a></li>
                                 </ul>
                             </li>
-                            <li class="side-menu_nav-link"><a href="">Ký gửi nhà</a></li>
-                            <li class="side-menu_nav-link"><a href="">Định giá nhà</a></li>
-                            <li class="side-menu_nav-link"><a href="">Mạng lưới môi giới</a></li>
+                            <li class="side-menu_nav-link"><a href="#">Ký gửi nhà</a></li>
+                            <li class="side-menu_nav-link"><a href="#">Định giá nhà</a></li>
+                            <li class="side-menu_nav-link"><a href="#">Mạng lưới môi giới</a></li>
                         </ul>
                     </div>
                 </div>
@@ -407,7 +439,8 @@
                     <div class="about-properties-owner">
                         <div class="properties">
                             <div class="properties-title">Mô tả</div>
-                            <p class="properties-detail">Cần bán căn nhà 3 tầng sổ đỏ chính chủ, nhà dân xây phố
+                            <p class="properties-detail">Cần bán căn nhà 3 tầng sổ đỏ chính chủ, nhà dân
+                                xây phố
                                 Tân
                                 Ấp ,Ba Đình ,Hà Nội.<br>
                                 Nhà ở vị trí trung tâm thành phố. Khu phố sầm uất gần chợ, gần
@@ -2147,6 +2180,7 @@
         }
     </script>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
