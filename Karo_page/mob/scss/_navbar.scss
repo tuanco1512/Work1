@@ -35,14 +35,11 @@
                 gap: 9.778px;
 
                 .logo-title {
-                    color: #000;
+                    color: #000929;
                     text-align: center;
-                    font-family: Be Vietnam Pro;
-                    font-size: 29.333px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    letter-spacing: -0.611px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    letter-spacing: -0.72px;
                 }
             }
 
@@ -95,74 +92,26 @@
             display: flex;
             align-items: center;
             gap: 25px;
+            position: relative;
 
-            .info {
-                display: flex;
-                align-items: flex-start;
-                gap: 47px;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 50px;
+            .side-menu{
+                position: absolute;
+                width: 250px;
+                top: 0;
+                left: 0;
 
-                a {
-                    color: var(--text-grey, #666);
+                .text{
+                    font-size: 25px;
+                    font-weight: 600;
                     text-align: center;
+                    padding-bottom: 30px;
+                    letter-spacing: 1px
+                }
 
-                    /* 312.5% */
-                    &:hover {
-                        color: black;
+                ul{
+                    li{
+                        line-height: 60px;
                     }
-                }
-            }
-
-            .login-register {
-                display: flex;
-                align-items: center;
-                gap: 25px;
-
-                .btn{
-                    padding: 10px 30px;
-                }
-
-                .seperate-line {
-                    width: 1px;
-                    height: 36px;
-                    background: #EEE;
-                }
-
-                svg {
-                    cursor: pointer;
-                }
-
-                .u-login-info {
-                    display: flex;
-                    height: 50px;
-                    align-items: center;
-                    gap: 10px;
-                    cursor: pointer;
-
-                    img {
-                        width: 36px;
-                        height: 36px;
-                        border-radius: 100px;
-                        border: 1px solid rgba(17, 17, 17, 0.10);
-                        background: lightgray 50% / cover no-repeat;
-                        object-fit: cover
-                    }
-
-                    .u-login-container {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                        align-self: stretch;
-                        color: var(--color-navy, #3D4C68);
-                        font-size: 13px;
-                        font-weight: 500;
-                        line-height: 128%;
-                        /* 16.64px */
-                    }
-
                 }
             }
         }

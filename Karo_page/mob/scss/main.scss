@@ -1,3 +1,5 @@
+@import 'reset';
+
 // variables $ functions
 @import 'variables';
 
@@ -13,3 +15,5 @@
 @import 'card';
 @import 'button';
 @import 'navbar';
+
+@import url(fonts.css);
