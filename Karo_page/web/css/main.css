@@ -1,107 +1,3 @@
-/* CSS Document */
-@import url(fonts.css);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  outline: none;
-}
-
-textarea {
-  resize: none;
-}
-
-input {
-  outline: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-input[type=text],
-input[type=number],
-input[type=email],
-input[type=password],
-textarea, select {
-  /* Remove First */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -moz-appearance: textfield;
-  outline: none;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .test-btn {
   background-color: #9900ff;
 }
@@ -146,11 +42,9 @@ img {
   color: #326dee;
 }
 
-.disable {
-  opacity: 0.2;
-}
-.disable:hover {
-  cursor: default !important;
+.grid-temp-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 select {
@@ -220,6 +114,9 @@ select {
   display: flex;
   align-items: flex-start;
   gap: 19px;
+}
+.intro .title .sub-title .function-container .btn-save_post.click svg {
+  fill: #002051;
 }
 .intro .title .sub-title .function-container .font-blue {
   background: #F5F9FF;
@@ -341,6 +238,7 @@ select {
 }
 
 .about-work-wrapper {
+  margin-top: 15px;
   display: flex;
   gap: 34px;
   width: 1240px;
@@ -359,6 +257,177 @@ select {
   height: 1.5px;
   opacity: 0.1;
   background: #000929;
+}
+
+.owner-customer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.owner-content_contact {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1.5px solid var(--bg-light-w-blue, #EBF3FF);
+  background: #FCFDFF;
+}
+.owner-content_contact .owner-title {
+  color: #000929;
+  /* Body / Medium 150% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  opacity: 0.5;
+}
+.owner-content_contact .owner-info_contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.owner-content_contact .owner-info_contact .owner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.owner-content_contact .owner-info_contact .owner-info .owner-name {
+  color: #000929;
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.owner-content_contact .owner-info_contact .owner-info .owner-code {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.owner-content_contact .owner-info_contact .owner-info .owner-code .font-light-grey {
+  color: #000929;
+  /* Body / Small 140% / Medium */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  /* 19.6px */
+  opacity: 0.5;
+}
+.owner-content_contact .owner-info_contact .owner-info .owner-code .font-orange {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+  /* 21px */
+}
+.owner-content_contact .owner-info_contact .btn-funcs_wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
+}
+.owner-content_contact .owner-info_contact .btn-funcs_wrapper .btn-func-contact {
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: var(--bg-light-w-blue, #EBF3FF);
+}
+.owner-content_contact .owner-info_contact .btn-funcs_wrapper .btn-func-contact:hover {
+  opacity: 0.8;
+}
+
+.customer-content_contact {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1.5px solid var(--bg-light-w-blue, #EBF3FF);
+  border-radius: 8px;
+  border-right: 1.5px solid #FFE9E9;
+  border-bottom: 1.5px solid #FFE9E9;
+  border-left: 1.5px solid #FFE9E9;
+  background: #FFFDFD;
+}
+.customer-content_contact .customer-title {
+  color: #000929;
+  /* Body / Medium 150% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  opacity: 0.5;
+}
+.customer-content_contact .customer-info_contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.customer-content_contact .customer-info_contact .customer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.customer-content_contact .customer-info_contact .customer-info .customer-name {
+  color: #000929;
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.customer-content_contact .customer-info_contact .customer-info .customer-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.customer-content_contact .customer-info_contact .customer-info .customer-note .font-light-grey {
+  color: #000929;
+  /* Body / Small 140% / Medium */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  /* 19.6px */
+  opacity: 0.5;
+}
+.customer-content_contact .customer-info_contact .btn-funcs_wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
+}
+.customer-content_contact .customer-info_contact .btn-funcs_wrapper .btn-func-contact,
+.customer-content_contact .customer-info_contact .btn-funcs_wrapper .btn-func_add-note {
+  padding: 12px 15px;
+  border-radius: 8px;
+  background: #FFF0F0;
+}
+.customer-content_contact .customer-info_contact .btn-funcs_wrapper .btn-func-contact:hover,
+.customer-content_contact .customer-info_contact .btn-funcs_wrapper .btn-func_add-note:hover {
+  opacity: 0.8;
+}
+.customer-content_contact .add-customer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.customer-content_contact .add-customer .font-orange {
+  /* Body / Small 140% / Bold */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+  /* 19.6px */
 }
 
 .info-detail {
@@ -747,7 +816,7 @@ select {
   align-self: stretch;
 }
 .range-slider-section .range-slider-wrapper .range-slider-area .slide-container .range-slider .slider {
-  width: 65%;
+  width: 63%;
   height: 6px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -773,7 +842,7 @@ select {
 }
 .range-slider-section .range-slider-wrapper .range-slider-area .slide-container .range-slider .text {
   display: flex;
-  width: 25%;
+  width: 26%;
   padding: 10px 15px;
   align-items: center;
   gap: 20px;
@@ -915,11 +984,11 @@ select {
   background: #FFFDFD;
 }
 .prenium-section .prenium-body .prenium-chart {
-  width: 65%;
+  width: 63%;
   padding: 20px;
   height: 228px;
 }
-.prenium-section .prenium-body .line {
+.prenium-section .prenium-body .line-seperate {
   width: 1px;
   height: 100%;
   align-self: stretch;
@@ -1007,7 +1076,7 @@ select {
   letter-spacing: -0.5px;
   text-transform: uppercase;
 }
-.prenium-section .prenium-body .prenium-range-slider .line {
+.prenium-section .prenium-body .prenium-range-slider .line-seperate {
   width: 100%;
   height: 1px;
   background: #EEE;
@@ -1105,7 +1174,7 @@ select {
   letter-spacing: -0.24px;
 }
 
-.flex-container {
+.grid-temp-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 1240px;
@@ -1273,7 +1342,6 @@ select {
 
 .font-plus-jakarta {
   font-family: Plus Jakarta Sans;
-  background-color: white;
 }
 
 .font-big-red {
@@ -1612,8 +1680,17 @@ select {
 .card-deal .mask-group {
   width: 100%;
   padding-top: 51%;
-  background: url(../img/r-architecture-0tKCSyLXqQM-unsplash\ 1.png);
   border-top-right-radius: 10px;
+  position: relative;
+}
+.card-deal .mask-group .card-deal-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .card-deal .like-btn {
   width: 40px;
@@ -1629,6 +1706,9 @@ select {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.card-deal .like-btn.click svg {
+  fill: #002051;
 }
 .card-deal .text {
   display: flex;
@@ -1771,7 +1851,7 @@ select {
   flex-direction: column;
   position: absolute;
   left: -9px;
-  top: 172px;
+  bottom: -24px;
 }
 .card-deal .sell-tag .sell-tag-wrapper {
   width: 110px;
@@ -1795,7 +1875,7 @@ select {
   flex-direction: column;
   position: absolute;
   left: -9px;
-  top: 172px;
+  bottom: -24px;
 }
 .card-deal .rent-tag .rent-tag-wrapper {
   width: 110px;
@@ -1827,6 +1907,13 @@ select {
 
 .btn-r-25 {
   border-radius: 25px !important;
+}
+
+.btn-disable {
+  opacity: 0.2;
+}
+.btn-disable:hover {
+  cursor: default !important;
 }
 
 .btn-orange {
@@ -1902,7 +1989,7 @@ select {
   cursor: pointer;
 }
 
-.btn-funcs:hover, .btn:hover, .btn-black:hover, .btn-orange:hover, .btn-dark-grey:hover, .btn-navy:hover, .search-btn:hover, .btn-func:hover, .btn-success:hover {
+.btn-funcs:hover, .btn:hover, .btn-black:hover, .btn-orange:hover, .btn-dark-grey:hover, .btn-navy:hover, .search-btn:hover, .btn-func:hover, .btn-success:hover, .like-btn:hover {
   opacity: 0.8;
 }
 
