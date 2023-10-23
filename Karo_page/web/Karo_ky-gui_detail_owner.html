@@ -861,11 +861,11 @@
                     <div class="count-down-card">
                         <div class="status">
                             <p class="font-white">Trạng thái giao dịch</p>
-                            <div class="plan">Sẵn sàng</div>
+                            <div class="plan status-color_green">Sẵn sàng</div> <!-- status-color: _yellow, _orange, _red -->
                         </div>
                         <div class="doughnut-chart">
                             <div class="chart-section">
-                                <canvas id="doughnutChart"></canvas>
+                                <canvas id="doughnutChart"></canvas> <!-- search id doughnutChart -->
                             </div>
                             <p class="font-white">Khi hết thời hạn, tin đăng của bạn sẽ tạm ẩn, bạn cần làm mới giao
                                 dịch để
@@ -2025,7 +2025,7 @@
                 label: 'Thời gian',
                 data: [30, 0],
                 backgroundColor: [
-                    '#60EE1E',
+                    '#60EE1E', // change status color here
                     '#EBF3FF;'
                 ],
                 borderColor: [
