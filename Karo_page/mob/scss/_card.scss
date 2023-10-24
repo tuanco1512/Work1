@@ -1,76 +1,87 @@
 .count-down-card {
     display: flex;
-    width: 350px;
-    padding: 20px;
+    width: 100%;
+    padding: 25px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
     border-radius: 8px;
     background: #002051;
     box-sizing: border-box;
 
-    .status {
+    .count-down-section {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+        align-self: stretch;
 
         .font-white {
-            font-feature-settings: 'ss04' on, 'ss06' on, 'liga' off;
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 11px;
+            font-weight: 400;
             line-height: 150%;
-            /* 27px */
-        }
-
-        .plan {
-            display: inline-flex;
-            padding: 6px 10px;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.10);
-            color: #60EE1E;
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 140%;
-            /* 19.6px */
+            /* 16.5px */
         }
     }
 
-    .doughnut-chart {
+    .count-down-title {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 20px;
         align-self: stretch;
+    }
 
-        .chart-section {
-            width: 180px;
-            height: 100px;
-        }
+    .font-white {
+        font-feature-settings: 'ss04' on, 'ss06' on, 'liga' off;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+        /* 27px */
+    }
 
-        .font-white {
-            align-self: stretch;
-            color: var(--main-color-white, #FFF);
-            text-align: center;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 150%;
-            /* 18px */
-        }
+    .plan {
+        display: inline-flex;
+        padding: 6px 10px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.10);
+        color: #60EE1E;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        /* 19.6px */
+    }
+
+    .time_count-down {
+        color: var(--blue-8th, #C8DDFF);
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 125%;
+        /* 15px */
+        letter-spacing: -0.12px;
     }
 
     .btn-extend {
         display: flex;
         width: -webkit-fill-available;
-        padding: 13px 24px;
+        padding: 10px 24px;
         justify-content: center;
         align-items: center;
         gap: 10px;
         border-radius: 8px;
+        color: #FF5358;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
         background: #FFF;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
+            opacity: 0.8;
+        }
+
+        &:hover.btn-disable{
+            opacity: 0.2;
         }
     }
 }

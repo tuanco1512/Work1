@@ -347,11 +347,13 @@ select {
 
 .about-work-wrapper {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   width: 100%;
   max-width: 100%;
   padding: 24px 20px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .about {
@@ -1078,6 +1080,7 @@ select {
 }
 
 .work-wrapper {
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1363,29 +1366,42 @@ select {
 
 .count-down-card {
   display: flex;
-  width: 350px;
-  padding: 20px;
+  width: 100%;
+  padding: 25px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  gap: 20px;
   border-radius: 8px;
   background: #002051;
   box-sizing: border-box;
 }
-.count-down-card .status {
+.count-down-card .count-down-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  align-self: stretch;
 }
-.count-down-card .status .font-white {
+.count-down-card .count-down-section .font-white {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 150%;
+  /* 16.5px */
+}
+.count-down-card .count-down-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.count-down-card .font-white {
   font-feature-settings: "ss04" on, "ss06" on, "liga" off;
   font-size: 18px;
   font-weight: 700;
   line-height: 150%;
   /* 27px */
 }
-.count-down-card .status .plan {
+.count-down-card .plan {
   display: inline-flex;
   padding: 6px 10px;
   border-radius: 12px;
@@ -1396,39 +1412,35 @@ select {
   line-height: 140%;
   /* 19.6px */
 }
-.count-down-card .doughnut-chart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  align-self: stretch;
-}
-.count-down-card .doughnut-chart .chart-section {
-  width: 180px;
-  height: 100px;
-}
-.count-down-card .doughnut-chart .font-white {
-  align-self: stretch;
-  color: var(--main-color-white, #FFF);
+.count-down-card .time_count-down {
+  color: var(--blue-8th, #C8DDFF);
   text-align: center;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 150%;
-  /* 18px */
+  font-weight: 700;
+  line-height: 125%;
+  /* 15px */
+  letter-spacing: -0.12px;
 }
 .count-down-card .btn-extend {
   display: flex;
   width: -webkit-fill-available;
-  padding: 13px 24px;
+  padding: 10px 24px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 8px;
+  color: #FF5358;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
   background: #FFF;
 }
 .count-down-card .btn-extend:hover {
   cursor: pointer;
+  opacity: 0.8;
+}
+.count-down-card .btn-extend:hover.btn-disable {
+  opacity: 0.2;
 }
 
 .slide-card {
@@ -1836,6 +1848,13 @@ select {
   border-radius: 25px !important;
 }
 
+.btn-disable {
+  opacity: 0.2;
+}
+.btn-disable:hover {
+  cursor: default !important;
+}
+
 .btn-orange {
   background: #EC1F25;
   color: #fff;
@@ -1909,7 +1928,15 @@ select {
   cursor: pointer;
 }
 
-.btn-funcs:hover, .btn:hover, .btn-black:hover, .btn-orange:hover, .btn-dark-grey:hover, .btn-navy:hover, .search-btn:hover, .btn-func:hover, .btn-success:hover {
+.btn-funcs:hover,
+.btn:hover,
+.btn-black:hover,
+.btn-orange:hover,
+.btn-dark-grey:hover,
+.btn-navy:hover,
+.search-btn:hover,
+.btn-func:hover,
+.btn-success:hover {
   opacity: 0.8;
 }
 
