@@ -4,6 +4,11 @@ $('.btn-menu').click(function(){
     $('.side-menu').toggleClass("show");
 });
 
+$('.btn-close').click(function(){
+    $(this).toggleClass("click");
+    $('.side-menu').toggleClass("show");
+});
+
 $('.sell-btn').click(function(){
     $('.sell-list_group').toggleClass("show");
     $('.side-menu_nav .first').toggleClass("rotate");

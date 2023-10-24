@@ -1,54 +1,60 @@
 /* reset styles */
 * {
-    color: inherit;
-    margin: 0;
-  }
+  color: inherit;
+  margin: 0;
+}
 
-  ._mob{
-    width: 375px !important;
-  }
-  
-  .wrapper {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 35px;
-    background-color: white;
-    font-size: $base-font-size;
-    color: black;
-  }
-  
-  ul {
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  hr {
-    border: 0;
-    border-top: 1px dotted #efefef;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  .test {
-    color: $primary;
-  }
+._mob {
+  width: 375px !important;
+  display: flex !important;
+  padding-bottom: 0px !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+}
 
-  .disable{
-    opacity: 0.2;
-    &:hover{
-      cursor: default !important;
-    }
-  }
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+  background-color: white;
+  font-size: $base-font-size;
+  color: black;
+}
 
-  select{
-    cursor: pointer;
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted #efefef;
+}
+
+img {
+  max-width: 100%;
+}
+
+.test {
+  color: $primary;
+}
+
+.disable {
+  opacity: 0.2;
+
+  &:hover {
+    cursor: default !important;
   }
+}
+
+select {
+  cursor: pointer;
+}

@@ -114,6 +114,11 @@ a {
 
 ._mob {
   width: 375px !important;
+  display: flex !important;
+  padding-bottom: 0px !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
 }
 
 .wrapper {
@@ -162,29 +167,30 @@ select {
 }
 
 .intro-container_main {
-  display: flex;
-  flex-direction: column;
-  width: 1240px;
-  gap: 35px;
   max-width: 100%;
-  padding: 0 30px;
   box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro {
-  width: 100%;
   display: flex;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 15px;
 }
 .intro .nav-container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   color: #808494;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 150%;
   /* 27px */
   text-transform: capitalize;
@@ -197,49 +203,43 @@ select {
   width: 100%;
 }
 .intro .title .font-black {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 140%;
-  /* 44.8px */
-  letter-spacing: -0.32px;
-}
-.intro .title .sub-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-.intro .title .sub-title .font-light-grey {
-  color: #000929;
-  /* Body/XLarge 160%/Medium */
   font-size: 20px;
-  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  /* 30px */
+  letter-spacing: -0.2px;
+}
+.intro .title .font-light-grey {
+  color: #000929;
+  font-size: 13px;
   font-weight: 500;
   line-height: 160%;
-  /* 32px */
-  letter-spacing: -0.1px;
+  /* 20.8px */
+  letter-spacing: -0.065px;
   opacity: 0.5;
 }
-.intro .title .sub-title .function-container {
+.intro .function-container {
   display: flex;
-  align-items: flex-start;
-  gap: 19px;
+  align-items: center;
+  gap: 16px;
 }
-.intro .title .sub-title .function-container .font-blue {
+.intro .function-container .font-blue {
   background: #F5F9FF;
   text-align: center;
   font-feature-settings: "ss04" on, "ss06" on, "liga" off;
   /* Body/Medium 150%/Bold */
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 150%;
   /* 24px */
 }
 
 .img-section {
-  display: inline-flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 34px;
+  gap: 10px;
 }
 .img-section .big-img-wrapper {
   position: relative;
@@ -2070,14 +2070,27 @@ select {
   background: rgba(0, 0, 0, 0.6);
   transition: left 0.4s ease;
 }
-.navbar .nav-container .right-section .side-menu .text, .navbar-white .nav-container .right-section .side-menu .text, .navbar-black .nav-container .right-section .side-menu .text, .navbar-gray .nav-container .right-section .side-menu .text, .navbar-purple .nav-container .right-section .side-menu .text, .navbar-orange .nav-container .right-section .side-menu .text, .navbar-green .nav-container .right-section .side-menu .text, .navbar-yellow .nav-container .right-section .side-menu .text, .navbar-red .nav-container .right-section .side-menu .text, .navbar-blue .nav-container .right-section .side-menu .text, .navbar-info .nav-container .right-section .side-menu .text, .navbar-error .nav-container .right-section .side-menu .text, .navbar-secondary .nav-container .right-section .side-menu .text, .navbar-primary .nav-container .right-section .side-menu .text {
-  display: flex;
+.navbar .nav-container .right-section .side-menu .side-menu_title, .navbar-white .nav-container .right-section .side-menu .side-menu_title, .navbar-black .nav-container .right-section .side-menu .side-menu_title, .navbar-gray .nav-container .right-section .side-menu .side-menu_title, .navbar-purple .nav-container .right-section .side-menu .side-menu_title, .navbar-orange .nav-container .right-section .side-menu .side-menu_title, .navbar-green .nav-container .right-section .side-menu .side-menu_title, .navbar-yellow .nav-container .right-section .side-menu .side-menu_title, .navbar-red .nav-container .right-section .side-menu .side-menu_title, .navbar-blue .nav-container .right-section .side-menu .side-menu_title, .navbar-info .nav-container .right-section .side-menu .side-menu_title, .navbar-error .nav-container .right-section .side-menu .side-menu_title, .navbar-secondary .nav-container .right-section .side-menu .side-menu_title, .navbar-primary .nav-container .right-section .side-menu .side-menu_title {
+  position: relative;
+}
+.navbar .nav-container .right-section .side-menu .side-menu_title .text, .navbar-white .nav-container .right-section .side-menu .side-menu_title .text, .navbar-black .nav-container .right-section .side-menu .side-menu_title .text, .navbar-gray .nav-container .right-section .side-menu .side-menu_title .text, .navbar-purple .nav-container .right-section .side-menu .side-menu_title .text, .navbar-orange .nav-container .right-section .side-menu .side-menu_title .text, .navbar-green .nav-container .right-section .side-menu .side-menu_title .text, .navbar-yellow .nav-container .right-section .side-menu .side-menu_title .text, .navbar-red .nav-container .right-section .side-menu .side-menu_title .text, .navbar-blue .nav-container .right-section .side-menu .side-menu_title .text, .navbar-info .nav-container .right-section .side-menu .side-menu_title .text, .navbar-error .nav-container .right-section .side-menu .side-menu_title .text, .navbar-secondary .nav-container .right-section .side-menu .side-menu_title .text, .navbar-primary .nav-container .right-section .side-menu .side-menu_title .text {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
   line-height: 65px;
   letter-spacing: 1px;
   background-color: #FFF;
+}
+.navbar .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-white .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-black .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-gray .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-purple .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-orange .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-green .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-yellow .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-red .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-blue .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-info .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-error .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-secondary .nav-container .right-section .side-menu .side-menu_title .btn-close, .navbar-primary .nav-container .right-section .side-menu .side-menu_title .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+.navbar .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-white .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-black .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-gray .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-purple .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-orange .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-green .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-yellow .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-red .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-blue .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-info .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-error .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-secondary .nav-container .right-section .side-menu .side-menu_title .btn-close :hover, .navbar-primary .nav-container .right-section .side-menu .side-menu_title .btn-close :hover {
+  cursor: pointer;
+}
+.navbar .nav-container .right-section .side-menu .side-menu_nav, .navbar-white .nav-container .right-section .side-menu .side-menu_nav, .navbar-black .nav-container .right-section .side-menu .side-menu_nav, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav, .navbar-green .nav-container .right-section .side-menu .side-menu_nav, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav, .navbar-red .nav-container .right-section .side-menu .side-menu_nav, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav, .navbar-info .nav-container .right-section .side-menu .side-menu_nav, .navbar-error .nav-container .right-section .side-menu .side-menu_nav, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav {
+  background: #FFF;
 }
 .navbar .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active a, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active a {
   color: #FF5358;
@@ -2293,8 +2306,8 @@ select {
 .navbar .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-white .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-black .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-green .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-red .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-info .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-error .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav .side-menu_nav-link:last-child {
   border-bottom: 1px solid #E6E6E6;
 }
-.navbar .nav-container .right-section .side-menu .side-menu_nav, .navbar-white .nav-container .right-section .side-menu .side-menu_nav, .navbar-black .nav-container .right-section .side-menu .side-menu_nav, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav, .navbar-green .nav-container .right-section .side-menu .side-menu_nav, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav, .navbar-red .nav-container .right-section .side-menu .side-menu_nav, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav, .navbar-info .nav-container .right-section .side-menu .side-menu_nav, .navbar-error .nav-container .right-section .side-menu .side-menu_nav, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav {
-  background: #FFF;
+.navbar .nav-container .right-section .side-menu .side-menu_background, .navbar-white .nav-container .right-section .side-menu .side-menu_background, .navbar-black .nav-container .right-section .side-menu .side-menu_background, .navbar-gray .nav-container .right-section .side-menu .side-menu_background, .navbar-purple .nav-container .right-section .side-menu .side-menu_background, .navbar-orange .nav-container .right-section .side-menu .side-menu_background, .navbar-green .nav-container .right-section .side-menu .side-menu_background, .navbar-yellow .nav-container .right-section .side-menu .side-menu_background, .navbar-red .nav-container .right-section .side-menu .side-menu_background, .navbar-blue .nav-container .right-section .side-menu .side-menu_background, .navbar-info .nav-container .right-section .side-menu .side-menu_background, .navbar-error .nav-container .right-section .side-menu .side-menu_background, .navbar-secondary .nav-container .right-section .side-menu .side-menu_background, .navbar-primary .nav-container .right-section .side-menu .side-menu_background {
+  height: 100%;
 }
 .navbar .nav-container .right-section .side-menu.show, .navbar-white .nav-container .right-section .side-menu.show, .navbar-black .nav-container .right-section .side-menu.show, .navbar-gray .nav-container .right-section .side-menu.show, .navbar-purple .nav-container .right-section .side-menu.show, .navbar-orange .nav-container .right-section .side-menu.show, .navbar-green .nav-container .right-section .side-menu.show, .navbar-yellow .nav-container .right-section .side-menu.show, .navbar-red .nav-container .right-section .side-menu.show, .navbar-blue .nav-container .right-section .side-menu.show, .navbar-info .nav-container .right-section .side-menu.show, .navbar-error .nav-container .right-section .side-menu.show, .navbar-secondary .nav-container .right-section .side-menu.show, .navbar-primary .nav-container .right-section .side-menu.show {
   left: 0px;
