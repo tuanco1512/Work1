@@ -1617,6 +1617,9 @@ select {
   cursor: pointer;
   opacity: 0.8;
 }
+.count-down-card .btn-extend:hover.btn-disable {
+  opacity: 0.2;
+}
 
 .slide-card {
   display: flex;
