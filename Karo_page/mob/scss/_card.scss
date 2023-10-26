@@ -1,4 +1,4 @@
-.count-down-card {
+.count-down-card._mob {
     display: flex;
     width: 100%;
     padding: 25px;
@@ -45,9 +45,20 @@
     .current-progress {
         display: block;
         border-radius: 8px;
-        background: #60EE1E;
         height: 8px;
         transition: left 0.4s ease;
+    }
+
+    .current-progress.green{
+        background: #60EE1E;
+    }
+
+    .current-progress.orange{
+        background: #EE821E;
+    }
+
+    .current-progress.red{
+        background: #EE501E;
     }
 
     .font-white {
@@ -63,11 +74,22 @@
         padding: 6px 10px;
         border-radius: 12px;
         background: rgba(255, 255, 255, 0.10);
-        color: #60EE1E;
         font-size: 14px;
         font-weight: 600;
         line-height: 140%;
         /* 19.6px */
+    }
+
+    .plan.green{
+        color: #60EE1E;
+    }
+
+    .plan.orange{
+        color: #EE821E;
+    }
+
+    .plan.red{
+        color: #EE501E;
     }
 
     .time_count-down {
@@ -105,7 +127,7 @@
     }
 }
 
-.slide-card {
+.slide-card._mob {
     display: flex;
     width: 100%;
     padding: 20px;
@@ -197,7 +219,7 @@
         .price {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             gap: 4px;
 
             .font-grey {
@@ -361,6 +383,8 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: auto;
+        width: 100%;
+        box-sizing: border-box;
 
         .text-wrapper {
             display: flex;
