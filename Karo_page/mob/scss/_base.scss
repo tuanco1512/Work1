@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body.overflow-hidden{
+ overflow: hidden;
+}
+
 ._mob {
   width: 375px !important;
   display: flex !important;
@@ -47,12 +51,14 @@ img {
   color: $primary;
 }
 
-.disable {
-  opacity: 0.2;
+.grid-temp-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  &:hover {
-    cursor: default !important;
-  }
+.grid-temp-1{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 select {

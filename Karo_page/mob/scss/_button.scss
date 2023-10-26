@@ -16,12 +16,12 @@
     border-radius: 25px !important;
 }
 
-.btn-disable {
+.btn-disable{
     opacity: 0.2;
-    &:hover {
-        cursor: default !important;
+    &:hover{
+      cursor: default !important;
     }
-}
+  }
 
 .btn-orange {
     background: #EC1F25;
@@ -97,16 +97,8 @@
     cursor: pointer;
 }
 
-.btn-funcs,
-.btn,
-.btn-black,
-.btn-orange,
-.btn-dark-grey,
-.btn-navy,
-.search-btn,
-.btn-func,
-.btn-success {
-    &:hover {
+.btn-funcs, .btn, .btn-black, .btn-orange, .btn-dark-grey, .btn-navy, .search-btn, .btn-func, .btn-success, .like-btn {
+    &:hover{
         opacity: 0.8;
     }
 }

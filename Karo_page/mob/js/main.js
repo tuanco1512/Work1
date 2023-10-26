@@ -2,11 +2,13 @@
 $('.btn-menu').click(function(){
     $(this).toggleClass("click");
     $('.side-menu').toggleClass("show");
+    $('body').toggleClass("overflow-hidden");
 });
 
 $('.btn-close').click(function(){
     $(this).toggleClass("click");
     $('.side-menu').toggleClass("show");
+    $('body').toggleClass("overflow-hidden");
 });
 
 $('.sell-btn').click(function(){
@@ -22,3 +24,10 @@ $('.rent-btn').click(function(){
 $('.side-menu_nav li').click(function(){
     $(this).addClass("active").siblings().removeClass("active");
 });
+
+$('.like-btn').click(function () {
+    $(this).toggleClass('click');
+})
+$('.btn-save_post').click(function () {
+    $(this).toggleClass('click');
+})
