@@ -16,12 +16,13 @@
     border-radius: 25px !important;
 }
 
-.btn-disable{
+.btn-disable {
     opacity: 0.2;
-    &:hover{
-      cursor: default !important;
+
+    &:hover {
+        cursor: default !important;
     }
-  }
+}
 
 .btn-orange {
     background: #EC1F25;
@@ -97,8 +98,18 @@
     cursor: pointer;
 }
 
-.btn-funcs, .btn, .btn-black, .btn-orange, .btn-dark-grey, .btn-navy, .search-btn, .btn-func, .btn-success, .like-btn {
-    &:hover{
+.btn-funcs,
+.btn,
+.btn-black,
+.btn-orange,
+.btn-dark-grey,
+.btn-navy,
+.search-btn,
+.btn-func,
+.btn-success,
+.like-btn,
+.btn-login {
+    &:hover {
         opacity: 0.8;
     }
 }
@@ -113,8 +124,38 @@
 }
 
 .btn-login {
-    background: var(--text-black, #222);
-    color: white;
+    display: flex;
+    padding: 10px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1.5px solid var(--blue-primary, #0844A3);
+
+    .font-blue {
+        color: var(--blue-primary, #0844A3);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 125%;
+        /* 20px */
+    }
+}
+
+.btn-post {
+    display: flex;
+    padding: 10px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+
+    .font-white {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 125%;
+        /* 20px */
+    }
 }
 
 .btn-action {
