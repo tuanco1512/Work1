@@ -455,9 +455,12 @@ select {
   width: 2px;
   height: 16px;
   background: #000929;
+  transform: rotate(0);
+  transition: transform 200ms linear;
 }
 .Karo_FAQ .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question[aria-expanded=true] .icon::after {
-  width: 0;
+  transform: rotate(90deg);
+  transition: transform 200ms linear;
 }
 .Karo_FAQ .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question[aria-expanded=true] + .FAQ-answer {
   opacity: 1;

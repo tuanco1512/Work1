@@ -437,12 +437,15 @@
                         width: 2px;
                         height: 16px;
                         background: #000929;
+                        transform: rotate(0);
+                        transition: transform 200ms linear;
                     }
                 }
 
                 .FAQ-question[aria-expanded='true']{
                     .icon::after{
-                        width: 0;
+                        transform: rotate(90deg);
+                        transition: transform 200ms linear;
                     }
                 }
 
