@@ -85,6 +85,7 @@
     }
 
     .intro-title-container {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -120,6 +121,7 @@
         gap: 30px;
         padding: 0 30px 46px;
         align-self: center;
+        box-sizing: border-box;
 
         .small-img-wrapper {
             position: relative;
@@ -147,7 +149,7 @@
             width: calc(100% - 30px - 40.16%);
             position: relative;
 
-            .big-img{
+            .big-img {
                 width: 100%;
                 padding-top: 57.725%;
 
@@ -161,6 +163,309 @@
                     position: absolute;
                     top: 0;
                     left: 0;
+                }
+            }
+        }
+    }
+}
+
+.about-Karo {
+    width: 100%;
+    background: var(--dark-1st, #000929);
+
+    .about-Karo-wrapper {
+        display: flex;
+        width: 1240px;
+        max-width: 100%;
+        margin: 60px auto;
+        padding: 0 30px;
+        box-sizing: border-box;
+        gap: 16px;
+
+        .about-Karo_left.font-white {
+            width: calc(100% - 16px - 74.435%);
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 132%;
+            /* 60.72px */
+            letter-spacing: -0.46px;
+        }
+
+        .about-Karo_right {
+            width: 74.435%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .font-white {
+                color: #EEE;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 170%;
+                /* 34px */
+            }
+        }
+    }
+}
+
+.vision-mission_karo {
+    width: 100%;
+
+    .vision-mission_karo-wrapper {
+        display: flex;
+        margin: 0 auto;
+        width: 1240px;
+        max-width: 100%;
+        padding: 45px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 50px;
+        box-sizing: border-box;
+
+        .vision-mission_title {
+            display: flex;
+            gap: 30px;
+
+            .Karo-vision,
+            .Karo-mission {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .font-black {
+                    font-size: 46px;
+                    font-weight: 700;
+                    line-height: 132%;
+                    /* 60.72px */
+                    letter-spacing: -0.46px;
+                }
+
+                .font-grey {
+                    color: var(--text-grey, rgba(0, 9, 41, 0.70));
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    /* 177.778% */
+                }
+            }
+        }
+
+        .img-container {
+            width: 100%;
+            position: relative;
+            padding-top: 38.226%;
+
+            .img-content {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 5%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 10px;
+                border: 1px solid rgba(78, 131, 216, 0.10);
+            }
+        }
+    }
+}
+
+.Karo_core-value {
+    width: 100%;
+    background: var(--red-primary, #EC1F25);
+
+    .Karo_core-value-wrapper {
+        width: 1240px;
+        max-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin: 0 auto;
+        padding: 60px 30px 83px;
+
+        .core-value_head {
+            display: flex;
+
+            .core-value_title {
+                width: 100%;
+                color: #EEE;
+                font-size: 46px;
+                font-weight: 700;
+                line-height: 132%;
+                /* 60.72px */
+                letter-spacing: -0.46px;
+            }
+
+            .core-value_text {
+                width: 100%;
+                color: #EEE;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 32px;
+                /* 177.778% */
+            }
+        }
+
+        .grid-temp-4 {
+            gap: 24px;
+
+            .core-value_card {
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                gap: 30px;
+                border-radius: 10px;
+                background: #FFF5F6;
+
+                .core-value_card-number {
+                    display: flex;
+                    width: 56px;
+                    padding: 8px;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 80px;
+                    background: var(--red-2nd, #FF5358);
+
+                    .font-white {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 40px;
+                        /* 166.667% */
+                    }
+                }
+
+                .core-value_card-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+
+                    .font-black {
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 135%;
+                        /* 37.8px */
+                        letter-spacing: -0.28px;
+                    }
+
+                    .font-grey {
+                        color: var(--text-grey, rgba(0, 9, 41, 0.70));
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 32px;
+                        /* 200% */
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.Karo_FAQ {
+    width: 100%;
+    border-bottom: 1px solid var(--bg-red, #FFF0F0);
+
+    .Karo_FAQ-wrapper {
+        width: 1240px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 16px 30px 42px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+
+        .FAQ-title {
+            color: var(--text-black, #000929);
+            font-size: 46px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 132%;
+            /* 60.72px */
+            letter-spacing: -0.46px;
+        }
+
+        .FAQ-info {
+            width: 57.42%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .FAQ-example {
+                display: flex;
+                padding-bottom: 0px;
+                flex-direction: column;
+                gap: 10px;
+                border-bottom: 1px solid rgba(0, 9, 41, 0.10);
+
+                .FAQ-question {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .font-black {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 40px;
+                        /* 200% */
+                        letter-spacing: -0.2px;
+                    }
+
+                    .icon {
+                        box-sizing: border-box;
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        padding: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px;
+                        background: var(--bg-light-blue, #F5F9FF);
+                    }
+
+                    .icon::before{
+                        content: '';
+                        width: 16px;
+                        height: 2px;
+                        background: #000929;
+                    }
+
+                    .icon::after{
+                        position: absolute;
+                        content: '';
+                        width: 2px;
+                        height: 16px;
+                        background: #000929;
+                    }
+                }
+
+                .FAQ-question[aria-expanded='true']{
+                    .icon::after{
+                        width: 0;
+                    }
+                }
+
+                .FAQ-question[aria-expanded='true'] + .FAQ-answer{
+                    opacity: 1;
+                    max-height: 9em;
+                    transition: all 200ms linear;
+                    will-change: opacity, max-height;
+                }
+
+                .FAQ-answer {
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: opacity 200ms linear, max-height 200ms linear;
+                    will-change: opacity, max-height ;
+                    color: var(--text-light-grey, rgba(0, 9, 41, 0.50));
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 155%;
+                    /* 26.35px */
+                    letter-spacing: -0.17px;
+                    padding-bottom: 15px;
                 }
             }
         }
