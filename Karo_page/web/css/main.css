@@ -139,7 +139,7 @@ select {
   flex-direction: column;
   gap: 50px;
   width: 1240px;
-  padding: 28px 30px 30px;
+  padding: 63px 30px 30px;
   max-width: 100%;
   align-self: center;
 }
@@ -165,7 +165,7 @@ select {
   max-width: 100%;
   display: flex;
   gap: 30px;
-  padding: 0 30px 46px;
+  padding: 0 30px 81px;
   align-self: center;
   box-sizing: border-box;
 }
@@ -245,6 +245,121 @@ select {
   /* 34px */
 }
 
+.Karo-services {
+  width: 100%;
+  background: linear-gradient(180deg, #FFFDFD 5.02%, #F0F6FF 100%);
+}
+.Karo-services .Karo-services-wrapper {
+  width: 1240px;
+  max-width: 100%;
+  margin: 75px auto 76px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info {
+  width: 34.355%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .services-title {
+  color: var(--text-black, #000929);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 132%;
+  /* 60.72px */
+  letter-spacing: -0.46px;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .services-subtitle {
+  color: var(--text-light-grey, rgba(0, 9, 41, 0.5));
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 160%;
+  /* 28.8px */
+  letter-spacing: -0.09px;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .services-content .services-content_detail {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .services-content .services-content_detail .btn_icon-done {
+  display: flex;
+  padding: 4.8px;
+  align-items: center;
+  border-radius: 48px;
+  background: #0844A3;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .services-content .services-content_detail .font-black {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  /* 25.2px */
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .function-container {
+  display: flex;
+  gap: 15px;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .function-container .btn-deposit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 25px;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--red-primary, #EC1F25);
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .function-container .btn-deposit:hover {
+  opacity: 0.8;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .function-container .btn-deposit .font-white {
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .function-container .btn-see-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 25px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1.5px solid var(--blue-primary, #0844A3);
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .function-container .btn-see-more:hover {
+  opacity: 0.8;
+}
+.Karo-services .Karo-services-wrapper .Karo-services_info .function-container .btn-see-more .font-blue {
+  color: var(--blue-primary, #0844A3);
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo-services .Karo-services-wrapper .img-container {
+  width: 44.92%;
+  position: relative;
+}
+.Karo-services .Karo-services-wrapper .img-container .img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .vision-mission_karo {
   width: 100%;
 }
@@ -253,7 +368,7 @@ select {
   margin: 0 auto;
   width: 1240px;
   max-width: 100%;
-  padding: 45px 30px;
+  padding: 80px 30px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -386,6 +501,203 @@ select {
   /* 200% */
 }
 
+.Karo_landlords-tenants {
+  width: 100%;
+  background: var(--dark-1st, #000929);
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+}
+.Karo_landlords-tenants .Karo_landlords-tenants_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 82px 30px;
+  width: 1240px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.Karo_landlords-tenants .landlords-tenants_text {
+  width: 45.16%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.Karo_landlords-tenants .landlords-tenants_text .landlords-tenants_title {
+  color: #EEE;
+  /* Heading/H2 */
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 56px */
+  letter-spacing: -0.4px;
+}
+.Karo_landlords-tenants .landlords-tenants_text .landlords-tenants_sub-title {
+  color: #EEE;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+}
+.Karo_landlords-tenants .landlords-tenants_text .btn-sign-up {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--red-primary, #EC1F25);
+}
+.Karo_landlords-tenants .landlords-tenants_text .btn-sign-up:hover {
+  opacity: 0.8;
+}
+.Karo_landlords-tenants .landlords-tenants_text .btn-sign-up .font-white {
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo_landlords-tenants .landlords-tenants_img {
+  width: 53.55%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  padding-bottom: 48px;
+}
+.Karo_landlords-tenants .landlords-tenants_img .intro-card.card-1 {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 1;
+}
+.Karo_landlords-tenants .landlords-tenants_img .intro-card.card-2 {
+  position: relative;
+}
+.Karo_landlords-tenants .landlords-tenants_img .intro-card.card-2 .intro-card_icon {
+  position: absolute;
+  top: -34px;
+  right: 32px;
+}
+.Karo_landlords-tenants .landlords-tenants_img .img-container {
+  width: 81.93%;
+  position: relative;
+  padding-top: 110.294%;
+}
+.Karo_landlords-tenants .landlords-tenants_img .img-container .img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  background: #C4C4C4;
+}
+
+.Karo-contact {
+  width: 100%;
+  background: linear-gradient(180deg, #FFF 0%, #F0F6FF 100%);
+  display: flex;
+  justify-content: center;
+}
+.Karo-contact .Karo-contact_wrapper {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.Karo-contact .Karo-contact_wrapper .karo-contact_headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.Karo-contact .Karo-contact_wrapper .karo-contact_headline .Karo-contact_title {
+  color: var(--main-color-black, #000929);
+  /* Heading/H2 */
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  /* 56px */
+  letter-spacing: -0.4px;
+}
+.Karo-contact .Karo-contact_wrapper .karo-contact_headline .Karo-contact_subtitle {
+  color: #0945A3;
+  /* Body / Medium 160% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+}
+.Karo-contact .Karo-contact_wrapper .Karo-contact_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Karo-contact .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 16px 19.5px;
+  width: 543px;
+  height: 80px;
+  max-width: 100%;
+  border-radius: 8px;
+  background: var(--main-color-white, #FFF);
+}
+.Karo-contact .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email .email-input_contact {
+  width: 100%;
+  border: none;
+  color: var(--main-color-black, #000929);
+  /* Body / Large 145% / Medium */
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 145%;
+  /* 26.1px */
+  letter-spacing: -0.09px;
+  opacity: 0.5;
+}
+.Karo-contact .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email .btn-submit {
+  display: flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  background: #0945A3;
+  color: var(--main-color-white, #FFF);
+  text-align: center;
+  /* Body/Medium 150%/Bold */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo-contact .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email .btn-submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.Karo-contact .Karo-contact_wrapper .Karo-contact_input .font-black {
+  color: #444;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 18px */
+  letter-spacing: -0.12px;
+}
+
 .Karo_FAQ {
   width: 100%;
   border-bottom: 1px solid var(--bg-red, #FFF0F0);
@@ -394,7 +706,7 @@ select {
   width: 1240px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 16px 30px 42px;
+  padding: 51px 30px 77px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -2379,6 +2691,48 @@ select {
   line-height: 16px;
   /* 133.333% */
   letter-spacing: 0.5px;
+}
+
+.intro-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 21px 24px 32px;
+  border-radius: 8px;
+  border: 1.5px solid var(--red-3rd, #FFB7B9);
+  background: var(--main-color-white, #FFF);
+  box-shadow: 0px 0px 50px 0px rgba(112, 101, 240, 0.2);
+}
+.intro-card .intro-card_icon {
+  width: 64px;
+  height: 64px;
+  background: #FFF0F0;
+  border: 2px solid #FFB7B9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-card .intro-card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.intro-card .intro-card_text .font-blue {
+  color: var(--main-color-secondary, #100A55);
+  /* Body / XLarge 160% / Bold */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 160%;
+  /* 32px */
+  letter-spacing: -0.1px;
+}
+.intro-card .intro-card_text .font-grey {
+  color: var(--greyscale-grey-600, #4D5461);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  /* 25.6px */
 }
 
 .btn {

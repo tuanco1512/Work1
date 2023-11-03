@@ -90,7 +90,7 @@
         flex-direction: column;
         gap: 50px;
         width: 1240px;
-        padding: 28px 30px 30px;
+        padding: 63px 30px 30px;
         max-width: 100%;
         align-self: center;
 
@@ -119,7 +119,7 @@
         max-width: 100%;
         display: flex;
         gap: 30px;
-        padding: 0 30px 46px;
+        padding: 0 30px 81px;
         align-self: center;
         box-sizing: border-box;
 
@@ -208,6 +208,141 @@
     }
 }
 
+.Karo-services {
+    width: 100%;
+    background: linear-gradient(180deg, #FFFDFD 5.02%, #F0F6FF 100%);
+
+    .Karo-services-wrapper {
+        width: 1240px;
+        max-width: 100%;
+        margin: 75px auto 76px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        .Karo-services_info {
+            width: 34.355%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+
+            .services-title {
+                color: var(--text-black, #000929);
+                font-size: 46px;
+                font-weight: 700;
+                line-height: 132%;
+                /* 60.72px */
+                letter-spacing: -0.46px;
+            }
+
+            .services-subtitle {
+                color: var(--text-light-grey, rgba(0, 9, 41, 0.50));
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 160%;
+                /* 28.8px */
+                letter-spacing: -0.09px;
+            }
+
+            .services-content {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+
+                .services-content_detail {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+
+                    .btn_icon-done {
+                        display: flex;
+                        padding: 4.8px;
+                        align-items: center;
+                        border-radius: 48px;
+                        background: #0844A3;
+                        width: 24px;
+                        height: 24px;
+                        box-sizing: border-box;
+                    }
+
+                    .font-black {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 140%;
+                        /* 25.2px */
+                    }
+
+                }
+            }
+
+            .function-container {
+                display: flex;
+                gap: 15px;
+
+                .btn-deposit {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 12px 25px;
+                    gap: 10px;
+                    border-radius: 10px;
+                    background: var(--red-primary, #EC1F25);
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    .font-white {
+
+                        /* Body/Medium 150%/Bold */
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 150%;
+                        /* 24px */
+                    }
+                }
+
+                .btn-see-more {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 12px 25px;
+                    gap: 10px;
+                    border-radius: 10px;
+                    border: 1.5px solid var(--blue-primary, #0844A3);
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    .font-blue {
+                        color: var(--blue-primary, #0844A3);
+
+                        /* Body/Medium 150%/Bold */
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 150%;
+                        /* 24px */
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            width: 44.92%;
+            position: relative;
+
+            .img-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
 .vision-mission_karo {
     width: 100%;
 
@@ -216,7 +351,7 @@
         margin: 0 auto;
         width: 1240px;
         max-width: 100%;
-        padding: 45px 30px;
+        padding: 80px 30px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -364,6 +499,231 @@
     }
 }
 
+.Karo_landlords-tenants {
+    width: 100%;
+    background: var(--dark-1st, #000929);
+    box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.20);
+
+    .Karo_landlords-tenants_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 82px 30px;
+        width: 1240px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .landlords-tenants_text {
+        width: 45.16%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .landlords-tenants_title {
+            color: #EEE;
+
+            /* Heading/H2 */
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+            /* 56px */
+            letter-spacing: -0.4px;
+        }
+
+        .landlords-tenants_sub-title {
+            color: #EEE;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 160%;
+            /* 25.6px */
+        }
+
+        .btn-sign-up {
+            width: fit-content;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 8px;
+            background: var(--red-primary, #EC1F25);
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            .font-white {
+
+                /* Body/Medium 150%/Bold */
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 150%;
+                /* 24px */
+            }
+        }
+    }
+
+    .landlords-tenants_img {
+        width: 53.55%;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        padding-bottom: 48px;
+
+        .intro-card.card-1 {
+            position: absolute;
+            top: 32px;
+            left: 0;
+            z-index: 1;
+        }
+
+        .intro-card.card-2 {
+            position: relative;
+
+            .intro-card_icon {
+                position: absolute;
+                top: -34px;
+                right: 32px;
+            }
+        }
+
+        .img-container {
+            width: 81.93%;
+            position: relative;
+            padding-top: 110.294%;
+
+            .img-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+                background: #C4C4C4;
+            }
+        }
+    }
+}
+
+.Karo-contact {
+    width: 100%;
+    background: linear-gradient(180deg, #FFF 0%, #F0F6FF 100%);
+    display: flex;
+    justify-content: center;
+
+    .Karo-contact_wrapper {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .karo-contact_headline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            .Karo-contact_title {
+                color: var(--main-color-black, #000929);
+
+                /* Heading/H2 */
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 140%;
+                /* 56px */
+                letter-spacing: -0.4px;
+            }
+
+            .Karo-contact_subtitle {
+                color: #0945A3;
+
+                /* Body / Medium 160% / Medium */
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 160%;
+                /* 25.6px */
+            }
+
+        }
+
+        .Karo-contact_input {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            .Karo-contact_input-email {
+                display: flex;
+                justify-content: space-between;
+                box-sizing: border-box;
+                padding: 16px 19.5px;
+                width: 543px;
+                height: 80px;
+                max-width: 100%;
+                border-radius: 8px;
+                background: var(--main-color-white, #FFF);
+
+                .email-input_contact {
+                    width: 100%;
+                    border: none;
+
+                    color: var(--main-color-black, #000929);
+                    /* Body / Large 145% / Medium */
+                    font-family: Plus Jakarta Sans;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 145%;
+                    /* 26.1px */
+                    letter-spacing: -0.09px;
+                    opacity: 0.5;
+                }
+
+                .btn-submit {
+                    display: flex;
+                    padding: 12px 40px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    border: none;
+                    background: #0945A3;
+                    color: var(--main-color-white, #FFF);
+                    text-align: center;
+
+                    /* Body/Medium 150%/Bold */
+                    font-family: Plus Jakarta Sans;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 150%;
+                    /* 24px */
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            .font-black {
+                color: #444;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 150%;
+                /* 18px */
+                letter-spacing: -0.12px;
+            }
+        }
+    }
+}
+
 .Karo_FAQ {
     width: 100%;
     border-bottom: 1px solid var(--bg-red, #FFF0F0);
@@ -372,7 +732,7 @@
         width: 1240px;
         max-width: 100%;
         margin: 0 auto;
-        padding: 16px 30px 42px;
+        padding: 51px 30px 77px;
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
@@ -424,14 +784,14 @@
                         background: var(--bg-light-blue, #F5F9FF);
                     }
 
-                    .icon::before{
+                    .icon::before {
                         content: '';
                         width: 16px;
                         height: 2px;
                         background: #000929;
                     }
 
-                    .icon::after{
+                    .icon::after {
                         position: absolute;
                         content: '';
                         width: 2px;
@@ -442,14 +802,14 @@
                     }
                 }
 
-                .FAQ-question[aria-expanded='true']{
-                    .icon::after{
+                .FAQ-question[aria-expanded='true'] {
+                    .icon::after {
                         transform: rotate(90deg);
                         transition: transform 200ms linear;
                     }
                 }
 
-                .FAQ-question[aria-expanded='true'] + .FAQ-answer{
+                .FAQ-question[aria-expanded='true']+.FAQ-answer {
                     opacity: 1;
                     max-height: 9em;
                     transition: all 200ms linear;
@@ -461,7 +821,7 @@
                     max-height: 0;
                     overflow: hidden;
                     transition: opacity 200ms linear, max-height 200ms linear;
-                    will-change: opacity, max-height ;
+                    will-change: opacity, max-height;
                     color: var(--text-light-grey, rgba(0, 9, 41, 0.50));
                     font-size: 17px;
                     font-weight: 500;
