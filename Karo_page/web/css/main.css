@@ -180,6 +180,7 @@ select {
 .intro .intro-img .small-img-wrapper .small-img .img-intro-content {
   width: 100%;
   height: 100%;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -200,6 +201,7 @@ select {
 .intro .intro-img .big-img-wrapper .big-img .img-intro-content {
   width: 100%;
   height: 100%;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -355,6 +357,9 @@ select {
   position: relative;
 }
 .Karo-services .Karo-services-wrapper .img-container .img-content {
+  width: 100%;
+  height: 100%;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -409,6 +414,7 @@ select {
 .vision-mission_karo .vision-mission_karo-wrapper .img-container .img-content {
   width: 100%;
   height: 100%;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 5%;
@@ -593,6 +599,7 @@ select {
   left: 0;
   width: 100%;
   height: 100%;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
