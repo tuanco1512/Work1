@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Karo Landing ky gui</title>
+</head>
+
+<body class="font-plus-jakarta">
+    <div class="wrapper _mob">
+        <!-- Karo navbar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="left-section display-f">
+                    <div class="Karo-logo display-f">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_1157_9068)">
+                                <path
+                                    d="M9.95018 10.3924L20.7866 0H5.47043C4.89899 0.000731114 4.33112 0.0901706 3.78711 0.265124L7.96807 9.99053C8.04668 10.1731 8.16833 10.3338 8.32261 10.4591C8.47689 10.5844 8.65921 10.6705 8.85399 10.71C9.04877 10.7495 9.25022 10.7412 9.44111 10.6859C9.63201 10.6306 9.80667 10.5299 9.95018 10.3924Z"
+                                    fill="#EC1F25" />
+                                <path
+                                    d="M16.2523 10.3335L27.9998 14.3503V5.47081C27.9999 4.30699 27.6288 3.17348 26.9404 2.23503C26.2521 1.29658 25.2824 0.602096 24.1724 0.252502L15.7999 8.28196C15.6479 8.42808 15.5359 8.61083 15.4747 8.81266C15.4136 9.0145 15.4053 9.22867 15.4508 9.43462C15.4962 9.64056 15.5937 9.83139 15.7341 9.98879C15.8745 10.1462 16.0529 10.2649 16.2523 10.3335Z"
+                                    fill="#EC1F25" />
+                                <path
+                                    d="M1.61178 1.59705C1.10078 2.10443 0.695278 2.70794 0.418646 3.3728C0.142015 4.03765 -0.000268227 4.75069 3.79603e-07 5.4708L3.79603e-07 22.5145C3.79603e-07 23.9654 0.576387 25.3569 1.60236 26.3829C2.62834 27.4089 4.01986 27.9853 5.47081 27.9853H12.9637L1.61178 1.59705Z"
+                                    fill="#EC1F25" />
+                                <path
+                                    d="M11.6 12.3093L10.5205 13.3446C10.2897 13.5661 10.132 13.8528 10.0684 14.1664C10.0049 14.48 10.0385 14.8055 10.1649 15.0994L15.7115 28H22.5247C23.9757 28 25.3672 27.4236 26.3932 26.3976C27.4192 25.3717 27.9955 23.9801 27.9955 22.5292V17.0184L13.1949 11.9558C12.9222 11.8631 12.6292 11.8471 12.348 11.9094C12.0667 11.9718 11.808 12.1101 11.6 12.3093Z"
+                                    fill="#EC1F25" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1157_9068">
+                                    <rect width="28" height="28" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="logo-title">Karo</div>
+                    </div>
+                </div>
+                <div class="right-section display-f">
+                    <div class="function-container">
+                        <div class="btn-create">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_1667_15982)">
+                                    <path d="M8 2.66663V13.3333" stroke="#EC1F25" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2.66699 8H13.3337" stroke="#EC1F25" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1667_15982">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="font-orange">Tạo</div>
+                        </div>
+                        <div class="btn-notification">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <g clip-path="url(#clip0_1667_15985)">
+                                    <path
+                                        d="M15.5257 12.3707C15.1084 11.6524 14.6109 10.2894 14.6109 7.875V7.37602C14.6109 4.26222 12.1129 1.71044 9.04245 1.68764C9.0281 1.68757 9.01389 1.6875 8.99954 1.6875C7.50961 1.68944 6.08148 2.28315 5.0293 3.33804C3.97712 4.39293 3.38707 5.82258 3.38896 7.3125V7.875C3.38896 10.2892 2.89121 11.6522 2.47373 12.3705C2.37401 12.5413 2.32109 12.7354 2.32032 12.9332C2.31955 13.131 2.37095 13.3255 2.46933 13.4971C2.56771 13.6687 2.7096 13.8113 2.88069 13.9106C3.05178 14.0099 3.24602 14.0623 3.44382 14.0625H6.18717C6.18717 14.8084 6.48349 15.5238 7.01094 16.0512C7.53838 16.5787 8.25375 16.875 8.99967 16.875C9.74559 16.875 10.461 16.5787 10.9884 16.0512C11.5159 15.5238 11.8122 14.8084 11.8122 14.0625H14.5555C14.7533 14.0623 14.9475 14.0099 15.1186 13.9106C15.2896 13.8114 15.4315 13.6688 15.5299 13.4972C15.6283 13.3257 15.6797 13.1312 15.679 12.9334C15.6782 12.7356 15.6254 12.5416 15.5257 12.3707ZM8.99967 15.75C8.55228 15.7495 8.12335 15.5715 7.807 15.2552C7.49064 14.9388 7.31269 14.5099 7.31217 14.0625H10.6872C10.6867 14.5099 10.5087 14.9388 10.1924 15.2552C9.87599 15.5715 9.44707 15.7495 8.99967 15.75Z"
+                                        fill="#000929" />
+                                    <mask id="path-2-outside-1_1667_15985" maskUnits="userSpaceOnUse" x="8.5" y="1"
+                                        width="8" height="8" fill="black">
+                                        <rect fill="white" x="8.5" y="1" width="8" height="8" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15 5.25C15 6.49264 13.9926 7.5 12.75 7.5C11.5074 7.5 10.5 6.49264 10.5 5.25C10.5 4.00736 11.5074 3 12.75 3C13.9926 3 15 4.00736 15 5.25Z" />
+                                    </mask>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 5.25C15 6.49264 13.9926 7.5 12.75 7.5C11.5074 7.5 10.5 6.49264 10.5 5.25C10.5 4.00736 11.5074 3 12.75 3C13.9926 3 15 4.00736 15 5.25Z"
+                                        fill="#EC1F25" />
+                                    <path
+                                        d="M12.75 9C14.8211 9 16.5 7.32107 16.5 5.25H13.5C13.5 5.66421 13.1642 6 12.75 6V9ZM9 5.25C9 7.32107 10.6789 9 12.75 9V6C12.3358 6 12 5.66421 12 5.25H9ZM12.75 1.5C10.6789 1.5 9 3.17893 9 5.25H12C12 4.83579 12.3358 4.5 12.75 4.5V1.5ZM16.5 5.25C16.5 3.17893 14.8211 1.5 12.75 1.5V4.5C13.1642 4.5 13.5 4.83579 13.5 5.25H16.5Z"
+                                        fill="#F6F5FD" mask="url(#path-2-outside-1_1667_15985)" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1667_15985">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="user-login_info">
+                            <img class="user-login_img" src="img/Rectangle 111.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"
+                                fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="#000929" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- intro _mob -->
+        <div class="intro _mob">
+            <div class="intro-title">
+                <div class="font-orange">Dữ liệu dẫn dắt <br>giao dịch thành công</div>
+                <div class="font-grey">Thành lập vào năm 2020, Karo tự hào là đơn vị ứng dụng công nghệ gen AI vào nền tảng giao dịch bất động sản đầu tại Việt Nam</div>
+            </div>
+            <div class="intro-img">
+                <img class="img-content" src="img/image 3.png" alt="">
+            </div>
+        </div>
+
+        <!-- about-Karo _mob -->
+        <div class="about-Karo _mob">
+            <div class="about-Karo_header">Về Karo</div>
+            <div class="about-Karo_body">
+                <div class="font-grey">Karo là nền tảng giao dịch bất động sản đầu tiên tại Việt Nam tiên phong ứng dụng công nghệ gen AI vào các hoạt động phân tích và giao dịch bất động sản. Chúng tôi cung cấp dịch vụ Ký gửi nhà dành cho chủ nhà với các tính năng định giá nhà; hỗ trợ pháp lý và mở rộng - kết nối người dùng là chủ nhà; môi giới; người mua/thuê nhà.</div>
+                <div class="font-grey">Với sức mạnh công nghệ gen AI được huấn luyện từ lõi, Karo mở rộng và phát triển nền tảng trở nên thân thiện hơn với người dùng dựa trên các chỉ số đo lường về mức độ phù hợp với nhu cầu của các bên, hạn chế tối đa chi phí và thời gian giao dịch sau khi đăng tải thông tin ký gửi tại nền tảng.</div>
+            </div>
+        </div>
+
+        <!-- Karo_vision-mission _mob -->
+        <div class="Karo_vision-mission _mob">
+            <div class="Karo-vision">
+                <div class="font-black">Tầm nhìn</div>
+                <div class="font-grey">Karo thúc đẩy phát triển nền tảng thân thiện và kế nối liền mạch với người dùng là chủ nhà; môi giới; người thuê/mua nhà tại Việt Nam</div>
+            </div>
+            <div class="img-container">
+                <img class="img-content" src="img/Image.png" alt="">
+            </div>
+            <div class="Karo-mission">
+                <div class="font-black">Sứ mệnh</div>
+                <div class="font-grey">Xây dựng nền tảng thân thiện và thông minh. Nâng tầm nhận thức của cộng đồng về giá trị thực của tài sản Bất động sản</div>
+            </div>
+        </div>
+
+        <!-- Karo_core-value _mob -->
+        <div class="Karo_core-value _mob">
+            <div class="Karo_core-value-wrapper">
+                <div class="core-value_head">
+                    <div class="core-value_title">Giá trị cốt lõi</div>
+                    <div class="core-value_text">Lấy dữ liệu làm lõi và con người làm trung tâm, Karo kết nối và phát
+                        triển cộng đồng bất động sản bền vững và lớn mạnh.</div>
+                </div>
+                <div class="grid-temp-1">
+                    <div class="core-value_card">
+                        <div class="core-value_card-number">
+                            <div class="font-white">1</div>
+                        </div>
+                        <div class="core-value_card-text">
+                            <div class="font-black">Kết nối <br>mạnh mẽ</div>
+                            <div class="font-grey">Karo kết nối người dùng và dữ liệu liền mạch để phân tích và đánh giá
+                                từng căn nhà</div>
+                        </div>
+                    </div>
+                    <div class="core-value_card">
+                        <div class="core-value_card-number">
+                            <div class="font-white">2</div>
+                        </div>
+                        <div class="core-value_card-text">
+                            <div class="font-black">Giá trị <br>rõ ràng</div>
+                            <div class="font-grey">Với những thuật toán xử lí dữ liệu lớn, Karo cung cấp thông tin thanh
+                                khoản và giá trị rõ ràng</div>
+                        </div>
+                    </div>
+                    <div class="core-value_card">
+                        <div class="core-value_card-number">
+                            <div class="font-white">3</div>
+                        </div>
+                        <div class="core-value_card-text">
+                            <div class="font-black">Lấy dữ liệu làm trung tâm</div>
+                            <div class="font-grey">Tập trung phân tích và đánh giá dữ liệu, phát triển và cung cấp thông
+                                tin chuẩn xác nhất.</div>
+                        </div>
+                    </div>
+                    <div class="core-value_card">
+                        <div class="core-value_card-number">
+                            <div class="font-white">4</div>
+                        </div>
+                        <div class="core-value_card-text">
+                            <div class="font-black">Hệ sinh thái dịch vụ đa dạng</div>
+                            <div class="font-grey">Chúng tôi cung cấp một hệ sinh thái đầy đủ những tính năng cần thiết
+                                dành cho người dùng.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Karo_FAQ _mob-->
+        <div class="Karo_FAQ _mob">
+            <div class="Karo_FAQ-wrapper">
+                <div class="FAQ-title">Câu hỏi <br>thường gặp</div>
+                <div class="FAQ-info">
+                    <div class="FAQ-example">
+                        <a class="FAQ-question" id="FAQ-question-btn-1" aria-expanded="false">
+                            <span class="font-black">Đăng tin tại Karo có mất phí không?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="FAQ-answer">Tất cả tin đăng tại Karo.land đều hoàn toàn miễn phí, dù bạn là chủ nhà
+                            ký gửi hay môi giới tiếp cận nguồn hàng đều được miễn phí tin đăng.</div>
+                    </div>
+                    <div class="FAQ-example">
+                        <a class="FAQ-question" id="FAQ-question-btn-2" aria-expanded="false">
+                            <span class="font-black">Cách thức đăng tin tại Karo</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="FAQ-answer">
+                            Bước 1: Đăng nhập hoặc đăng ký tài khoản tại [Link tới page đăng nhập]. <br>
+                            Bước 2: Bấm vào nút đăng tin. <br>
+                            Bước 3: Nhập các thông tin theo mẫu trường thông tin có sẵn. <br>
+                            Bước 4: Thêm hình ảnh/video. <br>
+                            Bước 5: Lựa chọn văn bản mô tả nhà. <br>
+                            Bước 6: Xác thực thông tin và tiến hành đăng tải nội dung.
+                        </div>
+                    </div>
+                    <div class="FAQ-example">
+                        <a class="FAQ-question" id="FAQ-question-btn-3" aria-expanded="false">
+                            <span class="font-black">Thông tin đã đăng có được chỉnh sửa không?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="FAQ-answer">Chủ nhà có thể chỉnh sửa toàn bộ thông tin kể cả khi nội dung đã được
+                            đăng tải. Karo khuyến khích người dùng thường xuyên cập nhật thông tin về hiện trạng nhà
+                            đang rao bán.</div>
+                    </div>
+                    <div class="FAQ-example">
+                        <a class="FAQ-question" id="FAQ-question-btn-4" aria-expanded="false">
+                            <span class="font-black">Tìm kiếm tin đăng của bạn tại đâu?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="FAQ-answer">Chủ nhà có thể tìm kiếm, quản lý và chỉnh sửa nội dung tại mục Ký gửi
+                            nhà tại Karo.land</div>
+                    </div>
+                    <div class="FAQ-example">
+                        <a class="FAQ-question" id="FAQ-question-btn-5" aria-expanded="false">
+                            <span class="font-black">Bài đăng hiệu quả cần những gì?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="FAQ-answer">
+                            Tiêu đề cụ thể. <br>
+                            Thông tin chi tiết. <br>
+                            Hình ảnh rõ ràng. <br>
+                            Karo có cam kết thời gian bán được nhà dành cho chủ nhà? <br>
+                            Giao dịch thành công dựa trên rất nhiều yếu tố do vậy Karo không đưa ra bất kỳ cam kết nào
+                            về thời gian bán được nhà dành cho chủ nhà.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const items = document.querySelectorAll('.FAQ-question');
+
+        function toggleFAQ_question() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+
+            // if(itemToggle == 'true'){
+            //     this.setAttribute('aria-expanded','false');
+            // }
+        }
+
+        items.forEach((item) => item.addEventListener('click', toggleFAQ_question));
+    </script>
+</body>
+</body>
+
+</html>

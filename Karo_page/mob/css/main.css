@@ -248,6 +248,308 @@ select {
   /* 24px */
 }
 
+.intro._mob {
+  display: flex;
+  padding: 30px 16px;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 30px;
+  background: #FFFDFD;
+}
+.intro._mob .intro-title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.intro._mob .intro-title .font-orange {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 132%;
+  /* 36.96px */
+  letter-spacing: -0.28px;
+}
+.intro._mob .intro-title .font-grey {
+  color: var(--text-grey, rgba(0, 9, 41, 0.7));
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  /* 186.667% */
+}
+.intro._mob .intro-img {
+  width: 100%;
+  padding-top: 57.725%;
+  position: relative;
+}
+.intro._mob .intro-img .img-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  border: 0.482px solid rgba(236, 31, 37, 0.06);
+}
+
+.about-Karo._mob {
+  display: flex;
+  padding: 30px 16px;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--dark-1st, #000929);
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.about-Karo._mob .about-Karo_header {
+  color: #FFF;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 132%;
+  /* 36.96px */
+  letter-spacing: -0.28px;
+}
+.about-Karo._mob .about-Karo_body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.about-Karo._mob .about-Karo_body .font-grey {
+  color: #EEE;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* 175% */
+}
+
+.Karo_vision-mission._mob {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Karo_vision-mission._mob .img-container {
+  width: 100%;
+  position: relative;
+  padding-top: 100%;
+}
+.Karo_vision-mission._mob .img-container .img-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Karo_vision-mission._mob .Karo-vision,
+.Karo_vision-mission._mob .Karo-mission {
+  display: flex;
+  padding: 30px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  box-sizing: border-box;
+}
+.Karo_vision-mission._mob .Karo-vision .font-black,
+.Karo_vision-mission._mob .Karo-mission .font-black {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 132%;
+  /* 36.96px */
+  letter-spacing: -0.28px;
+}
+.Karo_vision-mission._mob .Karo-vision .font-grey,
+.Karo_vision-mission._mob .Karo-mission .font-grey {
+  color: var(--text-grey, rgba(0, 9, 41, 0.7));
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  /* 175% */
+}
+
+.Karo_core-value._mob {
+  width: 100%;
+  background: var(--red-primary, #EC1F25);
+}
+.Karo_core-value._mob .Karo_core-value-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 30px 16px;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_head .core-value_title {
+  color: #EEE;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 132%;
+  /* 36.96px */
+  letter-spacing: -0.28px;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_head .core-value_text {
+  color: #EEE;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  /* 175% */
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 {
+  gap: 16px;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  background: #FFF5F6;
+  align-items: center;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-number {
+  display: flex;
+  width: 56px;
+  padding: 8px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  background: var(--red-2nd, #FF5358);
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-number .font-white {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  /* 166.667% */
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-text .font-black {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 135%;
+  /* 37.8px */
+  letter-spacing: -0.28px;
+  text-align: center;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-text .font-grey {
+  color: var(--text-grey, rgba(0, 9, 41, 0.7));
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  /* 200% */
+  text-align: center;
+}
+
+.Karo_FAQ._mob {
+  width: 100%;
+  border-bottom: 1px solid var(--bg-red, #FFF0F0);
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-title {
+  color: var(--text-black, #000929);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 132%;
+  /* 36.96px */
+  letter-spacing: -0.28px;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example {
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgba(0, 9, 41, 0.1);
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question {
+  display: flex;
+  justify-content: space-between;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question .font-black {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  /* 200% */
+  letter-spacing: -0.16px;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question .icon {
+  box-sizing: border-box;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--bg-light-blue, #F5F9FF);
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question .icon::before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #000929;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question .icon::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 12px;
+  background: #000929;
+  transform: rotate(0);
+  transition: transform 200ms linear;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question[aria-expanded=true] .icon::after {
+  transform: rotate(90deg);
+  transition: transform 200ms linear;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question[aria-expanded=true] + .FAQ-answer {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+  color: var(--text-light-grey, rgba(0, 9, 41, 0.5));
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+  /* 23.25px */
+  letter-spacing: -0.15px;
+}
+
 .img-section._mob {
   width: 100%;
   display: flex;
@@ -1198,7 +1500,8 @@ select {
   line-height: 150%;
   box-sizing: border-box;
 }
-.range-slider-section._mob .range-slider-wrapper .range-slider-area .slide-container .range-slider .text .font-black, .range-slider-section._mob .range-slider-wrapper .range-slider-area .slide-container .range-slider .text .font-blue {
+.range-slider-section._mob .range-slider-wrapper .range-slider-area .slide-container .range-slider .text .font-black,
+.range-slider-section._mob .range-slider-wrapper .range-slider-area .slide-container .range-slider .text .font-blue {
   font-family: Plus Jakarta Sans;
 }
 .range-slider-section._mob .range-slider-wrapper .range-slider-footer {
@@ -2686,12 +2989,40 @@ select {
   background: #f9f9f9;
   border-left-color: #FF5358;
 }
-.navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a {
+.navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a,
+.navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a,
+.navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a {
   color: black;
   background: white;
   border-left-color: transparent;
 }
-.navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover {
+.navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover, .navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .sell-list_group .side-menu_nav-link a:hover,
+.navbar .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-white .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-black .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-gray .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-purple .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-orange .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-green .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-yellow .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-red .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-blue .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-info .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-error .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-secondary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover,
+.navbar-primary .nav-container .right-section .side-menu .side-menu_nav > li.active .rent-list_group .side-menu_nav-link a:hover {
   color: #FF5358;
   background: #f9f9f9;
 }
@@ -2900,6 +3231,52 @@ select {
 }
 .navbar .nav-container .right-section .side-menu.show, .navbar-white .nav-container .right-section .side-menu.show, .navbar-black .nav-container .right-section .side-menu.show, .navbar-gray .nav-container .right-section .side-menu.show, .navbar-purple .nav-container .right-section .side-menu.show, .navbar-orange .nav-container .right-section .side-menu.show, .navbar-green .nav-container .right-section .side-menu.show, .navbar-yellow .nav-container .right-section .side-menu.show, .navbar-red .nav-container .right-section .side-menu.show, .navbar-blue .nav-container .right-section .side-menu.show, .navbar-info .nav-container .right-section .side-menu.show, .navbar-error .nav-container .right-section .side-menu.show, .navbar-secondary .nav-container .right-section .side-menu.show, .navbar-primary .nav-container .right-section .side-menu.show {
   left: 0px;
+}
+.navbar .nav-container .right-section .function-container, .navbar-white .nav-container .right-section .function-container, .navbar-black .nav-container .right-section .function-container, .navbar-gray .nav-container .right-section .function-container, .navbar-purple .nav-container .right-section .function-container, .navbar-orange .nav-container .right-section .function-container, .navbar-green .nav-container .right-section .function-container, .navbar-yellow .nav-container .right-section .function-container, .navbar-red .nav-container .right-section .function-container, .navbar-blue .nav-container .right-section .function-container, .navbar-info .nav-container .right-section .function-container, .navbar-error .nav-container .right-section .function-container, .navbar-secondary .nav-container .right-section .function-container, .navbar-primary .nav-container .right-section .function-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.navbar .nav-container .right-section .function-container .btn-create, .navbar-white .nav-container .right-section .function-container .btn-create, .navbar-black .nav-container .right-section .function-container .btn-create, .navbar-gray .nav-container .right-section .function-container .btn-create, .navbar-purple .nav-container .right-section .function-container .btn-create, .navbar-orange .nav-container .right-section .function-container .btn-create, .navbar-green .nav-container .right-section .function-container .btn-create, .navbar-yellow .nav-container .right-section .function-container .btn-create, .navbar-red .nav-container .right-section .function-container .btn-create, .navbar-blue .nav-container .right-section .function-container .btn-create, .navbar-info .nav-container .right-section .function-container .btn-create, .navbar-error .nav-container .right-section .function-container .btn-create, .navbar-secondary .nav-container .right-section .function-container .btn-create, .navbar-primary .nav-container .right-section .function-container .btn-create {
+  display: flex;
+  padding: 7px 10px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 8px;
+  border: 1px solid var(--red-primary, #EC1F25);
+  background: var(--bg-light-red, #FFFDFD);
+}
+.navbar .nav-container .right-section .function-container .btn-create .font-orange, .navbar-white .nav-container .right-section .function-container .btn-create .font-orange, .navbar-black .nav-container .right-section .function-container .btn-create .font-orange, .navbar-gray .nav-container .right-section .function-container .btn-create .font-orange, .navbar-purple .nav-container .right-section .function-container .btn-create .font-orange, .navbar-orange .nav-container .right-section .function-container .btn-create .font-orange, .navbar-green .nav-container .right-section .function-container .btn-create .font-orange, .navbar-yellow .nav-container .right-section .function-container .btn-create .font-orange, .navbar-red .nav-container .right-section .function-container .btn-create .font-orange, .navbar-blue .nav-container .right-section .function-container .btn-create .font-orange, .navbar-info .nav-container .right-section .function-container .btn-create .font-orange, .navbar-error .nav-container .right-section .function-container .btn-create .font-orange, .navbar-secondary .nav-container .right-section .function-container .btn-create .font-orange, .navbar-primary .nav-container .right-section .function-container .btn-create .font-orange {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 125%;
+  /* 17.5px */
+}
+.navbar .nav-container .right-section .function-container .btn-notification, .navbar-white .nav-container .right-section .function-container .btn-notification, .navbar-black .nav-container .right-section .function-container .btn-notification, .navbar-gray .nav-container .right-section .function-container .btn-notification, .navbar-purple .nav-container .right-section .function-container .btn-notification, .navbar-orange .nav-container .right-section .function-container .btn-notification, .navbar-green .nav-container .right-section .function-container .btn-notification, .navbar-yellow .nav-container .right-section .function-container .btn-notification, .navbar-red .nav-container .right-section .function-container .btn-notification, .navbar-blue .nav-container .right-section .function-container .btn-notification, .navbar-info .nav-container .right-section .function-container .btn-notification, .navbar-error .nav-container .right-section .function-container .btn-notification, .navbar-secondary .nav-container .right-section .function-container .btn-notification, .navbar-primary .nav-container .right-section .function-container .btn-notification {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 0px 1px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1.5px solid var(--bg-light-blue, #F5F9FF);
+  background: var(--bg-light-blue, #F5F9FF);
+}
+.navbar .nav-container .right-section .function-container .user-login_info, .navbar-white .nav-container .right-section .function-container .user-login_info, .navbar-black .nav-container .right-section .function-container .user-login_info, .navbar-gray .nav-container .right-section .function-container .user-login_info, .navbar-purple .nav-container .right-section .function-container .user-login_info, .navbar-orange .nav-container .right-section .function-container .user-login_info, .navbar-green .nav-container .right-section .function-container .user-login_info, .navbar-yellow .nav-container .right-section .function-container .user-login_info, .navbar-red .nav-container .right-section .function-container .user-login_info, .navbar-blue .nav-container .right-section .function-container .user-login_info, .navbar-info .nav-container .right-section .function-container .user-login_info, .navbar-error .nav-container .right-section .function-container .user-login_info, .navbar-secondary .nav-container .right-section .function-container .user-login_info, .navbar-primary .nav-container .right-section .function-container .user-login_info {
+  display: flex;
+  padding: 7px 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-blue, #E6F0FF);
+}
+.navbar .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-white .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-black .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-gray .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-purple .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-orange .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-green .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-yellow .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-red .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-blue .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-info .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-error .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-secondary .nav-container .right-section .function-container .user-login_info .user-login_img, .navbar-primary .nav-container .right-section .function-container .user-login_info .user-login_img {
+  width: 18px;
+  height: 18px;
+  border-radius: 31.25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar-primary {

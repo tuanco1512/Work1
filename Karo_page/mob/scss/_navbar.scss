@@ -94,7 +94,7 @@
             gap: 25px;
             position: relative;
 
-            .btn-menu{
+            .btn-menu {
                 cursor: pointer;
             }
 
@@ -107,8 +107,9 @@
                 background: rgba(0, 0, 0, 0.60);
                 transition: left 0.4s ease;
 
-                .side-menu_title{
+                .side-menu_title {
                     position: relative;
+
                     .text {
                         font-size: 25px;
                         font-weight: 600;
@@ -117,11 +118,13 @@
                         letter-spacing: 1px;
                         background-color: #FFF;
                     }
-                    .btn-close{
+
+                    .btn-close {
                         position: absolute;
                         top: 20px;
                         right: 15px;
-                        :hover{
+
+                        :hover {
                             cursor: pointer;
                         }
                     }
@@ -129,21 +132,23 @@
 
                 .side-menu_nav {
                     background: #FFF;
+
                     >li.active {
-                        a{
+                        a {
                             color: #FF5358;
                             background: #f9f9f9;
                             border-left-color: #FF5358;
                         }
 
-                        .sell-list_group, .rent-list_group{
-                            .side-menu_nav-link{
-                                a{
+                        .sell-list_group,
+                        .rent-list_group {
+                            .side-menu_nav-link {
+                                a {
                                     color: black;
                                     background: white;
                                     border-left-color: transparent;
 
-                                    &:hover{
+                                    &:hover {
                                         color: #FF5358;
                                         background: #f9f9f9;
                                     }
@@ -207,7 +212,7 @@
                         }
                     }
 
-                    .side-menu_nav-link:last-child{
+                    .side-menu_nav-link:last-child {
                         border-bottom: 1px solid #E6E6E6;
                     }
                 }
@@ -217,8 +222,59 @@
                 }
             }
 
-            .side-menu.show{
+            .side-menu.show {
                 left: 0px
+            }
+
+            .function-container {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+
+                .btn-create {
+                    display: flex;
+                    padding: 7px 10px;
+                    align-items: center;
+                    gap: 7px;
+                    border-radius: 8px;
+                    border: 1px solid var(--red-primary, #EC1F25);
+                    background: var(--bg-light-red, #FFFDFD);
+
+                    .font-orange {
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 125%;
+                        /* 17.5px */
+                    }
+                }
+
+                .btn-notification {
+                    display: flex;
+                    width: 32px;
+                    height: 32px;
+                    padding: 0px 1px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    border: 1.5px solid var(--bg-light-blue, #F5F9FF);
+                    background: var(--bg-light-blue, #F5F9FF);
+                }
+
+                .user-login_info {
+                    display: flex;
+                    padding: 7px 10px;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 8px;
+                    border: 1px solid var(--border-blue, #E6F0FF);
+
+                    .user-login_img {
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 31.25px;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }
