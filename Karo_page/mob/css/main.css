@@ -350,7 +350,7 @@ select {
   padding: 30px 16px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  gap: 16px;
   box-sizing: border-box;
 }
 .Karo_vision-mission._mob .Karo-vision .font-black,
@@ -370,6 +370,126 @@ select {
   /* 175% */
 }
 
+.Karo-services._mob {
+  width: 100%;
+  background: linear-gradient(180deg, #FFFDFD 5.02%, #F0F6FF 100%);
+}
+.Karo-services._mob .Karo-services-wrapper {
+  width: 100%;
+  margin: 30px 0;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .services-title {
+  color: var(--text-black, #000929);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 132%;
+  /* 60.72px */
+  letter-spacing: -0.46px;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .services-subtitle {
+  color: var(--text-light-grey, rgba(0, 9, 41, 0.5));
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  /* 28.8px */
+  letter-spacing: -0.09px;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .services-content .services-content_detail {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .services-content .services-content_detail .btn_icon-done {
+  display: flex;
+  padding: 3.6px;
+  align-items: center;
+  border-radius: 50%;
+  background: #0844A3;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .services-content .services-content_detail .font-black {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  /* 25.2px */
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .function-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .function-container .btn-deposit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 25px;
+  box-sizing: border-box;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--red-primary, #EC1F25);
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .function-container .btn-deposit:hover {
+  opacity: 0.8;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .function-container .btn-deposit .font-white {
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .function-container .btn-see-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 12px 25px;
+  box-sizing: border-box;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1.5px solid var(--blue-primary, #0844A3);
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .function-container .btn-see-more:hover {
+  opacity: 0.8;
+}
+.Karo-services._mob .Karo-services-wrapper .Karo-services_info .function-container .btn-see-more .font-blue {
+  color: var(--blue-primary, #0844A3);
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo-services._mob .Karo-services-wrapper .img-container {
+  width: 100%;
+  position: relative;
+  padding-top: 102.624%;
+}
+.Karo-services._mob .Karo-services-wrapper .img-container .img-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .Karo_core-value._mob {
   width: 100%;
   background: var(--red-primary, #EC1F25);
@@ -381,13 +501,14 @@ select {
   flex-direction: column;
   gap: 24px;
   margin: 0 auto;
-  padding: 30px 16px;
+  padding: 30px 0;
 }
 .Karo_core-value._mob .Karo_core-value-wrapper .core-value_head {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  padding: 0 16px;
 }
 .Karo_core-value._mob .Karo_core-value-wrapper .core-value_head .core-value_title {
   color: #EEE;
@@ -404,19 +525,33 @@ select {
   line-height: 28px;
   /* 175% */
 }
-.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 {
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 100%;
   gap: 16px;
 }
-.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card {
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container::-webkit-scrollbar {
+  width: 0;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card {
   display: flex;
   padding: 20px;
+  min-width: 280px;
+  box-sizing: border-box;
   flex-direction: column;
   gap: 30px;
   border-radius: 10px;
   background: #FFF5F6;
-  align-items: center;
 }
-.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-number {
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card:first-child {
+  margin-left: 16px;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card:last-child {
+  margin-right: 16px;
+}
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card .core-value_card-number {
   display: flex;
   width: 56px;
   padding: 8px;
@@ -426,32 +561,129 @@ select {
   border-radius: 80px;
   background: var(--red-2nd, #FF5358);
 }
-.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-number .font-white {
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card .core-value_card-number .font-white {
   font-size: 24px;
   font-weight: 700;
   line-height: 40px;
   /* 166.667% */
 }
-.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-text {
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card .core-value_card-text {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-text .font-black {
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card .core-value_card-text .font-black {
   font-size: 28px;
   font-weight: 600;
   line-height: 135%;
   /* 37.8px */
   letter-spacing: -0.28px;
-  text-align: center;
 }
-.Karo_core-value._mob .Karo_core-value-wrapper .grid-temp-1 .core-value_card .core-value_card-text .font-grey {
+.Karo_core-value._mob .Karo_core-value-wrapper .core-value_card-container .core-value_card .core-value_card-text .font-grey {
   color: var(--text-grey, rgba(0, 9, 41, 0.7));
   font-size: 16px;
   font-weight: 500;
   line-height: 32px;
   /* 200% */
-  text-align: center;
+}
+
+.Karo_landlords-tenants._mob {
+  width: 100%;
+  background: var(--dark-1st, #000929);
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+}
+.Karo_landlords-tenants._mob .Karo_landlords-tenants_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 82px 30px;
+  width: 1240px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_text {
+  width: 45.16%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_text .landlords-tenants_title {
+  color: #EEE;
+  /* Heading/H2 */
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 56px */
+  letter-spacing: -0.4px;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_text .landlords-tenants_sub-title {
+  color: #EEE;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  /* 25.6px */
+}
+.Karo_landlords-tenants._mob .landlords-tenants_text .btn-sign-up {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--red-primary, #EC1F25);
+}
+.Karo_landlords-tenants._mob .landlords-tenants_text .btn-sign-up:hover {
+  opacity: 0.8;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_text .btn-sign-up .font-white {
+  /* Body/Medium 150%/Bold */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo_landlords-tenants._mob .landlords-tenants_img {
+  width: 53.55%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  padding-bottom: 48px;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_img .intro-card.card-1 {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 1;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_img .intro-card.card-2 {
+  position: relative;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_img .intro-card.card-2 .intro-card_icon {
+  position: absolute;
+  top: -34px;
+  right: 32px;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_img .img-container {
+  width: 81.93%;
+  position: relative;
+  padding-top: 110.294%;
+}
+.Karo_landlords-tenants._mob .landlords-tenants_img .img-container .img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  background: #C4C4C4;
 }
 
 .Karo_FAQ._mob {
@@ -2702,6 +2934,48 @@ select {
   line-height: 16px;
   /* 133.333% */
   letter-spacing: 0.5px;
+}
+
+.intro-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 21px 24px 32px;
+  border-radius: 8px;
+  border: 1.5px solid var(--red-3rd, #FFB7B9);
+  background: var(--main-color-white, #FFF);
+  box-shadow: 0px 0px 50px 0px rgba(112, 101, 240, 0.2);
+}
+.intro-card .intro-card_icon {
+  width: 64px;
+  height: 64px;
+  background: #FFF0F0;
+  border: 2px solid #FFB7B9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-card .intro-card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.intro-card .intro-card_text .font-blue {
+  color: var(--main-color-secondary, #100A55);
+  /* Body / XLarge 160% / Bold */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 160%;
+  /* 32px */
+  letter-spacing: -0.1px;
+}
+.intro-card .intro-card_text .font-grey {
+  color: var(--greyscale-grey-600, #4D5461);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  /* 25.6px */
 }
 
 .btn {
