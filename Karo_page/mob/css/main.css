@@ -379,6 +379,7 @@ select {
   margin: 30px 0;
   padding: 0 16px;
   display: flex;
+  gap: 30px;
   flex-direction: column;
   box-sizing: border-box;
 }
@@ -855,9 +856,10 @@ select {
 }
 .Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-question[aria-expanded=true] + .FAQ-answer {
   opacity: 1;
-  max-height: 9em;
+  max-height: 15em;
+  padding-bottom: 15px;
   transition: all 200ms linear;
-  will-change: opacity, max-height;
+  will-change: opacity, max-height, padding-bottom;
 }
 .Karo_FAQ._mob .Karo_FAQ-wrapper .FAQ-info .FAQ-example .FAQ-answer {
   opacity: 0;
