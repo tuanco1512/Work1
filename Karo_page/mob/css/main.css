@@ -594,41 +594,38 @@ select {
 }
 .Karo_landlords-tenants._mob .Karo_landlords-tenants_wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 82px 30px;
-  width: 1240px;
-  max-width: 100%;
+  padding: 40px 16px;
+  width: 100%;
   box-sizing: border-box;
+  gap: 30px;
 }
 .Karo_landlords-tenants._mob .landlords-tenants_text {
-  width: 45.16%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 .Karo_landlords-tenants._mob .landlords-tenants_text .landlords-tenants_title {
   color: #EEE;
-  /* Heading/H2 */
-  font-size: 40px;
-  font-style: normal;
+  font-size: 28px;
   font-weight: 700;
   line-height: 140%;
-  /* 56px */
-  letter-spacing: -0.4px;
+  /* 39.2px */
+  letter-spacing: -0.28px;
 }
 .Karo_landlords-tenants._mob .landlords-tenants_text .landlords-tenants_sub-title {
   color: #EEE;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 160%;
   /* 25.6px */
 }
 .Karo_landlords-tenants._mob .landlords-tenants_text .btn-sign-up {
-  width: -moz-fit-content;
-  width: fit-content;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -648,16 +645,14 @@ select {
   /* 24px */
 }
 .Karo_landlords-tenants._mob .landlords-tenants_img {
-  width: 53.55%;
+  width: 100%;
   display: flex;
-  justify-content: end;
   position: relative;
-  padding-bottom: 48px;
 }
 .Karo_landlords-tenants._mob .landlords-tenants_img .intro-card.card-1 {
   position: absolute;
-  top: 32px;
-  left: 0;
+  top: 15px;
+  left: 15px;
   z-index: 1;
 }
 .Karo_landlords-tenants._mob .landlords-tenants_img .intro-card.card-2 {
@@ -665,11 +660,11 @@ select {
 }
 .Karo_landlords-tenants._mob .landlords-tenants_img .intro-card.card-2 .intro-card_icon {
   position: absolute;
-  top: -34px;
-  right: 32px;
+  top: -13px;
+  right: 21px;
 }
 .Karo_landlords-tenants._mob .landlords-tenants_img .img-container {
-  width: 81.93%;
+  width: 100%;
   position: relative;
   padding-top: 110.294%;
 }
@@ -684,6 +679,103 @@ select {
      object-fit: cover;
   border-radius: 8px;
   background: #C4C4C4;
+}
+
+.Karo-contact._mob {
+  width: 100%;
+  background: linear-gradient(180deg, #FFF 0%, #F0F6FF 100%);
+  display: flex;
+  justify-content: center;
+}
+.Karo-contact._mob .Karo-contact_wrapper {
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Karo-contact._mob .Karo-contact_wrapper .karo-contact_headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.Karo-contact._mob .Karo-contact_wrapper .karo-contact_headline .Karo-contact_title {
+  color: var(--main-color-black, #000929);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  /* 39.2px */
+  letter-spacing: -0.28px;
+}
+.Karo-contact._mob .Karo-contact_wrapper .karo-contact_headline .Karo-contact_subtitle {
+  color: #0945A3;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  /* 24px */
+  letter-spacing: -0.15px;
+}
+.Karo-contact._mob .Karo-contact_wrapper .Karo-contact_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Karo-contact._mob .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  min-width: 280px;
+  height: 62px;
+  width: 100%;
+  border-radius: 8px;
+  background: var(--main-color-white, #FFF);
+}
+.Karo-contact._mob .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email .email-input_contact {
+  width: 100%;
+  border: none;
+  color: var(--main-color-black, #000929);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 145%;
+  /* 21.75px */
+  letter-spacing: -0.075px;
+  opacity: 0.5;
+}
+.Karo-contact._mob .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email .btn-submit {
+  display: flex;
+  padding: 9px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  background: #0945A3;
+  color: var(--main-color-white, #FFF);
+  text-align: center;
+  /* Body/Medium 150%/Bold */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.Karo-contact._mob .Karo-contact_wrapper .Karo-contact_input .Karo-contact_input-email .btn-submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.Karo-contact._mob .Karo-contact_wrapper .Karo-contact_input .font-black {
+  color: #444;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 18px */
+  letter-spacing: -0.12px;
 }
 
 .Karo_FAQ._mob {
@@ -2180,64 +2272,69 @@ select {
   background: var(--red-2nd, #FF5358);
 }
 
-.Karo-page-footer {
+.Karo-page-footer._mob {
   width: 100%;
   background: var(--main-color-white, #FFF);
   box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
 }
-.Karo-page-footer .info {
+.Karo-page-footer._mob .info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-start;
-  width: 1240px;
-  padding: 80px 30px 0 30px;
+  width: 100%;
+  padding: 40px 16px;
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 100%;
 }
-.Karo-page-footer .info .info-area {
+.Karo-page-footer._mob .info .info-area {
+  padding-top: 30px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 30px;
 }
-.Karo-page-footer .info .info-area .Karo-logo {
+.Karo-page-footer._mob .info .info-area .Karo-logo {
   display: flex;
   align-items: center;
   gap: 9.778px;
 }
-.Karo-page-footer .info .info-area .Karo-logo .font-black {
+.Karo-page-footer._mob .info .info-area .Karo-logo .font-black {
   text-align: center;
   font-size: 29.333px;
   font-weight: 500;
   letter-spacing: -0.611px;
 }
-.Karo-page-footer .info .info-area .text-section {
+.Karo-page-footer._mob .info .info-area .text-section {
   width: 297px;
 }
-.Karo-page-footer .info .info-area .text-section .font-black {
+.Karo-page-footer._mob .info .info-area .text-section .font-black {
   color: #000929;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
 }
-.Karo-page-footer .info .nav-menu {
+.Karo-page-footer._mob .info .nav-menu {
+  width: 100%;
   display: flex;
   align-items: flex-start;
-  gap: 88px;
+  flex-direction: column;
+  gap: 30px;
 }
-.Karo-page-footer .info .nav-menu .nav-wrapper {
+.Karo-page-footer._mob .info .nav-menu .nav-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 48px;
+  gap: 30px;
 }
-.Karo-page-footer .info .nav-menu .nav-wrapper .nav-container {
+.Karo-page-footer._mob .info .nav-menu .nav-wrapper .nav-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.Karo-page-footer .info .nav-menu .nav-wrapper .nav-container .font-black {
+.Karo-page-footer._mob .info .nav-menu .nav-wrapper .nav-container .font-black {
   color: #000929;
   font-feature-settings: "ss04" on, "ss06" on, "liga" off;
   /* Body/Medium 150%/Bold */
@@ -2246,11 +2343,11 @@ select {
   line-height: 150%;
   /* 24px */
 }
-.Karo-page-footer .info .nav-menu .nav-wrapper .nav-container .list-link {
+.Karo-page-footer._mob .info .nav-menu .nav-wrapper .nav-container .list-link {
   display: flex;
   flex-direction: column;
 }
-.Karo-page-footer .info .nav-menu .nav-wrapper .nav-container .list-link .font-grey {
+.Karo-page-footer._mob .info .nav-menu .nav-wrapper .nav-container .list-link .font-grey {
   color: #000929;
   font-size: 16px;
   font-weight: 500;
@@ -2258,22 +2355,21 @@ select {
   /* 237.5% */
   opacity: 0.7;
 }
-.Karo-page-footer .line {
-  margin-top: 48px;
+.Karo-page-footer._mob .line {
   width: 100%;
   height: 1.5px;
   background: #EC252A;
 }
-.Karo-page-footer .copy-right {
-  padding: 30px;
-  width: 1240px;
+.Karo-page-footer._mob .copy-right {
+  padding: 30px 16px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 30px;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 100%;
 }
-.Karo-page-footer .copy-right .font-light-grey {
+.Karo-page-footer._mob .copy-right .font-light-grey {
   color: #000929;
   /* Body / Medium 160% / Medium */
   font-size: 16px;
@@ -2282,7 +2378,7 @@ select {
   /* 25.6px */
   opacity: 0.5;
 }
-.Karo-page-footer .copy-right .socials {
+.Karo-page-footer._mob .copy-right .socials {
   display: inline-flex;
   align-items: flex-start;
   gap: 40px;
@@ -2936,17 +3032,17 @@ select {
   letter-spacing: 0.5px;
 }
 
-.intro-card {
+.intro-card._mob {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding: 24px 21px 24px 32px;
-  border-radius: 8px;
+  gap: 12.4px;
+  padding: 12.5px 21px 12.5px 16.5px;
+  border-radius: 4px;
   border: 1.5px solid var(--red-3rd, #FFB7B9);
   background: var(--main-color-white, #FFF);
   box-shadow: 0px 0px 50px 0px rgba(112, 101, 240, 0.2);
 }
-.intro-card .intro-card_icon {
+.intro-card._mob .intro-card_icon {
   width: 64px;
   height: 64px;
   background: #FFF0F0;
@@ -2956,12 +3052,22 @@ select {
   align-items: center;
   justify-content: center;
 }
-.intro-card .intro-card_text {
+.intro-card._mob .intro-card_icon._mob {
+  width: 33.06px;
+  height: 33.06px;
+  background: #FFF0F0;
+  border: 1px solid #FFB7B9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-card._mob .intro-card_text {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.intro-card .intro-card_text .font-blue {
+.intro-card._mob .intro-card_text .font-blue {
   color: var(--main-color-secondary, #100A55);
   /* Body / XLarge 160% / Bold */
   font-size: 20px;
@@ -2970,12 +3076,33 @@ select {
   /* 32px */
   letter-spacing: -0.1px;
 }
-.intro-card .intro-card_text .font-grey {
+.intro-card._mob .intro-card_text .font-grey {
   color: var(--greyscale-grey-600, #4D5461);
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
   /* 25.6px */
+}
+.intro-card._mob .intro-card_text._mob {
+  display: flex;
+  flex-direction: column;
+  gap: 1.033px;
+}
+.intro-card._mob .intro-card_text._mob .font-blue {
+  color: var(--main-color-secondary, #100A55);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 160%;
+  /* 17.6px */
+  letter-spacing: -0.055px;
+}
+.intro-card._mob .intro-card_text._mob .font-grey {
+  color: var(--greyscale-grey-600, #4D5461);
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 14.4px */
 }
 
 .btn {

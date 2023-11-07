@@ -37,7 +37,8 @@
         border-radius: 8px;
         background: #EBF3FF;
         transition: opacity 0.4s ease-in-out;
-        &:hover{
+
+        &:hover {
             opacity: 0.8;
         }
     }
@@ -49,15 +50,15 @@
         transition: left 0.4s ease;
     }
 
-    .current-progress.green{
+    .current-progress.green {
         background: #60EE1E;
     }
 
-    .current-progress.orange{
+    .current-progress.orange {
         background: #EE821E;
     }
 
-    .current-progress.red{
+    .current-progress.red {
         background: #EE501E;
     }
 
@@ -80,15 +81,15 @@
         /* 19.6px */
     }
 
-    .plan.green{
+    .plan.green {
         color: #60EE1E;
     }
 
-    .plan.orange{
+    .plan.orange {
         color: #EE821E;
     }
 
-    .plan.red{
+    .plan.red {
         color: #EE501E;
     }
 
@@ -295,11 +296,11 @@
                     text-align: center;
                     font-feature-settings: 'ss04' on, 'ss06' on, 'liga' off;
 
-                    
+
                     font-size: 15px;
                     font-weight: 700;
                     line-height: 150%;
-                    
+
                 }
             }
         }
@@ -600,12 +601,12 @@
     }
 }
 
-.intro-card {
+.intro-card._mob {
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding: 24px 21px 24px 32px;
-    border-radius: 8px;
+    gap: 12.4px;
+    padding: 12.5px 21px 12.5px 16.5px;
+    border-radius: 4px;
     border: 1.5px solid var(--red-3rd, #FFB7B9);
     background: var(--main-color-white, #FFF);
     box-shadow: 0px 0px 50px 0px rgba(112, 101, 240, 0.20);
@@ -615,6 +616,17 @@
         height: 64px;
         background: #FFF0F0;
         border: 2px solid #FFB7B9;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-card_icon._mob {
+        width: 33.06px;
+        height: 33.06px;
+        background: #FFF0F0;
+        border: 1px solid #FFB7B9;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -643,6 +655,30 @@
             font-weight: 400;
             line-height: 160%;
             /* 25.6px */
+        }
+    }
+
+    .intro-card_text._mob {
+        display: flex;
+        flex-direction: column;
+        gap: 1.033px;
+
+        .font-blue {
+            color: var(--main-color-secondary, #100A55);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 160%;
+            /* 17.6px */
+            letter-spacing: -0.055px;
+        }
+
+        .font-grey {
+            color: var(--greyscale-grey-600, #4D5461);
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            /* 14.4px */
         }
     }
 }
