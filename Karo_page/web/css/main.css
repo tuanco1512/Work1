@@ -66,6 +66,116 @@ select {
   box-sizing: border-box;
 }
 
+.Karo-manage-container {
+  display: flex;
+  width: 100%;
+  background: var(--main-color-white, #FFF);
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+}
+
+.Karo-manage_user-function_container {
+  width: 298px;
+  padding: 20px 26px;
+  height: 1251px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--greyscale-grey-50, #F9FAFB);
+}
+.Karo-manage_user-function_container .user-info_container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Karo-manage_user-function_container .user-info_container .img-content {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Karo-manage_user-function_container .user-info_container .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.Karo-manage_user-function_container .user-info_container .user-info .user-name {
+  color: var(--main-color-secondary, #100A55);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  /* 22.4px */
+}
+.Karo-manage_user-function_container .user-info_container .user-info .user-subtitle {
+  color: var(--main-color-secondary, #100A55);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 135%;
+  /* 16.2px */
+  opacity: 0.5;
+}
+.Karo-manage_user-function_container .function-menu_container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+.Karo-manage_user-function_container .function-menu_container .function-btn {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.Karo-manage_user-function_container .function-menu_container .function-btn .icon-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Karo-manage_user-function_container .function-menu_container .function-btn .icon-text .font-light-grey {
+  color: var(--text-light-grey, rgba(0, 9, 41, 0.5));
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 150%;
+  /* 22.5px */
+}
+.Karo-manage_user-function_container .function-menu_container .function-btn.active {
+  background: var(--bg-light-w-blue, #EBF3FF);
+}
+.Karo-manage_user-function_container .function-menu_container .function-btn.active svg,
+.Karo-manage_user-function_container .function-menu_container .function-btn.active .font-light-grey {
+  color: #1D61CC;
+}
+.Karo-manage_user-function_container .function-menu_container .function-btn.active svg g,
+.Karo-manage_user-function_container .function-menu_container .function-btn.active .font-light-grey g {
+  opacity: 1;
+}
+.Karo-manage_user-function_container .function-menu_container .function-btn.active svg path,
+.Karo-manage_user-function_container .function-menu_container .function-btn.active .font-light-grey path {
+  fill: #1D61CC;
+}
+.Karo-manage_user-function_container .support-setting_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.Karo-manage_user-function_container .support-setting_container .btn-account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Karo-manage_user-function_container .support-setting_container .btn-account .font-light-grey {
+  color: var(--main-color-secondary, #100A55);
+  /* Body / Medium 150% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  opacity: 0.5;
+}
+
 .intro {
   width: 100%;
   display: flex;
@@ -3087,6 +3197,67 @@ select {
   font-weight: 500;
   line-height: 128%;
   /* 16.64px */
+}
+.navbar .nav-container .right-section .function-container, .navbar-white .nav-container .right-section .function-container, .navbar-black .nav-container .right-section .function-container, .navbar-gray .nav-container .right-section .function-container, .navbar-purple .nav-container .right-section .function-container, .navbar-orange .nav-container .right-section .function-container, .navbar-green .nav-container .right-section .function-container, .navbar-yellow .nav-container .right-section .function-container, .navbar-red .nav-container .right-section .function-container, .navbar-blue .nav-container .right-section .function-container, .navbar-info .nav-container .right-section .function-container, .navbar-error .nav-container .right-section .function-container, .navbar-secondary .nav-container .right-section .function-container, .navbar-primary .nav-container .right-section .function-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar .nav-container .right-section .function-container .btn-post, .navbar-white .nav-container .right-section .function-container .btn-post, .navbar-black .nav-container .right-section .function-container .btn-post, .navbar-gray .nav-container .right-section .function-container .btn-post, .navbar-purple .nav-container .right-section .function-container .btn-post, .navbar-orange .nav-container .right-section .function-container .btn-post, .navbar-green .nav-container .right-section .function-container .btn-post, .navbar-yellow .nav-container .right-section .function-container .btn-post, .navbar-red .nav-container .right-section .function-container .btn-post, .navbar-blue .nav-container .right-section .function-container .btn-post, .navbar-info .nav-container .right-section .function-container .btn-post, .navbar-error .nav-container .right-section .function-container .btn-post, .navbar-secondary .nav-container .right-section .function-container .btn-post, .navbar-primary .nav-container .right-section .function-container .btn-post {
+  display: flex;
+  padding: 10px 30px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #EC1F25;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  /* 20px */
+}
+.navbar .nav-container .right-section .function-container .btn-post:hover, .navbar-white .nav-container .right-section .function-container .btn-post:hover, .navbar-black .nav-container .right-section .function-container .btn-post:hover, .navbar-gray .nav-container .right-section .function-container .btn-post:hover, .navbar-purple .nav-container .right-section .function-container .btn-post:hover, .navbar-orange .nav-container .right-section .function-container .btn-post:hover, .navbar-green .nav-container .right-section .function-container .btn-post:hover, .navbar-yellow .nav-container .right-section .function-container .btn-post:hover, .navbar-red .nav-container .right-section .function-container .btn-post:hover, .navbar-blue .nav-container .right-section .function-container .btn-post:hover, .navbar-info .nav-container .right-section .function-container .btn-post:hover, .navbar-error .nav-container .right-section .function-container .btn-post:hover, .navbar-secondary .nav-container .right-section .function-container .btn-post:hover, .navbar-primary .nav-container .right-section .function-container .btn-post:hover {
+  opacity: 0.8;
+}
+.navbar .nav-container .right-section .function-container .btn-notify, .navbar-white .nav-container .right-section .function-container .btn-notify, .navbar-black .nav-container .right-section .function-container .btn-notify, .navbar-gray .nav-container .right-section .function-container .btn-notify, .navbar-purple .nav-container .right-section .function-container .btn-notify, .navbar-orange .nav-container .right-section .function-container .btn-notify, .navbar-green .nav-container .right-section .function-container .btn-notify, .navbar-yellow .nav-container .right-section .function-container .btn-notify, .navbar-red .nav-container .right-section .function-container .btn-notify, .navbar-blue .nav-container .right-section .function-container .btn-notify, .navbar-info .nav-container .right-section .function-container .btn-notify, .navbar-error .nav-container .right-section .function-container .btn-notify, .navbar-secondary .nav-container .right-section .function-container .btn-notify, .navbar-primary .nav-container .right-section .function-container .btn-notify {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 0px 1px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--bg-light-blue, #F5F9FF);
+  background: var(--bg-light-blue, #F5F9FF);
+}
+.navbar .nav-container .right-section .function-container .btn-notify:hover, .navbar-white .nav-container .right-section .function-container .btn-notify:hover, .navbar-black .nav-container .right-section .function-container .btn-notify:hover, .navbar-gray .nav-container .right-section .function-container .btn-notify:hover, .navbar-purple .nav-container .right-section .function-container .btn-notify:hover, .navbar-orange .nav-container .right-section .function-container .btn-notify:hover, .navbar-green .nav-container .right-section .function-container .btn-notify:hover, .navbar-yellow .nav-container .right-section .function-container .btn-notify:hover, .navbar-red .nav-container .right-section .function-container .btn-notify:hover, .navbar-blue .nav-container .right-section .function-container .btn-notify:hover, .navbar-info .nav-container .right-section .function-container .btn-notify:hover, .navbar-error .nav-container .right-section .function-container .btn-notify:hover, .navbar-secondary .nav-container .right-section .function-container .btn-notify:hover, .navbar-primary .nav-container .right-section .function-container .btn-notify:hover {
+  opacity: 0.8;
+}
+.navbar .nav-container .right-section .function-container .btn_user-info, .navbar-white .nav-container .right-section .function-container .btn_user-info, .navbar-black .nav-container .right-section .function-container .btn_user-info, .navbar-gray .nav-container .right-section .function-container .btn_user-info, .navbar-purple .nav-container .right-section .function-container .btn_user-info, .navbar-orange .nav-container .right-section .function-container .btn_user-info, .navbar-green .nav-container .right-section .function-container .btn_user-info, .navbar-yellow .nav-container .right-section .function-container .btn_user-info, .navbar-red .nav-container .right-section .function-container .btn_user-info, .navbar-blue .nav-container .right-section .function-container .btn_user-info, .navbar-info .nav-container .right-section .function-container .btn_user-info, .navbar-error .nav-container .right-section .function-container .btn_user-info, .navbar-secondary .nav-container .right-section .function-container .btn_user-info, .navbar-primary .nav-container .right-section .function-container .btn_user-info {
+  display: flex;
+  padding: 8px 10px;
+  align-items: center;
+  gap: 14px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-blue, #E6F0FF);
+}
+.navbar .nav-container .right-section .function-container .btn_user-info:hover, .navbar-white .nav-container .right-section .function-container .btn_user-info:hover, .navbar-black .nav-container .right-section .function-container .btn_user-info:hover, .navbar-gray .nav-container .right-section .function-container .btn_user-info:hover, .navbar-purple .nav-container .right-section .function-container .btn_user-info:hover, .navbar-orange .nav-container .right-section .function-container .btn_user-info:hover, .navbar-green .nav-container .right-section .function-container .btn_user-info:hover, .navbar-yellow .nav-container .right-section .function-container .btn_user-info:hover, .navbar-red .nav-container .right-section .function-container .btn_user-info:hover, .navbar-blue .nav-container .right-section .function-container .btn_user-info:hover, .navbar-info .nav-container .right-section .function-container .btn_user-info:hover, .navbar-error .nav-container .right-section .function-container .btn_user-info:hover, .navbar-secondary .nav-container .right-section .function-container .btn_user-info:hover, .navbar-primary .nav-container .right-section .function-container .btn_user-info:hover {
+  opacity: 0.8;
+}
+.navbar .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-white .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-black .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-gray .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-purple .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-orange .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-green .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-yellow .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-red .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-blue .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-info .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-error .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-secondary .nav-container .right-section .function-container .btn_user-info .img-content, .navbar-primary .nav-container .right-section .function-container .btn_user-info .img-content {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navbar .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-white .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-black .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-gray .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-purple .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-orange .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-green .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-yellow .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-red .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-blue .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-info .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-error .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-secondary .nav-container .right-section .function-container .btn_user-info .user-name, .navbar-primary .nav-container .right-section .function-container .btn_user-info .user-name {
+  color: var(--blue-darkest, #03102A);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 145%;
+  /* 21.75px */
 }
 
 .navbar-primary {

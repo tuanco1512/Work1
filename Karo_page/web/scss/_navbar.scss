@@ -121,7 +121,7 @@
                 align-items: center;
                 gap: 25px;
 
-                .btn{
+                .btn {
                     padding: 10px 30px;
                 }
 
@@ -163,6 +163,72 @@
                         /* 16.64px */
                     }
 
+                }
+            }
+
+            .function-container {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .btn-post {
+                    display: flex;
+                    padding: 10px 30px;
+                    gap: 10px;
+                    border-radius: 8px;
+                    background: #EC1F25;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 125%;
+                    /* 20px */
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+
+                .btn-notify {
+                    display: flex;
+                    width: 40px;
+                    height: 40px;
+                    padding: 0px 1px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 8px;
+                    border: 1.5px solid var(--bg-light-blue, #F5F9FF);
+                    background: var(--bg-light-blue, #F5F9FF);
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+
+                .btn_user-info {
+                    display: flex;
+                    padding: 8px 10px;
+                    align-items: center;
+                    gap: 14px;
+                    border-radius: 8px;
+                    border: 1.5px solid var(--border-blue, #E6F0FF);
+                    &:hover{
+                        opacity: 0.8;
+                    }
+
+                    .img-content {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        object-fit: cover
+                    }
+
+                    .user-name {
+                        color: var(--blue-darkest, #03102A);
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 145%;
+                        /* 21.75px */
+                    }
                 }
             }
         }
