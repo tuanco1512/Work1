@@ -876,6 +876,138 @@ select {
   letter-spacing: -0.15px;
 }
 
+.Karo-manage_user-function_container._mob {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--greyscale-grey-50, #F9FAFB);
+}
+.Karo-manage_user-function_container._mob .user-info_container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Karo-manage_user-function_container._mob .user-info_container .img-content {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Karo-manage_user-function_container._mob .user-info_container .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.Karo-manage_user-function_container._mob .user-info_container .user-info .user-name {
+  color: var(--main-color-secondary, #100A55);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  /* 22.4px */
+}
+.Karo-manage_user-function_container._mob .user-info_container .user-info .user-subtitle {
+  color: var(--main-color-secondary, #100A55);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 135%;
+  /* 16.2px */
+  opacity: 0.5;
+}
+.Karo-manage_user-function_container._mob .Karo-manage_user-function_title {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 14px 16px;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.06);
+}
+.Karo-manage_user-function_container._mob .Karo-manage_user-function_title .font-black {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 30px */
+  letter-spacing: -0.2px;
+}
+.Karo-manage_user-function_container._mob .Karo-manage_user-function_title .btn-close {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--bg-light-grey, #FAFAFA);
+}
+.Karo-manage_user-function_container._mob .function-menu_container {
+  display: flex;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 16px;
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn:hover {
+  background: var(--bg-light-w-blue, #EBF3FF);
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn .icon-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn .icon-text .font-light-grey {
+  color: var(--text-light-grey, rgba(0, 9, 41, 0.5));
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 150%;
+  /* 22.5px */
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn.active {
+  background: var(--bg-light-w-blue, #EBF3FF);
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn.active svg,
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn.active .font-light-grey {
+  color: #1D61CC;
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn.active svg g,
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn.active .font-light-grey g {
+  opacity: 1;
+}
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn.active svg path,
+.Karo-manage_user-function_container._mob .function-menu_container .function-btn.active .font-light-grey path {
+  fill: #1D61CC;
+}
+.Karo-manage_user-function_container._mob .support-setting_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.Karo-manage_user-function_container._mob .support-setting_container .btn-account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Karo-manage_user-function_container._mob .support-setting_container .btn-account .font-light-grey {
+  color: var(--main-color-secondary, #100A55);
+  /* Body / Medium 150% / Medium */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  opacity: 0.5;
+}
+
 .img-section._mob {
   width: 100%;
   display: flex;

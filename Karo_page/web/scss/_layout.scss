@@ -78,6 +78,9 @@
             align-items: center;
             justify-content: space-between;
             border-radius: 8px;
+            &:hover{
+                background: var(--bg-light-w-blue, #EBF3FF);
+            }
 
             .icon-text {
                 display: flex;

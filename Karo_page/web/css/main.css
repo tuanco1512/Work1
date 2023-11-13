@@ -133,6 +133,9 @@ select {
   justify-content: space-between;
   border-radius: 8px;
 }
+.Karo-manage_user-function_container .function-menu_container .function-btn:hover {
+  background: var(--bg-light-w-blue, #EBF3FF);
+}
 .Karo-manage_user-function_container .function-menu_container .function-btn .icon-text {
   display: flex;
   align-items: center;
