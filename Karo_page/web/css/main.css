@@ -183,6 +183,16 @@ select {
   /* 24px */
   opacity: 0.5;
 }
+.Karo-manage_user-function_container::-webkit-scrollbar {
+  width: 6px;
+}
+.Karo-manage_user-function_container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.Karo-manage_user-function_container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 
 .Karo_deposit-list_container {
   display: flex;
@@ -521,6 +531,16 @@ select {
 }
 .Karo_deposit-list_container .Karo_deposit-list_body .house-deposit-card_nav.active {
   background: var(--bg-light-blue, #F5F9FF);
+}
+.Karo_deposit-list_container .Karo_deposit-list_body::-webkit-scrollbar {
+  width: 6px;
+}
+.Karo_deposit-list_container .Karo_deposit-list_body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.Karo_deposit-list_container .Karo_deposit-list_body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 .Karo_house-deposit-info_container {

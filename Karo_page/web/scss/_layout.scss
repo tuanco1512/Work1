@@ -78,7 +78,8 @@
             align-items: center;
             justify-content: space-between;
             border-radius: 8px;
-            &:hover{
+
+            &:hover {
                 background: var(--bg-light-w-blue, #EBF3FF);
             }
 
@@ -137,6 +138,19 @@
                 opacity: 0.5;
             }
         }
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
     }
 }
 
@@ -529,6 +543,19 @@
 
         .house-deposit-card_nav.active {
             background: var(--bg-light-blue, #F5F9FF);
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
         }
     }
 }
