@@ -291,6 +291,81 @@ select {
   border: 0.482px solid rgba(236, 31, 37, 0.06);
 }
 
+.illustration-container._mob {
+  width: 100%;
+  border-radius: 8px;
+  border: 1.5px solid var(--red-3rd, #FFB7B9);
+  background: var(--bg-light-red, #FFFDFD);
+  box-sizing: border-box;
+  padding: 20px 20px 10px 20px;
+}
+.illustration-container._mob .illustration-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.illustration-container._mob .illustration-content .illustration-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.illustration-container._mob .illustration-content .illustration-text .font-black {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 140%;
+  /* 23.8px */
+  letter-spacing: -0.17px;
+}
+.illustration-container._mob .illustration-content .illustration-text .font-grey {
+  color: var(--greyscale-grey-500, #6C727F);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  /* 24px */
+}
+.illustration-container._mob .illustration-content .function-btn {
+  display: flex;
+  flex-direction: column;
+}
+.illustration-container._mob .illustration-content .function-btn .btn-search {
+  display: flex;
+  padding: 11px 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--red-2nd, #FF5358);
+}
+.illustration-container._mob .illustration-content .function-btn .btn-search:hover {
+  opacity: 0.8;
+}
+.illustration-container._mob .illustration-content .function-btn .btn-search .font-white {
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+.illustration-container._mob .illustration-content .function-btn .btn-delete {
+  display: flex;
+  padding: 11px 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--bg-light-red, #FFFDFD);
+}
+.illustration-container._mob .illustration-content .function-btn .btn-delete:hover {
+  opacity: 0.8;
+}
+.illustration-container._mob .illustration-content .function-btn .btn-delete .font-black {
+  font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+  /* Body/Medium 150%/Bold */
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 150%;
+  /* 24px */
+}
+
 .about-Karo._mob {
   display: flex;
   padding: 30px 16px;

@@ -548,11 +548,11 @@
         &::-webkit-scrollbar {
             width: 6px;
         }
-    
+
         &::-webkit-scrollbar-track {
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         }
-    
+
         &::-webkit-scrollbar-thumb {
             background-color: darkgrey;
             outline: 1px solid slategrey;
@@ -2889,6 +2889,109 @@
     width: 1240px;
     max-width: 100%;
     gap: 32px;
+}
+
+.illustration-container {
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid var(--red-3rd, #FFB7B9);
+    background: var(--bg-light-red, #FFFDFD);
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 36px 68px 18.86px 48px;
+    box-sizing: border-box;
+
+    .illustration-content {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+
+        .illustration-text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .font-black {
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 140%;
+                /* 44.8px */
+                letter-spacing: -0.32px;
+            }
+
+            .font-grey {
+                color: var(--greyscale-grey-500, #6C727F);
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 160%;
+                /* 35.2px */
+            }
+        }
+
+        .function-btn {
+            display: flex;
+            gap: 16px;
+
+            .btn-search {
+                display: flex;
+                padding: 13px 25px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                background: var(--red-2nd, #FF5358);
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                .font-white {
+                    font-feature-settings: 'ss04' on, 'ss06' on, 'liga' off;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 150%;
+                    /* 24px */
+                }
+            }
+
+            .btn-delete {
+                display: flex;
+                padding: 13px 25px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                border: 1px solid var(--dark-1st, #000929);
+                background: var(--bg-light-red, #FFFDFD);
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                .font-black {
+                    font-feature-settings: 'ss04' on, 'ss06' on, 'liga' off;
+
+                    /* Body/Medium 150%/Bold */
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 150%;
+                    /* 24px */
+                }
+            }
+        }
+    }
+
+    .illustration-img-wrapper {
+        width: 379px;
+        position: relative;
+        padding-top: 27%;
+
+        .img-content {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
 }
 
 .Karo-page-footer {
