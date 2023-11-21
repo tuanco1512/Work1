@@ -2903,6 +2903,7 @@
     box-sizing: border-box;
 
     .illustration-content {
+        width: 579px;
         display: flex;
         flex-direction: column;
         gap: 34px;
@@ -2981,12 +2982,13 @@
     }
 
     .illustration-img-wrapper {
-        width: 379px;
+        width: 30.565%;
         position: relative;
-        padding-top: 27%;
+        padding-top: 26.5%;
 
         .img-content {
             width: 100%;
+            height: 100%;
             position: absolute;
             top: 0;
             right: 0;
