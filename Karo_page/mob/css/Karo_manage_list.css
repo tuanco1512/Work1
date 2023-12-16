@@ -551,7 +551,7 @@
   display: flex;
   padding: 10px;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   border-radius: 8px;
   border: 1px solid var(--Border-Blue, #E6F0FF);
   background: var(--BG-Section-Light-Blue, #FAFCFF);
