@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="manage-project-main-content">
+            <div class="filter-dropdown-select-items-container">
+                <div class="filter-dropdown-select-items">
+                    <div class="select-item">
+                        <select class="" name="provine" id="">
+                            <option value="" disabled selected hidden>Tỉnh/Thành phố</option>
+                            <option value="">A</option>
+                            <option value="">B</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="#4B465C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="white" stroke-opacity="0.2"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="select-item">
+                        <select class="" name="district" id="">
+                            <option value="" disabled selected hidden>Quận / Huyện</option>
+                            <option value="">A</option>
+                            <option value="">B</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="#4B465C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="white" stroke-opacity="0.2"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="select-item">
+                        <select class="" name="ward" id="">
+                            <option value="" disabled selected hidden>Phường / Xã</option>
+                            <option value="">A</option>
+                            <option value="">B</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="#4B465C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="white" stroke-opacity="0.2"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <a class="reset-filter-btn disabled">Xoá lọc</a>
+                    <a class="search-filter-btn">Lọc</a>
+                </div>
+            </div>
+            <div class="filter-display-items">
+                <div class="advanced-filter-section">
+                    <div class="select-item">
+                        <select class="" name="ward" id="">
+                            <option value="">Hiển thị 60</option>
+                            <option value="">Hiển thị 70</option>
+                            <option value="">Hiển thị 80</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="#4B465C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.66666 7.5L10.6667 12.5L15.6667 7.5" stroke="white" stroke-opacity="0.2"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="filter-input-search">
+                        <input type="text" placeholder="Tìm kiếm theo tên dự án..">
+                        <a class="create-new-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path d="M9 3.75V14.25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.75 9H14.25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Tạo mới</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="filter-total-result">
+                    Tất cả
+                    <span>1020</span>
+                </div>
+                <div class="data-table">
+                    <div class="data-table-header">
+                        <div class="data-col data-id">
+                            ID
+                            <div class="arrow">
+                                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="data-col data-title">
+                            Tiêu đề
+                            <div class="arrow">
+                                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="data-col data-section">
+                            Khu vực
+                            <div class="arrow">
+                                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="data-col data-advertisement">
+                            Tin rao
+                            <div class="arrow">
+                                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="data-col data-date">
+                            Ngày tạo
+                            <div class="arrow">
+                                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="data-col data-action">
+                            Hành động
+                            <div class="arrow">
+                                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.5 8.97223L7 5.47223L3.5 8.97223" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                    viewBox="0 0 14 15" fill="none">
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="#4B465C"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 6.02777L7 9.52777L10.5 6.02777" stroke="white" stroke-opacity="0.5"
+                                        stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-table-row">
+                        <div class="data-id">1</div>
+                        <div class="data-title">
+                            <div class="main-title">Vinhomes Masterise</div>
+                            <div class="sub-title">An Dương Vương, Phường Phú Thượng, Quận Tây Hồ...</div>
+                        </div>
+                        <div class="data-section">TP. Hà Nội</div>
+                        <div class="data-advertisement">30</div>
+                        <div class="data-date">8/12/2023</div>
+                        <div class="data-action">
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M8.25002 6.41666H5.50002C4.4875 6.41666 3.66669 7.23747 3.66669 8.24999V16.5C3.66669 17.5125 4.4875 18.3333 5.50002 18.3333H13.75C14.7625 18.3333 15.5834 17.5125 15.5834 16.5V13.75"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25002 6.41666H5.50002C4.4875 6.41666 3.66669 7.23747 3.66669 8.24999V16.5C3.66669 17.5125 4.4875 18.3333 5.50002 18.3333H13.75C14.7625 18.3333 15.5834 17.5125 15.5834 16.5V13.75"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 13.75H11L18.7917 5.95831C19.5511 5.19892 19.5511 3.9677 18.7917 3.20831C18.0323 2.44892 16.8011 2.44892 16.0417 3.20831L8.25 11V13.75"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 13.75H11L18.7917 5.95831C19.5511 5.19892 19.5511 3.9677 18.7917 3.20831C18.0323 2.44892 16.8011 2.44892 16.0417 3.20831L8.25 11V13.75"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6667 4.58334L17.4167 7.33334" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.6667 4.58334L17.4167 7.33334" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path d="M3.66669 6.41668H18.3334" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.66669 6.41668H18.3334" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.16665 10.0833V15.5833" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.16665 10.0833V15.5833" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.8333 10.0833V15.5833" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.8333 10.0833V15.5833" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M4.58331 6.41666L5.49998 17.4167C5.49998 18.4292 6.32079 19.25 7.33331 19.25H14.6666C15.6792 19.25 16.5 18.4292 16.5 17.4167L17.4166 6.41666"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M4.58331 6.41666L5.49998 17.4167C5.49998 18.4292 6.32079 19.25 7.33331 19.25H14.6666C15.6792 19.25 16.5 18.4292 16.5 17.4167L17.4166 6.41666"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 6.41667V3.66667C8.25 3.16041 8.66041 2.75 9.16667 2.75H12.8333C13.3396 2.75 13.75 3.16041 13.75 3.66667V6.41667"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 6.41667V3.66667C8.25 3.16041 8.66041 2.75 9.16667 2.75H12.8333C13.3396 2.75 13.75 3.16041 13.75 3.66667V6.41667"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <circle cx="11" cy="11" r="0.916667" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="11" r="0.916667" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="17.4167" r="0.916667" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="17.4167" r="0.916667" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <ellipse cx="11" cy="4.58332" rx="0.916667" ry="0.916667" stroke="#4B465C"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <ellipse cx="11" cy="4.58332" rx="0.916667" ry="0.916667" stroke="white"
+                                        stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="data-table-row">
+                        <div class="data-id">2</div>
+                        <div class="data-title">
+                            <div class="main-title">Vinhomes Masterise</div>
+                            <div class="sub-title">An Dương Vương, Phường Phú Thượng, Quận Tây Hồ...</div>
+                        </div>
+                        <div class="data-section">Tỉnh Hưng Yên</div>
+                        <div class="data-advertisement">30</div>
+                        <div class="data-date">8/12/2023</div>
+                        <div class="data-action">
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M8.25002 6.41666H5.50002C4.4875 6.41666 3.66669 7.23747 3.66669 8.24999V16.5C3.66669 17.5125 4.4875 18.3333 5.50002 18.3333H13.75C14.7625 18.3333 15.5834 17.5125 15.5834 16.5V13.75"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25002 6.41666H5.50002C4.4875 6.41666 3.66669 7.23747 3.66669 8.24999V16.5C3.66669 17.5125 4.4875 18.3333 5.50002 18.3333H13.75C14.7625 18.3333 15.5834 17.5125 15.5834 16.5V13.75"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 13.75H11L18.7917 5.95831C19.5511 5.19892 19.5511 3.9677 18.7917 3.20831C18.0323 2.44892 16.8011 2.44892 16.0417 3.20831L8.25 11V13.75"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 13.75H11L18.7917 5.95831C19.5511 5.19892 19.5511 3.9677 18.7917 3.20831C18.0323 2.44892 16.8011 2.44892 16.0417 3.20831L8.25 11V13.75"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6667 4.58334L17.4167 7.33334" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.6667 4.58334L17.4167 7.33334" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path d="M3.66669 6.41668H18.3334" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.66669 6.41668H18.3334" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.16665 10.0833V15.5833" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.16665 10.0833V15.5833" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.8333 10.0833V15.5833" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.8333 10.0833V15.5833" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M4.58331 6.41666L5.49998 17.4167C5.49998 18.4292 6.32079 19.25 7.33331 19.25H14.6666C15.6792 19.25 16.5 18.4292 16.5 17.4167L17.4166 6.41666"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M4.58331 6.41666L5.49998 17.4167C5.49998 18.4292 6.32079 19.25 7.33331 19.25H14.6666C15.6792 19.25 16.5 18.4292 16.5 17.4167L17.4166 6.41666"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 6.41667V3.66667C8.25 3.16041 8.66041 2.75 9.16667 2.75H12.8333C13.3396 2.75 13.75 3.16041 13.75 3.66667V6.41667"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 6.41667V3.66667C8.25 3.16041 8.66041 2.75 9.16667 2.75H12.8333C13.3396 2.75 13.75 3.16041 13.75 3.66667V6.41667"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <circle cx="11" cy="11" r="0.916667" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="11" r="0.916667" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="17.4167" r="0.916667" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="17.4167" r="0.916667" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <ellipse cx="11" cy="4.58332" rx="0.916667" ry="0.916667" stroke="#4B465C"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <ellipse cx="11" cy="4.58332" rx="0.916667" ry="0.916667" stroke="white"
+                                        stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="data-table-row">
+                        <div class="data-id">3</div>
+                        <div class="data-title">
+                            <div class="main-title">Vinhomes Masterise</div>
+                            <div class="sub-title">An Dương Vương, Phường Phú Thượng, Quận Tây Hồ...</div>
+                        </div>
+                        <div class="data-section">TP. Hà Nội</div>
+                        <div class="data-advertisement">30</div>
+                        <div class="data-date">8/12/2023</div>
+                        <div class="data-action">
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M8.25002 6.41666H5.50002C4.4875 6.41666 3.66669 7.23747 3.66669 8.24999V16.5C3.66669 17.5125 4.4875 18.3333 5.50002 18.3333H13.75C14.7625 18.3333 15.5834 17.5125 15.5834 16.5V13.75"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25002 6.41666H5.50002C4.4875 6.41666 3.66669 7.23747 3.66669 8.24999V16.5C3.66669 17.5125 4.4875 18.3333 5.50002 18.3333H13.75C14.7625 18.3333 15.5834 17.5125 15.5834 16.5V13.75"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 13.75H11L18.7917 5.95831C19.5511 5.19892 19.5511 3.9677 18.7917 3.20831C18.0323 2.44892 16.8011 2.44892 16.0417 3.20831L8.25 11V13.75"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 13.75H11L18.7917 5.95831C19.5511 5.19892 19.5511 3.9677 18.7917 3.20831C18.0323 2.44892 16.8011 2.44892 16.0417 3.20831L8.25 11V13.75"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6667 4.58334L17.4167 7.33334" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.6667 4.58334L17.4167 7.33334" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path d="M3.66669 6.41668H18.3334" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.66669 6.41668H18.3334" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.16665 10.0833V15.5833" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.16665 10.0833V15.5833" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.8333 10.0833V15.5833" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.8333 10.0833V15.5833" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M4.58331 6.41666L5.49998 17.4167C5.49998 18.4292 6.32079 19.25 7.33331 19.25H14.6666C15.6792 19.25 16.5 18.4292 16.5 17.4167L17.4166 6.41666"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M4.58331 6.41666L5.49998 17.4167C5.49998 18.4292 6.32079 19.25 7.33331 19.25H14.6666C15.6792 19.25 16.5 18.4292 16.5 17.4167L17.4166 6.41666"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 6.41667V3.66667C8.25 3.16041 8.66041 2.75 9.16667 2.75H12.8333C13.3396 2.75 13.75 3.16041 13.75 3.66667V6.41667"
+                                        stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.25 6.41667V3.66667C8.25 3.16041 8.66041 2.75 9.16667 2.75H12.8333C13.3396 2.75 13.75 3.16041 13.75 3.66667V6.41667"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <circle cx="11" cy="11" r="0.916667" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="11" r="0.916667" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="17.4167" r="0.916667" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="11" cy="17.4167" r="0.916667" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <ellipse cx="11" cy="4.58332" rx="0.916667" ry="0.916667" stroke="#4B465C"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <ellipse cx="11" cy="4.58332" rx="0.916667" ry="0.916667" stroke="white"
+                                        stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="notify-filter-display">Hiển thị từ 1 đến 60 của 1020 dự án</div>
+                    <div class="pagination">
+                        <a class="go-previous-page">Trước</a>
+                        <a class="page-number current-page">1</a>
+                        <a class="page-number">2</a>
+                        <a class="page-number previous-clicked-page">3</a>
+                        <a class="page-number">4</a>
+                        <a class="page-number">5</a>
+                        <a class="go-next-page">Tiếp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="create-change-project-main-content">
+            <div class="accordion">
+                <div class="accordion-header">
+                    <form action="">
+                        <div class="project-name">
+                            <label for="">Tên dự án*</label>
+                            <input type="text" placeholder="Nhập nội dung...">
+                        </div>
+                        <div class="project-address">
+                            <div class="select-items">
+                                <label for="">Tỉnh/Thành phố*</label>
+                                <select name="" id="">
+                                    <option value="" disabled selected hidden>Chọn</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="select-items">
+                                <label for="">Quận/Huyện*</label>
+                                <select name="" id="">
+                                    <option value="" disabled selected hidden>Chọn</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-address">
+                            <div class="select-items">
+                                <label for="">Phường/Xã*</label>
+                                <select name="" id="">
+                                    <option value="" disabled selected hidden>Chọn</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="#4B465C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-opacity="0.2"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="input-info">
+                                <label for="">Đường</label>
+                                <input type="text" placeholder="Nhập nội dung...">
+                            </div>
+                        </div>
+                        <div class="project-address">
+                            <div class="input-info">
+                                <label for="">Số nhà</label>
+                                <input type="text" placeholder="Nhập nội dung...">
+                            </div>
+                            <div class="input-info">
+                                <label for="">Toạ độ Google</label>
+                                <input type="text" placeholder="Nhập nội dung...">
+                            </div>
+                        </div>
+                        <div class="project-address">
+                            <div class="input-info">
+                                <label for="">Tên chủ đầu tư</label>
+                                <input type="text" placeholder="Nhập nội dung...">
+                            </div>
+                            <div class="input-info">
+                                <label for="">Tiến độ</label>
+                                <input type="text" placeholder="Nhập nội dung...">
+                            </div>
+                        </div>
+                        <div class="project-img-upload">
+                            <label for="">Hình ảnh</label>
+                            <div class="input-project-img">
+                                <a class="input-img-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                        fill="none">
+                                        <path
+                                            d="M3 12.75V14.25C3 15.0784 3.67157 15.75 4.5 15.75H13.5C14.3284 15.75 15 15.0784 15 14.25V12.75"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5.25 6.75L9 3L12.75 6.75" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9 3V12" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Tải ảnh</span>
+                                </a>
+                                <div class="suggestion-input">Nên up trên 5 ảnh, dung lượng mỗi ảnh dưới 5MB</div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <label for="">Mô tả</label>
+                            <div class="input-text-area">
+                                <div class="btn-functions-change-style-text">
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.83337 4.16666L10.8334 4.16666C12.4442 4.16666 13.75 5.4725 13.75 7.08333C13.75 8.69416 12.4442 10 10.8334 10H5.83337L5.83337 4.16666Z"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.83337 4.16666L10.8334 4.16666C12.4442 4.16666 13.75 5.4725 13.75 7.08333C13.75 8.69416 12.4442 10 10.8334 10H5.83337L5.83337 4.16666Z"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M10.8334 10H11.6667C13.2775 10 14.5834 11.3058 14.5834 12.9167C14.5834 14.5275 13.2775 15.8333 11.6667 15.8333H5.83337L5.83337 10"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10.8334 10H11.6667C13.2775 10 14.5834 11.3058 14.5834 12.9167C14.5834 14.5275 13.2775 15.8333 11.6667 15.8333H5.83337L5.83337 10"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path d="M9.16663 4.16667L14.1666 4.16667" stroke="#4B465C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 4.16667L14.1666 4.16667" stroke="white"
+                                                stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M5.83337 15.8333H10.8334" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5.83337 15.8333H10.8334" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.6667 4.16666L8.33337 15.8333" stroke="#4B465C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.6667 4.16666L8.33337 15.8333" stroke="white"
+                                                stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M5.83337 4.16666L5.83337 8.33333C5.83337 10.6345 7.69885 12.5 10 12.5C12.3012 12.5 14.1667 10.6345 14.1667 8.33333V4.16666"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M5.83337 4.16666L5.83337 8.33333C5.83337 10.6345 7.69885 12.5 10 12.5C12.3012 12.5 14.1667 10.6345 14.1667 8.33333V4.16666"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M4.16663 15.8333L15.8333 15.8333" stroke="#4B465C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M4.16663 15.8333L15.8333 15.8333" stroke="white"
+                                                stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path d="M9.16663 5L16.6666 5" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 5L16.6666 5" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 10L16.6666 10" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 10L16.6666 10" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 15H16.6667" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 15H16.6667" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3.33337 13.3333C3.33337 12.4129 4.07957 11.6667 5.00004 11.6667C5.92052 11.6667 6.66671 12.4129 6.66671 13.3333C6.66671 13.8258 6.25004 14.1667 5.83337 14.5833L3.33337 16.6667H6.66671"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M3.33337 13.3333C3.33337 12.4129 4.07957 11.6667 5.00004 11.6667C5.92052 11.6667 6.66671 12.4129 6.66671 13.3333C6.66671 13.8258 6.25004 14.1667 5.83337 14.5833L3.33337 16.6667H6.66671"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5.00004 8.33334L5.00004 3.33334L3.33337 5" stroke="#4B465C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5.00004 8.33334L5.00004 3.33334L3.33337 5" stroke="white"
+                                                stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path d="M2.91663 4.58333L4.16663 5.83333L6.24996 3.75" stroke="#4B465C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.91663 4.58333L4.16663 5.83333L6.24996 3.75" stroke="white"
+                                                stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M2.91663 9.58333L4.16663 10.8333L6.24996 8.75" stroke="#4B465C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.91663 9.58333L4.16663 10.8333L6.24996 8.75" stroke="white"
+                                                stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M2.91663 14.5833L4.16663 15.8333L6.24996 13.75" stroke="#4B465C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.91663 14.5833L4.16663 15.8333L6.24996 13.75" stroke="white"
+                                                stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9.16663 5L16.6666 5" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 5L16.6666 5" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 10L16.6666 10" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 10L16.6666 10" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 15L16.6666 15" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.16663 15L16.6666 15" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M8.33337 11.6667C8.88197 12.2266 9.63284 12.5421 10.4167 12.5421C11.2006 12.5421 11.9514 12.2266 12.5 11.6667L15.8334 8.33335C16.984 7.18275 16.984 5.31727 15.8334 4.16668C14.6828 3.01609 12.8173 3.01609 11.6667 4.16668L11.25 4.58335"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M8.33337 11.6667C8.88197 12.2266 9.63284 12.5421 10.4167 12.5421C11.2006 12.5421 11.9514 12.2266 12.5 11.6667L15.8334 8.33335C16.984 7.18275 16.984 5.31727 15.8334 4.16668C14.6828 3.01609 12.8173 3.01609 11.6667 4.16668L11.25 4.58335"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M11.6665 8.33331C11.1179 7.77341 10.3671 7.45789 9.5832 7.45789C8.79933 7.45789 8.04846 7.77341 7.49987 8.33331L4.16653 11.6666C3.01594 12.8172 3.01594 14.6827 4.16653 15.8333C5.31713 16.9839 7.18261 16.9839 8.3332 15.8333L8.74987 15.4166"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M11.6665 8.33331C11.1179 7.77341 10.3671 7.45789 9.5832 7.45789C8.79933 7.45789 8.04846 7.77341 7.49987 8.33331L4.16653 11.6666C3.01594 12.8172 3.01594 14.6827 4.16653 15.8333C5.31713 16.9839 7.18261 16.9839 8.3332 15.8333L8.74987 15.4166"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path d="M12.4999 6.66667H12.5082" stroke="#4B465C" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.4999 6.66667H12.5082" stroke="white" stroke-opacity="0.2"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <rect x="3.33337" y="3.33334" width="13.3333" height="13.3333" rx="3"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <rect x="3.33337" y="3.33334" width="13.3333" height="13.3333" rx="3"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3.33337 12.5L6.66671 9.16663C7.44021 8.42232 8.3932 8.42232 9.16671 9.16663L13.3334 13.3333"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M3.33337 12.5L6.66671 9.16663C7.44021 8.42232 8.3932 8.42232 9.16671 9.16663L13.3334 13.3333"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M11.6666 11.6666L12.5 10.8333C13.2735 10.089 14.2265 10.089 15 10.8333L16.6666 12.5"
+                                                stroke="#4B465C" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M11.6666 11.6666L12.5 10.8333C13.2735 10.089 14.2265 10.089 15 10.8333L16.6666 12.5"
+                                                stroke="white" stroke-opacity="0.2" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <textarea name="" id="" placeholder="Nhập nội dung..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="related-advertise">
+                <div class="total-number-related-advertises">Tin rao liên quan: <span>30</span></div>
+                <div class="image-name">
+                    <img src="assets/img/r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="">
+                    <div class="name-location">
+                        <div class="title">Tân Mai - 20m2 ô tô tránh - ngõ thông - kinh ô tránh - ngõ thông - ô tránh -
+                            ngõ thông - ô tra...</div>
+                        <div class="price">1,5 tỷ</div>
+                    </div>
+                </div>
+                <div class="image-name">
+                    <img src="assets/img/r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="">
+                    <div class="name-location">
+                        <div class="title">Tân Mai - 20m2 ô tô tránh - ngõ thông - kinh ô tránh - ngõ thông - ô tránh -
+                            ngõ thông - ô tra...</div>
+                        <div class="price">1,5 tỷ</div>
+                    </div>
+                </div>
+                <div class="image-name">
+                    <img src="assets/img/r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="">
+                    <div class="name-location">
+                        <div class="title">Tân Mai - 20m2 ô tô tránh - ngõ thông - kinh ô tránh - ngõ thông - ô tránh -
+                            ngõ thông - ô tra...</div>
+                        <div class="price">1,5 tỷ</div>
+                    </div>
+                </div>
+                <div class="image-name">
+                    <img src="assets/img/r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="">
+                    <div class="name-location">
+                        <div class="title">Tân Mai - 20m2 ô tô tránh - ngõ thông - kinh ô tránh - ngõ thông - ô tránh -
+                            ngõ thông - ô tra...</div>
+                        <div class="price">1,5 tỷ</div>
+                    </div>
+                </div>
+                <div class="image-name">
+                    <img src="assets/img/r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="">
+                    <div class="name-location">
+                        <div class="title">Tân Mai - 20m2 ô tô tránh - ngõ thông - kinh ô tránh - ngõ thông - ô tránh -
+                            ngõ thông - ô tra...</div>
+                        <div class="price">1,5 tỷ</div>
+                    </div>
+                </div>
+                <a class="btn-show-more">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
